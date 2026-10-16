@@ -19,5 +19,26 @@
   "closed": false,
   "outcome": null,
   "dry": false
+ },
+ {
+  "sym": "SNDKBUSDT",
+  "side": "SHORT",
+  "zone": [
+   1330.88,
+   1340.89844809596
+  ],
+  "tps": [
+   1305.8338797601004,
+   1285.7969835681806,
+   1255.7416392803011
+  ],
+  "sl": 1367.9482579550515,
+  "ts": 1792171774.6887345,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
  }
 ]
