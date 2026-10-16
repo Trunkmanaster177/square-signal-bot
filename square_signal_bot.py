@@ -11,7 +11,7 @@ Setup:
   export DRY_RUN=true      # prints the post only. Set to false to really post.
   python square_signal_bot.py
 """
-import os, time, json, random, logging, requests
+import os, time, json, copy, random, logging, requests
 
 API_KEY = os.getenv("SQUARE_API_KEY", "")
 DRY_RUN = os.getenv("DRY_RUN", "true").lower() != "false"
@@ -116,8 +116,8 @@ INTROS = ["Heyyy traders 💖", "Hi cuties ✨", "Gm gm lovelies 🌸", "Hello m
 OUTROS = ["Trade smart, stay cute & manage your risk okay? 💗", "Don't forget your stop loss, babes 🌷",
           "Patience pays, loves ✨ Not financial advice 💕", "Risk 1-2% only, pretty please 🥺💖"]
 
-def build_post(s):
-    lv = build_levels(s)
+def build_post(s, lv=None):
+    lv = lv or build_levels(s)
     coin = s["sym"].replace("USDT", "")
     tag = "$" + coin
     z1, z2 = lv["zone"]
@@ -151,29 +151,147 @@ Trade {tag} Here👇
 
 # ---------- posting ----------
 def post_to_square(text):
+    """Returns True if the post went through (or DRY_RUN)."""
     if DRY_RUN:
-        logging.info("DRY RUN, post below:\n%s", text); return
+        logging.info("DRY RUN, post below:\n%s", text); return True
     r = requests.post(SQUARE_URL, timeout=20,
                       headers={"X-Square-OpenAPI-Key": API_KEY,
                                "Content-Type": "application/json",
                                "clienttype": "binanceSkill"},
                       json={"bodyTextOnly": text})
     logging.info("Square response: %s", r.text)
+    try:
+        return r.ok and r.json().get("code") in ("000000", None, 0)
+    except Exception:
+        return r.ok
+
+
+# ---------- target tracker ----------
+TRADES_FILE = "open_trades.json"
+ENTRY_TIMEOUT = 12 * 3600         # entry never touched -> cancel silently
+TRADE_EXPIRY = 72 * 3600          # stop tracking after 72h
+
+def load_trades():
+    try: return json.load(open(TRADES_FILE))
+    except Exception: return []
+
+def save_trades(trades):
+    active = [t for t in trades if not t["closed"]]
+    done = [t for t in trades if t["closed"]][-50:]
+    json.dump(active + done, open(TRADES_FILE, "w"), indent=1)
+
+def fmt_dur(sec):
+    h, m = int(sec // 3600), int(sec % 3600 // 60)
+    return f"{h}h {m}m" if h else f"{m}m"
+
+def pct(entry, price, side):
+    return (price - entry) / entry * 100 * (1 if side == "LONG" else -1)
+
+def track_record(trades):
+    done = [t for t in trades if t["closed"] and t.get("outcome") in ("TP", "SL")][-20:]
+    if len(done) < 3: return ""
+    wins = sum(1 for t in done if t["hits"])
+    return f"\n📊 Track record (last {len(done)} closed signals): {wins}/{len(done)} reached at least TP1"
+
+def build_update(t, trades, n_new, sl_hit):
+    coin = t["sym"].replace("USDT", ""); tag = "$" + coin
+    entry = sum(t["zone"]) / 2; side = t["side"]; hits = t["hits"]
+    if len(hits) == 3: head = "🏆 ALL targets smashed! Amazing 💖"
+    elif sl_hit and hits: head = f"💫 TP{len(hits)} was hit, then price reversed to SL"
+    elif sl_hit: head = "💔 Stop loss hit. It's part of trading, stay disciplined babes"
+    else: head = f"🎉 TP{len(hits)} HIT! Yayyy"
+    lines = []
+    for i, tp in enumerate(t["tps"]):
+        if i < len(hits):
+            lines.append(f"🎯TP{i+1}: {fmt(tp)} ✅ {pct(entry, tp, side):+.2f}% in {fmt_dur(hits[i] - t['entry_ts'])}")
+        else:
+            lines.append(f"🎯TP{i+1}: {fmt(tp)} " + ("➖" if sl_hit else "⏳"))
+    sl_line = f"Stop loss: {fmt(t['sl'])} " + (f"❌ {pct(entry, t['sl'], side):+.2f}%" if sl_hit else "")
+    since = fmt_dur(time.time() - t["ts"])
+    return f"""{random.choice(INTROS)}
+
+{head}
+
+{tag} {side.title()} update.
+Entry zone: {fmt(t['zone'][0])} - {fmt(t['zone'][1])}
+{chr(10).join(lines)}
+{sl_line}
+
+⏱ Time since signal: {since}{track_record(trades)}
+
+Trade {tag} Here👇
+⚠️ Not financial advice. DYOR.
+#{coin} #TargetHit #TradingSignals #BinanceSquare"""
+
+def check_trades():
+    trades = load_trades()
+    now = time.time()
+    for idx, t in enumerate(trades):
+        if t["closed"]: continue
+        if t.get("dry") and not DRY_RUN:          # test trade, never posted live
+            t["closed"], t["outcome"] = True, "dry"; continue
+        n = copy.deepcopy(t)
+        d = 1 if n["side"] == "LONG" else -1
+        top, bot = max(n["zone"]), min(n["zone"])
+        k = requests.get(f"{FAPI}/api/v3/klines", timeout=15,
+                         params={"symbol": n["sym"], "interval": "5m",
+                                 "startTime": int(n["ts"] * 1000), "limit": 1000}).json()
+        before, sl_hit = len(n["hits"]), False
+        for c in k:
+            ct, hi, lo = c[0] / 1000, float(c[2]), float(c[3])
+            if not n["entered"]:
+                if lo <= top and hi >= bot: n["entered"], n["entry_ts"] = True, ct
+                else: continue
+            if (lo <= n["sl"]) if d == 1 else (hi >= n["sl"]):   # SL checked first = conservative
+                sl_hit = True; break
+            while len(n["hits"]) < 3:
+                tp = n["tps"][len(n["hits"])]
+                if (hi >= tp) if d == 1 else (lo <= tp): n["hits"].append(ct)
+                else: break
+            if len(n["hits"]) == 3: break
+        new_tps = len(n["hits"]) - before
+        if sl_hit or len(n["hits"]) == 3:
+            n["closed"], n["outcome"] = True, ("SL" if sl_hit else "TP")
+        elif not n["entered"] and now - n["ts"] > ENTRY_TIMEOUT:
+            n["closed"], n["outcome"] = True, "cancelled"
+        elif now - n["ts"] > TRADE_EXPIRY:
+            n["closed"], n["outcome"] = True, "expired"
+        if new_tps or sl_hit:
+            snapshot = trades[:idx] + [n] + trades[idx + 1:]
+            if post_to_square(build_update(n, snapshot, new_tps, sl_hit)):
+                trades[idx] = n
+        else:
+            trades[idx] = n                          # silent changes (entered/cancelled/expired)
+    save_trades(trades)
+
 
 def run_once():
+    try:
+        check_trades()
+    except Exception as e:
+        logging.error("Tracker failed: %s", e)
+    trades = load_trades()
+    active = {t["sym"] for t in trades if not t["closed"]}
     results = []
     for t in get_candidates():
         try:
             results.append(analyse(t["symbol"]))
         except Exception as e:
             logging.warning("skip %s: %s", t["symbol"], e)
-    good = [r for r in results if r["score"] >= MIN_SCORE and r["sym"] not in recent]
+    good = [r for r in results if r["score"] >= MIN_SCORE
+            and r["sym"] not in recent and r["sym"] not in active]
     if not good:
         logging.info("No high-quality setup this round, skipping post."); return
     best = max(good, key=lambda r: (r["score"], r["vol"]))
-    recent.append(best["sym"]); del recent[:-4]
-    json.dump(recent, open(STATE_FILE, "w"))
-    post_to_square(build_post(best))
+    lv = build_levels(best)
+    if post_to_square(build_post(best, lv)):
+        recent.append(best["sym"]); del recent[:-4]
+        json.dump(recent, open(STATE_FILE, "w"))
+        trades.append(dict(sym=best["sym"], side=best["side"], zone=list(lv["zone"]),
+                           tps=lv["tps"], sl=lv["sl"], ts=time.time(), entered=False,
+                           entry_ts=None, hits=[], closed=False, outcome=None, dry=DRY_RUN))
+        save_trades(trades)
+
 
 if __name__ == "__main__":
     if os.getenv("RUN_ONCE", "false").lower() == "true":   # GitHub Actions mode
