@@ -53,5 +53,5 @@ jobs:
           git config user.name "signal-bot"
           git config user.email "bot@users.noreply.github.com"
           git pull --rebase || true
-          git add recent.json || true
+          git add recent.json open_trades.json || true
           git diff --cached --quiet || (git commit -m "update state" && git push)
