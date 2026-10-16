@@ -2,7 +2,7 @@ name: Binance Square News Bot
 
 on:
   schedule:
-    - cron: "0 1-23/2 * * *"   # every 2 hours, offset by 1h from the signal bot
+    - cron: "0 * * * *"   
   workflow_dispatch:
 
 permissions:
