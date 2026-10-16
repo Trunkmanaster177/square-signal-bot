@@ -1,0 +1,40 @@
+name: Binance Square News Bot
+
+on:
+  schedule:
+    - cron: "0 1-23/2 * * *"   # every 2 hours, offset by 1h from the signal bot
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Run news bot
+        env:
+          SQUARE_API_KEY: ${{ secrets.SQUARE_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # optional
+          DRY_RUN: "false"
+          RUN_ONCE: "true"
+        run: python news_bot.py
+      - name: Save card preview
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: news-card
+          path: news_card.png
+          if-no-files-found: ignore
+      - name: Save state
+        run: |
+          git config user.name "news-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git pull --rebase || true
+          git add posted_news.json || true
+          git diff --cached --quiet || (git commit -m "update news state" && git push)
