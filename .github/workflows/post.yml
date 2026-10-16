@@ -2,7 +2,7 @@ name: Binance Square Signal Bot
 
 on:
   schedule:
-    - cron: "0 */2 * * *"     # every 2 hours (UTC)
+    - cron: "0 */1 * * *"     # every 2 hours (UTC)
   workflow_dispatch:           # manual "Run workflow" button
 
 permissions:
