@@ -195,7 +195,8 @@
   "entered": true,
   "entry_ts": 1792215300.0,
   "hits": [
-   1792241400.0
+   1792241400.0,
+   1792256400.0
   ],
   "closed": false,
   "outcome": null,
@@ -218,7 +219,8 @@
   "entered": true,
   "entry_ts": 1792220400.0,
   "hits": [
-   1792241400.0
+   1792241400.0,
+   1792255800.0
   ],
   "closed": false,
   "outcome": null,
@@ -318,27 +320,6 @@
   "dry": false
  },
  {
-  "sym": "INJUSDT",
-  "side": "LONG",
-  "zone": [
-   8.705,
-   8.627290086628587
-  ],
-  "tps": [
-   8.899274783428531,
-   9.054694610171355,
-   9.28782435028559
-  ],
-  "sl": 8.417473320525776,
-  "ts": 1792241943.0985727,
-  "entered": true,
-  "entry_ts": 1792242000.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "UNIUSDT",
   "side": "SHORT",
   "zone": [
@@ -354,7 +335,9 @@
   "ts": 1792244943.1563504,
   "entered": true,
   "entry_ts": 1792245000.0,
-  "hits": [],
+  "hits": [
+   1792255500.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -399,7 +382,8 @@
   "entered": true,
   "entry_ts": 1792246800.0,
   "hits": [
-   1792251900.0
+   1792251900.0,
+   1792255800.0
   ],
   "closed": false,
   "outcome": null,
@@ -440,11 +424,55 @@
   ],
   "sl": 719.7215567602749,
   "ts": 1792255242.6787074,
+  "entered": true,
+  "entry_ts": 1792255500.0,
+  "hits": [
+   1792256400.0
+  ],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "TAOUSDT",
+  "side": "SHORT",
+  "zone": [
+   266.8,
+   268.3508699714607
+  ],
+  "tps": [
+   262.92282507134814,
+   259.8210851284267,
+   255.16847521404452
+  ],
+  "sl": 272.5382188944047,
+  "ts": 1792259145.9937687,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "INJUSDT",
+  "side": "LONG",
+  "zone": [
+   8.705,
+   8.627290086628587
+  ],
+  "tps": [
+   8.899274783428531,
+   9.054694610171355,
+   9.28782435028559
+  ],
+  "sl": 8.417473320525776,
+  "ts": 1792241943.0985727,
+  "entered": true,
+  "entry_ts": 1792242000.0,
+  "hits": [],
+  "closed": true,
+  "outcome": "SL",
   "dry": false
  },
  {
