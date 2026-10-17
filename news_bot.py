@@ -197,16 +197,50 @@ def make_card(item, path=CARD_PATH):
 
 
 # ---------- posting ----------
-def post_to_square(text, image_path):
-    if DRY_RUN:
-        logging.info("DRY RUN, post below (image saved at %s):\n%s", image_path, text); return True
-    # NOTE: text post. See README note: add the image field here once confirmed in Square OpenAPI docs.
-    r = requests.post(SQUARE_URL, timeout=20,
+SQ_V1 = "https://www.binance.com/bapi/composite/v1/public/pgc/openApi"
+SQ_V2 = "https://www.binance.com/bapi/composite/v2/public/pgc/openApi"
+
+def sq_api(endpoint, body, base=SQ_V2):
+    r = requests.post(base + endpoint, timeout=30, json=body,
                       headers={"X-Square-OpenAPI-Key": API_KEY, "Content-Type": "application/json",
-                               "clienttype": "binanceSkill"},
-                      json={"bodyTextOnly": text})
-    logging.info("Square response: %s", r.text)
-    return r.ok
+                               "clienttype": "binanceSkill"})
+    if endpoint == "/content/add" and r.status_code == 504:     # posted, but no id returned
+        return {"publishStatus": "success_without_post_id"}
+    j = r.json()
+    if j.get("code") != "000000":
+        raise RuntimeError(f"API error [{j.get('code')}]: {j.get('message')}")
+    return j["data"]
+
+def upload_image(path):
+    """presigned URL -> PUT file -> poll until Binance returns the public image URL."""
+    d = sq_api("/image/presignedUrl", {"imageName": os.path.basename(path)})
+    with open(path, "rb") as f:
+        requests.put(d["presignedUrl"], data=f.read(), headers={"Content-Type": "image/png"},
+                     timeout=60).raise_for_status()
+    for _ in range(10):
+        st = sq_api("/image/imageStatus", {"fileTicket": d["fileTicket"]})
+        if st["status"] == 1: return st["imageUrl"]
+        if st["status"] == 2: raise RuntimeError("image processing failed: %s" % st.get("failedReason"))
+        time.sleep(3)
+    raise TimeoutError("image processing timed out")
+
+def post_to_square(text, image=None):
+    """Returns True if the post went through (or DRY_RUN). Posts text + image when image is given."""
+    if DRY_RUN:
+        logging.info("DRY RUN, post below (image: %s):\n%s", image, text); return True
+    body = {"contentType": 1, "bodyTextOnly": text}
+    if image and os.path.exists(image):
+        try:
+            body["imageList"] = [upload_image(image)]
+        except Exception as e:
+            logging.warning("Image upload failed, posting text only: %s", e)
+    try:
+        res = sq_api("/content/add", body, SQ_V1)
+        logging.info("Posted: %s", res)
+        return True
+    except Exception as e:
+        logging.error("Post failed: %s", e)
+        return False
 
 
 def run_once():
@@ -228,4 +262,6 @@ if __name__ == "__main__":
     while True:
         try: run_once()
         except Exception as e: logging.error("Run failed: %s", e)
+        time.sleep(POST_EVERY)
+Exception as e: logging.error("Run failed: %s", e)
         time.sleep(POST_EVERY)
