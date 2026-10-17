@@ -232,23 +232,52 @@ def upload_image(path):
         time.sleep(3)
     raise TimeoutError("image processing timed out")
 
-def post_to_square(text, image=None):
-    """Returns True if the post went through (or DRY_RUN). Posts text + image when image is given."""
-    if DRY_RUN:
-        logging.info("DRY RUN, post below (image: %s):\n%s", image, text); return True
-    body = {"contentType": 1, "bodyTextOnly": text}
-    if image and os.path.exists(image):
-        try:
-            body["imageList"] = [upload_image(image)]
-        except Exception as e:
-            logging.warning("Image upload failed, posting text only: %s", e)
+TG_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TG_CHAT = os.getenv("TELEGRAM_CHAT_ID", "")      # @channelusername or -100xxxxxxxxxx
+
+def post_to_telegram(text, image=None):
+    """Posts photo + text to the Telegram channel. Returns True on success."""
+    if not (TG_TOKEN and TG_CHAT): return False
+    base = f"https://api.telegram.org/bot{TG_TOKEN}"
     try:
-        res = sq_api("/content/add", body, SQ_V1)
-        logging.info("Posted: %s", res)
+        caption = text if len(text) <= 1024 else None      # photo captions max 1024 chars
+        if image and os.path.exists(image):
+            data = {"chat_id": TG_CHAT}
+            if caption: data["caption"] = caption
+            with open(image, "rb") as f:
+                r = requests.post(base + "/sendPhoto", data=data, files={"photo": f}, timeout=60)
+            if not r.ok:
+                logging.error("Telegram photo failed: %s %s", r.status_code, r.text); return False
+            if caption: return True
+        r = requests.post(base + "/sendMessage", timeout=30,
+                          data={"chat_id": TG_CHAT, "text": text, "disable_web_page_preview": True})
+        if not r.ok:
+            logging.error("Telegram message failed: %s %s", r.status_code, r.text); return False
         return True
     except Exception as e:
-        logging.error("Post failed: %s", e)
+        logging.error("Telegram error: %s", type(e).__name__)   # no URL in logs (it holds the token)
         return False
+
+def post_to_square(text, image=None):
+    """Posts to Binance Square (text + image) and Telegram. True if at least one succeeded."""
+    if DRY_RUN:
+        logging.info("DRY RUN, post below (image: %s, telegram: %s):\n%s",
+                     image, bool(TG_TOKEN and TG_CHAT), text); return True
+    tg_ok = post_to_telegram(text, image)
+    sq_ok = False
+    if API_KEY:
+        body = {"contentType": 1, "bodyTextOnly": text}
+        if image and os.path.exists(image):
+            try:
+                body["imageList"] = [upload_image(image)]
+            except Exception as e:
+                logging.warning("Image upload failed, posting text only: %s", e)
+        try:
+            res = sq_api("/content/add", body, SQ_V1)
+            logging.info("Posted to Square: %s", res); sq_ok = True
+        except Exception as e:
+            logging.error("Square post failed: %s", e)
+    return sq_ok or tg_ok
 
 
 # ---------- target tracker ----------
