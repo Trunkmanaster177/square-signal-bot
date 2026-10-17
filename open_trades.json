@@ -289,7 +289,8 @@
   "entered": true,
   "entry_ts": 1792235700.0,
   "hits": [
-   1792241400.0
+   1792241400.0,
+   1792252200.0
   ],
   "closed": false,
   "outcome": null,
@@ -372,9 +373,11 @@
   ],
   "sl": 2444.925879652033,
   "ts": 1792246538.7423363,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
+  "entered": true,
+  "entry_ts": 1792246800.0,
+  "hits": [
+   1792252200.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -393,6 +396,29 @@
   ],
   "sl": 0.19742164462725392,
   "ts": 1792246734.9569736,
+  "entered": true,
+  "entry_ts": 1792246800.0,
+  "hits": [
+   1792251900.0
+  ],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "ZECUSDT",
+  "side": "SHORT",
+  "zone": [
+   1163.12,
+   1170.852634818583
+  ],
+  "tps": [
+   1143.7884129535423,
+   1128.3231433163762,
+   1105.125238860627
+  ],
+  "sl": 1191.7307488287574,
+  "ts": 1792252788.8014905,
   "entered": false,
   "entry_ts": null,
   "hits": [],
