@@ -2,7 +2,7 @@ name: Binance Square News Bot
 
 on:
   schedule:
-    - cron: "30 * * * *"   # every hour at :30 (UTC)
+    - cron: "30 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -24,6 +24,8 @@ jobs:
       - name: Run news bot
         env:
           SQUARE_API_KEY: ${{ secrets.SQUARE_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # optional
           DRY_RUN: "false"
           RUN_ONCE: "true"
