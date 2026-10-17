@@ -66,27 +66,6 @@
   "dry": false
  },
  {
-  "sym": "USD1USDT",
-  "side": "LONG",
-  "zone": [
-   1.00041,
-   1.0003364235470007
-  ],
-  "tps": [
-   1.0005939411324984,
-   1.000741094038497,
-   1.000961823397495
-  ],
-  "sl": 1.0001377671239022,
-  "ts": 1792185642.2647278,
-  "entered": true,
-  "entry_ts": 1792187400.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "XAUTUSDT",
   "side": "LONG",
   "zone": [
@@ -271,11 +250,53 @@
   ],
   "sl": 10.182718758751573,
   "ts": 1792226729.3545942,
+  "entered": true,
+  "entry_ts": 1792227000.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "STRKUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.07164,
+   0.07267212667863392
+  ],
+  "tps": [
+   0.0690596833034152,
+   0.06699542994614738,
+   0.06389904991024563
+  ],
+  "sl": 0.07545886871094548,
+  "ts": 1792230035.9145155,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "USD1USDT",
+  "side": "LONG",
+  "zone": [
+   1.00041,
+   1.0003364235470007
+  ],
+  "tps": [
+   1.0005939411324984,
+   1.000741094038497,
+   1.000961823397495
+  ],
+  "sl": 1.0001377671239022,
+  "ts": 1792185642.2647278,
+  "entered": true,
+  "entry_ts": 1792187400.0,
+  "hits": [],
+  "closed": true,
+  "outcome": "SL",
   "dry": false
  },
  {
