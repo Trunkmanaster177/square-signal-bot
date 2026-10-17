@@ -434,27 +434,6 @@
   "dry": false
  },
  {
-  "sym": "TAOUSDT",
-  "side": "SHORT",
-  "zone": [
-   266.8,
-   268.3508699714607
-  ],
-  "tps": [
-   262.92282507134814,
-   259.8210851284267,
-   255.16847521404452
-  ],
-  "sl": 272.5382188944047,
-  "ts": 1792259145.9937687,
-  "entered": true,
-  "entry_ts": 1792259400.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "PUMPUSDT",
   "side": "SHORT",
   "zone": [
@@ -489,11 +468,53 @@
   ],
   "sl": 12.203163951620933,
   "ts": 1792264848.956888,
+  "entered": true,
+  "entry_ts": 1792265100.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "INJUSDT",
+  "side": "LONG",
+  "zone": [
+   8.771,
+   8.695815306208186
+  ],
+  "tps": [
+   8.958961734479537,
+   9.109331122063166,
+   9.33488520343861
+  ],
+  "sl": 8.492816632970287,
+  "ts": 1792269835.8330855,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "TAOUSDT",
+  "side": "SHORT",
+  "zone": [
+   266.8,
+   268.3508699714607
+  ],
+  "tps": [
+   262.92282507134814,
+   259.8210851284267,
+   255.16847521404452
+  ],
+  "sl": 272.5382188944047,
+  "ts": 1792259145.9937687,
+  "entered": true,
+  "entry_ts": 1792259400.0,
+  "hits": [],
+  "closed": true,
+  "outcome": "SL",
   "dry": false
  },
  {
