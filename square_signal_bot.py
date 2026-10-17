@@ -149,21 +149,106 @@ Trade {tag} Here👇
 #{coin} #BinanceSquare #TradingSignals #{ 'Long' if s['side']=='LONG' else 'Short' }"""
 
 
+# ---------- chart image ----------
+def make_chart(t, path):
+    """Candlestick chart with entry zone, TP1-3, SL, signal time and hit markers."""
+    import matplotlib; matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from matplotlib.patches import Rectangle
+    k = requests.get(f"{FAPI}/api/v3/klines", timeout=15,
+                     params={"symbol": t["sym"], "interval": "1h", "limit": 72}).json()
+    n = len(k)
+    fig, ax = plt.subplots(figsize=(8, 5), dpi=140)
+    fig.patch.set_facecolor("#fff5fa"); ax.set_facecolor("#fff5fa")
+    for i, c in enumerate(k):
+        o, h, l, cl = (float(c[1]), float(c[2]), float(c[3]), float(c[4]))
+        col = "#1ea97c" if cl >= o else "#e0457b"
+        ax.vlines(i, l, h, color=col, lw=1)
+        ax.add_patch(Rectangle((i - 0.3, min(o, cl)), 0.6, max(abs(cl - o), (h - l) * 0.02), color=col))
+    top, bot = max(t["zone"]), min(t["zone"])
+    ax.fill_between([-1, n + 1], bot, top, color="#ff8fc0", alpha=0.35, lw=0)
+    xr = n + 10
+    ax.text(xr, (top + bot) / 2, "Entry " + fmt((top + bot) / 2), color="#c2185b", va="center", fontsize=8, weight="bold")
+    for i, tp in enumerate(t["tps"]):
+        done = i < len(t["hits"])
+        ax.hlines(tp, -1, n + 1, color="#1ea97c", ls="-" if done else "--", lw=1.2)
+        ax.text(xr, tp, f"TP{i+1} {fmt(tp)}" + (" ✓" if done else ""), color="#0b7a57",
+                va="center", fontsize=8, weight="bold")
+    ax.hlines(t["sl"], -1, n + 1, color="#d32f2f", lw=1.3)
+    ax.text(xr, t["sl"], "SL " + fmt(t["sl"]), color="#d32f2f", va="center", fontsize=8, weight="bold")
+    def idx_of(ts):
+        best = 0
+        for i, c in enumerate(k):
+            if c[0] / 1000 <= ts: best = i
+        return best
+    sig = idx_of(t["ts"])
+    ax.axvline(sig, color="#777", ls=":", lw=1)
+    ax.text(sig, ax.get_ylim()[1], " signal", fontsize=7, color="#777", va="top")
+    for i, hts in enumerate(t["hits"]):
+        ax.scatter(idx_of(hts), t["tps"][i], marker="*", s=220, color="#ffc107", edgecolor="#b8860b", zorder=5)
+    levels = t["tps"] + [t["sl"], top, bot]
+    lows = [float(c[3]) for c in k]; highs = [float(c[2]) for c in k]
+    lo, hi = min(lows + levels), max(highs + levels); pad = (hi - lo) * 0.06
+    ax.set_ylim(lo - pad, hi + pad); ax.set_xlim(-1, n + 22)
+    ax.set_xticks([])
+    for sp in ("top", "right"): ax.spines[sp].set_visible(False)
+    status = "TP%d hit" % len(t["hits"]) if t["hits"] else "Setup"
+    ax.set_title(f"${t['sym'].replace('USDT','')} {t['side']}  |  {status}  |  1h chart",
+                 color="#880e4f", fontsize=12, weight="bold")
+    fig.tight_layout(); fig.savefig(path, facecolor=fig.get_facecolor()); plt.close(fig)
+    return path
+
+def safe_chart(t, path):
+    try: return make_chart(t, path)
+    except Exception as e:
+        logging.warning("chart failed: %s", e); return None
+
+
 # ---------- posting ----------
-def post_to_square(text):
-    """Returns True if the post went through (or DRY_RUN)."""
+SQ_V1 = "https://www.binance.com/bapi/composite/v1/public/pgc/openApi"
+SQ_V2 = "https://www.binance.com/bapi/composite/v2/public/pgc/openApi"
+
+def sq_api(endpoint, body, base=SQ_V2):
+    r = requests.post(base + endpoint, timeout=30, json=body,
+                      headers={"X-Square-OpenAPI-Key": API_KEY, "Content-Type": "application/json",
+                               "clienttype": "binanceSkill"})
+    if endpoint == "/content/add" and r.status_code == 504:     # posted, but no id returned
+        return {"publishStatus": "success_without_post_id"}
+    j = r.json()
+    if j.get("code") != "000000":
+        raise RuntimeError(f"API error [{j.get('code')}]: {j.get('message')}")
+    return j["data"]
+
+def upload_image(path):
+    """presigned URL -> PUT file -> poll until Binance returns the public image URL."""
+    d = sq_api("/image/presignedUrl", {"imageName": os.path.basename(path)})
+    with open(path, "rb") as f:
+        requests.put(d["presignedUrl"], data=f.read(), headers={"Content-Type": "image/png"},
+                     timeout=60).raise_for_status()
+    for _ in range(10):
+        st = sq_api("/image/imageStatus", {"fileTicket": d["fileTicket"]})
+        if st["status"] == 1: return st["imageUrl"]
+        if st["status"] == 2: raise RuntimeError("image processing failed: %s" % st.get("failedReason"))
+        time.sleep(3)
+    raise TimeoutError("image processing timed out")
+
+def post_to_square(text, image=None):
+    """Returns True if the post went through (or DRY_RUN). Posts text + image when image is given."""
     if DRY_RUN:
-        logging.info("DRY RUN, post below:\n%s", text); return True
-    r = requests.post(SQUARE_URL, timeout=20,
-                      headers={"X-Square-OpenAPI-Key": API_KEY,
-                               "Content-Type": "application/json",
-                               "clienttype": "binanceSkill"},
-                      json={"bodyTextOnly": text})
-    logging.info("Square response: %s", r.text)
+        logging.info("DRY RUN, post below (image: %s):\n%s", image, text); return True
+    body = {"contentType": 1, "bodyTextOnly": text}
+    if image and os.path.exists(image):
+        try:
+            body["imageList"] = [upload_image(image)]
+        except Exception as e:
+            logging.warning("Image upload failed, posting text only: %s", e)
     try:
-        return r.ok and r.json().get("code") in ("000000", None, 0)
-    except Exception:
-        return r.ok
+        res = sq_api("/content/add", body, SQ_V1)
+        logging.info("Posted: %s", res)
+        return True
+    except Exception as e:
+        logging.error("Post failed: %s", e)
+        return False
 
 
 # ---------- target tracker ----------
@@ -258,7 +343,8 @@ def check_trades():
             n["closed"], n["outcome"] = True, "expired"
         if new_tps or sl_hit:
             snapshot = trades[:idx] + [n] + trades[idx + 1:]
-            if post_to_square(build_update(n, snapshot, new_tps, sl_hit)):
+            if post_to_square(build_update(n, snapshot, new_tps, sl_hit),
+                              safe_chart(n, f"chart_update_{n['sym']}.png")):
                 trades[idx] = n
         else:
             trades[idx] = n                          # silent changes (entered/cancelled/expired)
@@ -284,7 +370,9 @@ def run_once():
         logging.info("No high-quality setup this round, skipping post."); return
     best = max(good, key=lambda r: (r["score"], r["vol"]))
     lv = build_levels(best)
-    if post_to_square(build_post(best, lv)):
+    sig = dict(sym=best["sym"], side=best["side"], zone=list(lv["zone"]), tps=lv["tps"],
+               sl=lv["sl"], ts=time.time(), hits=[])
+    if post_to_square(build_post(best, lv), safe_chart(sig, "chart_signal.png")):
         recent.append(best["sym"]); del recent[:-4]
         json.dump(recent, open(STATE_FILE, "w"))
         trades.append(dict(sym=best["sym"], side=best["side"], zone=list(lv["zone"]),
