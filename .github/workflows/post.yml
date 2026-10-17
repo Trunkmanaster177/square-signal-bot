@@ -2,7 +2,6 @@ name: Binance Square Signal Bot
 
 on:
   schedule:
-    # every 1.15 hours (69 minutes), 21 posts a day (UTC)
     - cron: "0 0 * * *"
     - cron: "9 1 * * *"
     - cron: "18 2 * * *"
@@ -45,9 +44,18 @@ jobs:
       - name: Run bot
         env:
           SQUARE_API_KEY: ${{ secrets.SQUARE_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DRY_RUN: "false"
           RUN_ONCE: "true"
         run: python square_signal_bot.py
+      - name: Save chart previews
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: charts
+          path: chart_*.png
+          if-no-files-found: ignore
       - name: Save state
         run: |
           git config user.name "signal-bot"
