@@ -123,7 +123,9 @@
   "ts": 1792194949.6706696,
   "entered": true,
   "entry_ts": 1792195200.0,
-  "hits": [],
+  "hits": [
+   1792235100.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -271,6 +273,27 @@
   ],
   "sl": 0.07545886871094548,
   "ts": 1792230035.9145155,
+  "entered": true,
+  "entry_ts": 1792230300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "SUIUSDT",
+  "side": "SHORT",
+  "zone": [
+   1.0058,
+   1.0111656278838068
+  ],
+  "tps": [
+   0.9923859302904833,
+   0.9816546745228697,
+   0.9655577908714494
+  ],
+  "sl": 1.0256528231700852,
+  "ts": 1792235619.0882416,
   "entered": false,
   "entry_ts": null,
   "hits": [],
