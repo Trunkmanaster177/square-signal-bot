@@ -380,6 +380,27 @@
   "dry": false
  },
  {
+  "sym": "ENAUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.1931,
+   0.19426801206141997
+  ],
+  "tps": [
+   0.19017996984645003,
+   0.18784394572361007,
+   0.18433990953935012
+  ],
+  "sl": 0.19742164462725392,
+  "ts": 1792246734.9569736,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
   "sym": "FILUSDT",
   "side": "LONG",
   "zone": [
