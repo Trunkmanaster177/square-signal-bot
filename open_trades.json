@@ -427,6 +427,27 @@
   "dry": false
  },
  {
+  "sym": "BNBUSDT",
+  "side": "SHORT",
+  "zone": [
+   714.89,
+   716.1958261514256
+  ],
+  "tps": [
+   711.6254346214358,
+   709.0137823185846,
+   705.0963038643076
+  ],
+  "sl": 719.7215567602749,
+  "ts": 1792255242.6787074,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
   "sym": "FILUSDT",
   "side": "LONG",
   "zone": [
