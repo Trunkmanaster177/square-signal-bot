@@ -288,6 +288,27 @@
   "dry": false
  },
  {
+  "sym": "AVAUSDT",
+  "side": "LONG",
+  "zone": [
+   0.375,
+   0.36265780120765895
+  ],
+  "tps": [
+   0.4058554969808526,
+   0.4305398945655347,
+   0.46756649094255787
+  ],
+  "sl": 0.32933386446833807,
+  "ts": 1792324055.393356,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
   "sym": "BTCUSDT",
   "side": "SHORT",
   "zone": [
