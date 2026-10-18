@@ -246,27 +246,6 @@
   "dry": false
  },
  {
-  "sym": "TIAUSDT",
-  "side": "LONG",
-  "zone": [
-   0.658,
-   0.6496090525848905
-  ],
-  "tps": [
-   0.6789773685377738,
-   0.6957592633679929,
-   0.7209321056133215
-  ],
-  "sl": 0.6269534945640947,
-  "ts": 1792314084.2523677,
-  "entered": true,
-  "entry_ts": 1792314300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "STRKUSDT",
   "side": "SHORT",
   "zone": [
@@ -304,7 +283,8 @@
   "entered": true,
   "entry_ts": 1792325400.0,
   "hits": [
-   1792326300.0
+   1792326300.0,
+   1792327200.0
   ],
   "closed": false,
   "outcome": null,
@@ -329,6 +309,48 @@
   "hits": [],
   "closed": false,
   "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "DOGEUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.07942,
+   0.07969761390563343
+  ],
+  "tps": [
+   0.07872596523591645,
+   0.07817073742464961,
+   0.07733789570774934
+  ],
+  "sl": 0.08044717145084368,
+  "ts": 1792329560.2283366,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "TIAUSDT",
+  "side": "LONG",
+  "zone": [
+   0.658,
+   0.6496090525848905
+  ],
+  "tps": [
+   0.6789773685377738,
+   0.6957592633679929,
+   0.7209321056133215
+  ],
+  "sl": 0.6269534945640947,
+  "ts": 1792314084.2523677,
+  "entered": true,
+  "entry_ts": 1792314300.0,
+  "hits": [],
+  "closed": true,
+  "outcome": "SL",
   "dry": false
  },
  {
