@@ -154,7 +154,9 @@
   "ts": 1792283401.1714602,
   "entered": true,
   "entry_ts": 1792284300.0,
-  "hits": [],
+  "hits": [
+   1792330200.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -176,7 +178,8 @@
   "entered": true,
   "entry_ts": 1792294500.0,
   "hits": [
-   1792300800.0
+   1792300800.0,
+   1792330200.0
   ],
   "closed": false,
   "outcome": null,
@@ -219,7 +222,9 @@
   "ts": 1792307743.232231,
   "entered": true,
   "entry_ts": 1792311600.0,
-  "hits": [],
+  "hits": [
+   1792330200.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -240,7 +245,9 @@
   "ts": 1792311224.189768,
   "entered": true,
   "entry_ts": 1792311300.0,
-  "hits": [],
+  "hits": [
+   1792329900.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -325,6 +332,27 @@
   ],
   "sl": 0.08044717145084368,
   "ts": 1792329560.2283366,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "SNDKBUSDT",
+  "side": "SHORT",
+  "zone": [
+   1262.73,
+   1267.7046091698257
+  ],
+  "tps": [
+   1250.2934770754357,
+   1240.3442587357843,
+   1225.4204312263073
+  ],
+  "sl": 1281.136053928355,
+  "ts": 1792332318.12435,
   "entered": false,
   "entry_ts": null,
   "hits": [],
