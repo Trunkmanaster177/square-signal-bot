@@ -91,27 +91,6 @@
   "dry": false
  },
  {
-  "sym": "STRKUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.06439,
-   0.06517352405945195
-  ],
-  "tps": [
-   0.062431189851370104,
-   0.060864141732466195,
-   0.05851356955411032
-  ],
-  "sl": 0.06728903901997224,
-  "ts": 1792317271.418337,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "WLDUSDT",
   "side": "SHORT",
   "zone": [
@@ -154,29 +133,6 @@
   "dry": false
  },
  {
-  "sym": "SNDKBUSDT",
-  "side": "SHORT",
-  "zone": [
-   1262.73,
-   1267.7046091698257
-  ],
-  "tps": [
-   1250.2934770754357,
-   1240.3442587357843,
-   1225.4204312263073
-  ],
-  "sl": 1281.136053928355,
-  "ts": 1792332318.12435,
-  "entered": true,
-  "entry_ts": 1792335600.0,
-  "hits": [
-   1792344600.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "AVAXUSDT",
   "side": "SHORT",
   "zone": [
@@ -190,8 +146,8 @@
   ],
   "sl": 9.805313926043329,
   "ts": 1792334615.9142482,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792361400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -267,50 +223,6 @@
   "dry": false
  },
  {
-  "sym": "SPCXBUSDT",
-  "side": "SHORT",
-  "zone": [
-   143.07,
-   143.43258800388415
-  ],
-  "tps": [
-   142.16352999028962,
-   141.4383539825213,
-   140.35058997086884
-  ],
-  "sl": 144.41157561437137,
-  "ts": 1792348517.352858,
-  "entered": true,
-  "entry_ts": 1792348800.0,
-  "hits": [
-   1792352400.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "BTCUSDT",
-  "side": "SHORT",
-  "zone": [
-   81194.07,
-   81327.8324782719
-  ],
-  "tps": [
-   80859.6638043203,
-   80592.13884777653,
-   80190.85141296088
-  ],
-  "sl": 81688.991169606,
-  "ts": 1792351535.8901446,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "PUMPUSDT",
   "side": "SHORT",
   "zone": [
@@ -350,6 +262,115 @@
   "hits": [],
   "closed": false,
   "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "PEPEUSDT",
+  "side": "SHORT",
+  "zone": [
+   3.89e-06,
+   3.916976004785197e-06
+  ],
+  "tps": [
+   3.822559988037009e-06,
+   3.768607978466616e-06,
+   3.6876799641110274e-06
+  ],
+  "sl": 3.989811217705227e-06,
+  "ts": 1792363078.1428401,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "STRKUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.06439,
+   0.06517352405945195
+  ],
+  "tps": [
+   0.062431189851370104,
+   0.060864141732466195,
+   0.05851356955411032
+  ],
+  "sl": 0.06728903901997224,
+  "ts": 1792317271.418337,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": true,
+  "outcome": "cancelled",
+  "dry": false
+ },
+ {
+  "sym": "SNDKBUSDT",
+  "side": "SHORT",
+  "zone": [
+   1262.73,
+   1267.7046091698257
+  ],
+  "tps": [
+   1250.2934770754357,
+   1240.3442587357843,
+   1225.4204312263073
+  ],
+  "sl": 1281.136053928355,
+  "ts": 1792332318.12435,
+  "entered": true,
+  "entry_ts": 1792335600.0,
+  "hits": [
+   1792344600.0
+  ],
+  "closed": true,
+  "outcome": "SL",
+  "dry": false
+ },
+ {
+  "sym": "SPCXBUSDT",
+  "side": "SHORT",
+  "zone": [
+   143.07,
+   143.43258800388415
+  ],
+  "tps": [
+   142.16352999028962,
+   141.4383539825213,
+   140.35058997086884
+  ],
+  "sl": 144.41157561437137,
+  "ts": 1792348517.352858,
+  "entered": true,
+  "entry_ts": 1792348800.0,
+  "hits": [
+   1792352400.0
+  ],
+  "closed": true,
+  "outcome": "SL",
+  "dry": false
+ },
+ {
+  "sym": "BTCUSDT",
+  "side": "SHORT",
+  "zone": [
+   81194.07,
+   81327.8324782719
+  ],
+  "tps": [
+   80859.6638043203,
+   80592.13884777653,
+   80190.85141296088
+  ],
+  "sl": 81688.991169606,
+  "ts": 1792351535.8901446,
+  "entered": true,
+  "entry_ts": 1792360500.0,
+  "hits": [],
+  "closed": true,
+  "outcome": "SL",
   "dry": false
  },
  {
