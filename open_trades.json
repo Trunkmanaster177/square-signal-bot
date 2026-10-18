@@ -265,6 +265,27 @@
   "dry": false
  },
  {
+  "sym": "XRPUSDT",
+  "side": "SHORT",
+  "zone": [
+   1.2929,
+   1.2969492046031987
+  ],
+  "tps": [
+   1.2827769884920028,
+   1.274678579285605,
+   1.2625309654760086
+  ],
+  "sl": 1.3078820570318355,
+  "ts": 1792311224.189768,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
   "sym": "UNIUSDT",
   "side": "SHORT",
   "zone": [
