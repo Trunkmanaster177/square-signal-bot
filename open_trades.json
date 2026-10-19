@@ -46,27 +46,6 @@
   "dry": false
  },
  {
-  "sym": "LINKUSDT",
-  "side": "SHORT",
-  "zone": [
-   11.644,
-   11.696203953836292
-  ],
-  "tps": [
-   11.513490115409272,
-   11.40908220773669,
-   11.252470346227815
-  ],
-  "sl": 11.837154629194279,
-  "ts": 1792359646.0538275,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "PEPEUSDT",
   "side": "SHORT",
   "zone": [
@@ -130,6 +109,27 @@
   "hits": [],
   "closed": false,
   "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "LINKUSDT",
+  "side": "SHORT",
+  "zone": [
+   11.644,
+   11.696203953836292
+  ],
+  "tps": [
+   11.513490115409272,
+   11.40908220773669,
+   11.252470346227815
+  ],
+  "sl": 11.837154629194279,
+  "ts": 1792359646.0538275,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": true,
+  "outcome": "cancelled",
   "dry": false
  },
  {
