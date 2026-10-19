@@ -1,29 +1,5 @@
 [
  {
-  "sym": "SOXLBUSDT",
-  "side": "SHORT",
-  "zone": [
-   95.74,
-   97.17121066905395
-  ],
-  "tps": [
-   92.16197332736512,
-   89.29955198925721,
-   85.00591998209535
-  ],
-  "sl": 101.03547947549963,
-  "ts": 1792180569.1120706,
-  "entered": true,
-  "entry_ts": 1792219800.0,
-  "hits": [
-   1792272000.0,
-   1792272300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "XAUTUSDT",
   "side": "LONG",
   "zone": [
@@ -165,8 +141,8 @@
   ],
   "sl": 8.129679590314323,
   "ts": 1792366924.4009676,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792378800.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -186,11 +162,56 @@
   ],
   "sl": 0.5071196630617554,
   "ts": 1792370169.037087,
+  "entered": true,
+  "entry_ts": 1792370400.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "HBARUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.08453,
+   0.08523092770041278
+  ],
+  "tps": [
+   0.08277768074896805,
+   0.08137582534814247,
+   0.07927304224690411
+  ],
+  "sl": 0.0871234324915273,
+  "ts": 1792381224.952453,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "SOXLBUSDT",
+  "side": "SHORT",
+  "zone": [
+   95.74,
+   97.17121066905395
+  ],
+  "tps": [
+   92.16197332736512,
+   89.29955198925721,
+   85.00591998209535
+  ],
+  "sl": 101.03547947549963,
+  "ts": 1792180569.1120706,
+  "entered": true,
+  "entry_ts": 1792219800.0,
+  "hits": [
+   1792272000.0,
+   1792272300.0
+  ],
+  "closed": true,
+  "outcome": "SL",
   "dry": false
  },
  {
