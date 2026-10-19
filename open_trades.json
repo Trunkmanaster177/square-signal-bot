@@ -15,7 +15,9 @@
   "ts": 1792188633.1222374,
   "entered": true,
   "entry_ts": 1792188900.0,
-  "hits": [],
+  "hits": [
+   1792392900.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -39,27 +41,6 @@
   "hits": [
    1792315500.0
   ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "USD1USDT",
-  "side": "LONG",
-  "zone": [
-   1.00024,
-   1.0001920417065526
-  ],
-  "tps": [
-   1.0003598957336188,
-   1.0004558123205136,
-   1.000599687200856
-  ],
-  "sl": 1.0000625543142445,
-  "ts": 1792345679.147325,
-  "entered": true,
-  "entry_ts": 1792345800.0,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -152,27 +133,6 @@
   "dry": false
  },
  {
-  "sym": "WLDUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.4892,
-   0.4940431521788528
-  ],
-  "tps": [
-   0.477092119552868,
-   0.46740581519516244,
-   0.45287635865860404
-  ],
-  "sl": 0.5071196630617554,
-  "ts": 1792370169.037087,
-  "entered": true,
-  "entry_ts": 1792370400.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "HBARUSDT",
   "side": "SHORT",
   "zone": [
@@ -191,6 +151,48 @@
   "hits": [],
   "closed": false,
   "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "USD1USDT",
+  "side": "LONG",
+  "zone": [
+   1.00024,
+   1.0001920417065526
+  ],
+  "tps": [
+   1.0003598957336188,
+   1.0004558123205136,
+   1.000599687200856
+  ],
+  "sl": 1.0000625543142445,
+  "ts": 1792345679.147325,
+  "entered": true,
+  "entry_ts": 1792345800.0,
+  "hits": [],
+  "closed": true,
+  "outcome": "SL",
+  "dry": false
+ },
+ {
+  "sym": "WLDUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.4892,
+   0.4940431521788528
+  ],
+  "tps": [
+   0.477092119552868,
+   0.46740581519516244,
+   0.45287635865860404
+  ],
+  "sl": 0.5071196630617554,
+  "ts": 1792370169.037087,
+  "entered": true,
+  "entry_ts": 1792370400.0,
+  "hits": [],
+  "closed": true,
+  "outcome": "SL",
   "dry": false
  },
  {
