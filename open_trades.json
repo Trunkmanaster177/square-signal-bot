@@ -46,27 +46,6 @@
   "dry": false
  },
  {
-  "sym": "PEPEUSDT",
-  "side": "SHORT",
-  "zone": [
-   3.89e-06,
-   3.916976004785197e-06
-  ],
-  "tps": [
-   3.822559988037009e-06,
-   3.768607978466616e-06,
-   3.6876799641110274e-06
-  ],
-  "sl": 3.989811217705227e-06,
-  "ts": 1792363078.1428401,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "INJUSDT",
   "side": "LONG",
   "zone": [
@@ -109,6 +88,48 @@
   "hits": [],
   "closed": false,
   "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "ENAUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.1879,
+   0.18949562158946875
+  ],
+  "tps": [
+   0.18391094602632818,
+   0.18071970284739072,
+   0.17593283807898452
+  ],
+  "sl": 0.19380379988103433,
+  "ts": 1792408551.17136,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "PEPEUSDT",
+  "side": "SHORT",
+  "zone": [
+   3.89e-06,
+   3.916976004785197e-06
+  ],
+  "tps": [
+   3.822559988037009e-06,
+   3.768607978466616e-06,
+   3.6876799641110274e-06
+  ],
+  "sl": 3.989811217705227e-06,
+  "ts": 1792363078.1428401,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": true,
+  "outcome": "cancelled",
   "dry": false
  },
  {
