@@ -103,7 +103,9 @@
   "ts": 1792509196.5876708,
   "entered": true,
   "entry_ts": 1792514700.0,
-  "hits": [],
+  "hits": [
+   1792528500.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -164,6 +166,27 @@
   ],
   "sl": 1.0009992336650486,
   "ts": 1792528433.5857918,
+  "entered": true,
+  "entry_ts": 1792528500.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "SNDKBUSDT",
+  "side": "LONG",
+  "zone": [
+   1393.29,
+   1384.7771571069634
+  ],
+  "tps": [
+   1414.5721072325914,
+   1431.5977930186646,
+   1457.1363216977743
+  ],
+  "sl": 1361.7924812957647,
+  "ts": 1792532603.847533,
   "entered": false,
   "entry_ts": null,
   "hits": [],
