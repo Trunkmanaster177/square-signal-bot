@@ -155,6 +155,27 @@
   "dry": false
  },
  {
+  "sym": "ARBUSDT",
+  "side": "LONG",
+  "zone": [
+   0.1966,
+   0.19471813585075723
+  ],
+  "tps": [
+   0.20130466037310696,
+   0.20506838867159252,
+   0.21071398111932088
+  ],
+  "sl": 0.18963710264780173,
+  "ts": 1792510980.8811567,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
