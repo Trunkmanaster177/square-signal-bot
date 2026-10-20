@@ -127,7 +127,9 @@
   "ts": 1792429366.2623312,
   "entered": true,
   "entry_ts": 1792429500.0,
-  "hits": [],
+  "hits": [
+   1792458300.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -169,7 +171,9 @@
   "ts": 1792438231.6772933,
   "entered": true,
   "entry_ts": 1792438500.0,
-  "hits": [],
+  "hits": [
+   1792457400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -211,7 +215,9 @@
   "ts": 1792443588.975972,
   "entered": true,
   "entry_ts": 1792443600.0,
-  "hits": [],
+  "hits": [
+   1792457400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -253,6 +259,27 @@
   "ts": 1792448878.6665385,
   "entered": true,
   "entry_ts": 1792449000.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "BTCUSDT",
+  "side": "SHORT",
+  "zone": [
+   81736.93,
+   81919.97262053295
+  ],
+  "tps": [
+   81279.32344866762,
+   80913.23820760171,
+   80364.11034600285
+  ],
+  "sl": 82414.18769597194,
+  "ts": 1792459309.6024413,
+  "entered": false,
+  "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
