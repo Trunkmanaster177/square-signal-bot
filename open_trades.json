@@ -151,6 +151,27 @@
   "dry": false
  },
  {
+  "sym": "RLUSDUSDT",
+  "side": "LONG",
+  "zone": [
+   1.0013,
+   1.0012187118013645
+  ],
+  "tps": [
+   1.001503220496589,
+   1.00166579689386,
+   1.0019096614897665
+  ],
+  "sl": 1.0009992336650486,
+  "ts": 1792528433.5857918,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
