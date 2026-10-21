@@ -44,29 +44,6 @@
   "dry": false
  },
  {
-  "sym": "TRXUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.3314,
-   0.33169010313871417
-  ],
-  "tps": [
-   0.3306747421532146,
-   0.33009453587578624,
-   0.3292242264596437
-  ],
-  "sl": 0.33247338161324247,
-  "ts": 1792502632.2363815,
-  "entered": true,
-  "entry_ts": 1792502700.0,
-  "hits": [
-   1792504500.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "WLDUSDT",
   "side": "LONG",
   "zone": [
@@ -149,7 +126,9 @@
   "ts": 1792572397.786934,
   "entered": true,
   "entry_ts": 1792572600.0,
-  "hits": [],
+  "hits": [
+   1792600500.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -255,6 +234,27 @@
   ],
   "sl": 0.1903843571073774,
   "ts": 1792598495.4238124,
+  "entered": true,
+  "entry_ts": 1792598700.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "RLUSDUSDT",
+  "side": "SHORT",
+  "zone": [
+   1.0007,
+   1.0007934964081335
+  ],
+  "tps": [
+   1.0004662589796656,
+   1.0002792661633981,
+   0.9999987769389971
+  ],
+  "sl": 1.0010459367100943,
+  "ts": 1792604381.266164,
   "entered": false,
   "entry_ts": null,
   "hits": [],
