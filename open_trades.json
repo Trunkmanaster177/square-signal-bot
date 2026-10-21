@@ -132,29 +132,6 @@
   "dry": false
  },
  {
-  "sym": "SNDKBUSDT",
-  "side": "LONG",
-  "zone": [
-   1393.29,
-   1384.7771571069634
-  ],
-  "tps": [
-   1414.5721072325914,
-   1431.5977930186646,
-   1457.1363216977743
-  ],
-  "sl": 1361.7924812957647,
-  "ts": 1792532603.847533,
-  "entered": true,
-  "entry_ts": 1792571700.0,
-  "hits": [
-   1792541400.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "UNIUSDT",
   "side": "LONG",
   "zone": [
@@ -283,6 +260,27 @@
   "ts": 1792585825.7363946,
   "entered": true,
   "entry_ts": 1792586700.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "SNDKBUSDT",
+  "side": "SHORT",
+  "zone": [
+   1362.84,
+   1372.820520610726
+  ],
+  "tps": [
+   1337.8886984731848,
+   1317.9276572517329,
+   1287.9860954195549
+  ],
+  "sl": 1399.7679262596864,
+  "ts": 1792593041.873448,
+  "entered": false,
+  "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
