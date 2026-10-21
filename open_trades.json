@@ -82,7 +82,9 @@
   "ts": 1792517521.3099563,
   "entered": true,
   "entry_ts": 1792517700.0,
-  "hits": [],
+  "hits": [
+   1792609200.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -276,6 +278,27 @@
   ],
   "sl": 1320.2096368252762,
   "ts": 1792606614.0014532,
+  "entered": true,
+  "entry_ts": 1792606800.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "DOGEUSDT",
+  "side": "LONG",
+  "zone": [
+   0.08295,
+   0.08262749404404533
+  ],
+  "tps": [
+   0.08375626488988663,
+   0.08440127680179596,
+   0.08536879466965994
+  ],
+  "sl": 0.08175672796296775,
+  "ts": 1792609582.5472336,
   "entered": false,
   "entry_ts": null,
   "hits": [],
