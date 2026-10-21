@@ -67,27 +67,6 @@
   "dry": false
  },
  {
-  "sym": "PEPEUSDT",
-  "side": "LONG",
-  "zone": [
-   4.35e-06,
-   4.316879593864282e-06
-  ],
-  "tps": [
-   4.432801015339294e-06,
-   4.499041827610729e-06,
-   4.598403046017883e-06
-  ],
-  "sl": 4.227454497297844e-06,
-  "ts": 1792506016.0934248,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "WLDUSDT",
   "side": "LONG",
   "zone": [
@@ -106,27 +85,6 @@
   "hits": [
    1792528500.0
   ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "ARBUSDT",
-  "side": "LONG",
-  "zone": [
-   0.1966,
-   0.19471813585075723
-  ],
-  "tps": [
-   0.20130466037310696,
-   0.20506838867159252,
-   0.21071398111932088
-  ],
-  "sl": 0.18963710264780173,
-  "ts": 1792510980.8811567,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -208,6 +166,29 @@
   ],
   "sl": 7.372552485719675,
   "ts": 1792544827.5455844,
+  "entered": true,
+  "entry_ts": 1792545000.0,
+  "hits": [
+   1792547400.0
+  ],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "BTCUSDT",
+  "side": "LONG",
+  "zone": [
+   82804.22,
+   82609.25278296918
+  ],
+  "tps": [
+   83291.63804257706,
+   83681.57247663871,
+   84266.47412773118
+  ],
+  "sl": 82082.84129698595,
+  "ts": 1792554124.9079585,
   "entered": false,
   "entry_ts": null,
   "hits": [],
