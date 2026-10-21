@@ -147,7 +147,9 @@
   "ts": 1792532603.847533,
   "entered": true,
   "entry_ts": 1792571700.0,
-  "hits": [],
+  "hits": [
+   1792541400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -192,7 +194,8 @@
   "entered": true,
   "entry_ts": 1792554300.0,
   "hits": [
-   1792571100.0
+   1792571100.0,
+   1792572600.0
   ],
   "closed": false,
   "outcome": null,
@@ -254,6 +257,27 @@
   ],
   "sl": 741.8328977236972,
   "ts": 1792572397.786934,
+  "entered": true,
+  "entry_ts": 1792572600.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "SPCXBUSDT",
+  "side": "LONG",
+  "zone": [
+   162.8,
+   161.88698738941028
+  ],
+  "tps": [
+   165.08253152647433,
+   166.90855674765376,
+   169.6475945794229
+  ],
+  "sl": 159.42185334081805,
+  "ts": 1792575165.5720897,
   "entered": false,
   "entry_ts": null,
   "hits": [],
