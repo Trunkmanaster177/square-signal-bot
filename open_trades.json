@@ -217,7 +217,9 @@
   "ts": 1792562302.7693734,
   "entered": true,
   "entry_ts": 1792562400.0,
-  "hits": [],
+  "hits": [
+   1792581900.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -281,6 +283,27 @@
   ],
   "sl": 8.388422103930964,
   "ts": 1792578947.8316317,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "SOLUSDT",
+  "side": "LONG",
+  "zone": [
+   106.87,
+   106.48562412392774
+  ],
+  "tps": [
+   107.83093969018066,
+   108.59969144232518,
+   109.75281907054196
+  ],
+  "sl": 105.44780925853263,
+  "ts": 1792585825.7363946,
   "entered": false,
   "entry_ts": null,
   "hits": [],
