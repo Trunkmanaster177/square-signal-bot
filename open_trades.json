@@ -218,31 +218,8 @@
   "entered": true,
   "entry_ts": 1792562400.0,
   "hits": [
-   1792581900.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "IOSTUSDT",
-  "side": "LONG",
-  "zone": [
-   0.001327,
-   0.0012735945788866151
-  ],
-  "tps": [
-   0.0014605135527834625,
-   0.0015673243950102326,
-   0.0017275406583503877
-  ],
-  "sl": 0.0011293999418804756,
-  "ts": 1792568538.2996154,
-  "entered": true,
-  "entry_ts": 1792568700.0,
-  "hits": [
-   1792575900.0,
-   1792578000.0
+   1792581900.0,
+   1792587600.0
   ],
   "closed": false,
   "outcome": null,
@@ -283,8 +260,8 @@
   ],
   "sl": 8.388422103930964,
   "ts": 1792578947.8316317,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792586700.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -304,8 +281,8 @@
   ],
   "sl": 105.44780925853263,
   "ts": 1792585825.7363946,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792586700.0,
   "hits": [],
   "closed": false,
   "outcome": null,
