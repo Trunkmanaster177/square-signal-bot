@@ -1,28 +1,5 @@
 [
  {
-  "sym": "HBARUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.08453,
-   0.08523092770041278
-  ],
-  "tps": [
-   0.08277768074896805,
-   0.08137582534814247,
-   0.07927304224690411
-  ],
-  "sl": 0.0871234324915273,
-  "ts": 1792381224.952453,
-  "entered": true,
-  "entry_ts": 1792385100.0,
-  "hits": [
-   1792418400.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "USD1USDT",
   "side": "SHORT",
   "zone": [
@@ -38,7 +15,9 @@
   "ts": 1792448878.6665385,
   "entered": true,
   "entry_ts": 1792449000.0,
-  "hits": [],
+  "hits": [
+   1792635600.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -90,97 +69,6 @@
   "dry": false
  },
  {
-  "sym": "UNIUSDT",
-  "side": "LONG",
-  "zone": [
-   7.607,
-   7.543635806951264
-  ],
-  "tps": [
-   7.765410482621841,
-   7.892138868719314,
-   8.082231447865524
-  ],
-  "sl": 7.372552485719675,
-  "ts": 1792544827.5455844,
-  "entered": true,
-  "entry_ts": 1792545000.0,
-  "hits": [
-   1792547400.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "BNBUSDT",
-  "side": "LONG",
-  "zone": [
-   747.46,
-   745.9391615469452
-  ],
-  "tps": [
-   751.2620961326372,
-   754.3037730387468,
-   758.8662883979114
-  ],
-  "sl": 741.8328977236972,
-  "ts": 1792572397.786934,
-  "entered": true,
-  "entry_ts": 1792572600.0,
-  "hits": [
-   1792600500.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "INJUSDT",
-  "side": "LONG",
-  "zone": [
-   8.715,
-   8.626735703765126
-  ],
-  "tps": [
-   8.935660740587185,
-   9.112189333056934,
-   9.376982221761558
-  ],
-  "sl": 8.388422103930964,
-  "ts": 1792578947.8316317,
-  "entered": true,
-  "entry_ts": 1792586700.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "SOLUSDT",
-  "side": "LONG",
-  "zone": [
-   106.87,
-   106.48562412392774
-  ],
-  "tps": [
-   107.83093969018066,
-   108.59969144232518,
-   109.75281907054196
-  ],
-  "sl": 105.44780925853263,
-  "ts": 1792585825.7363946,
-  "entered": true,
-  "entry_ts": 1792586700.0,
-  "hits": [
-   1792593900.0,
-   1792596300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "SNDKBUSDT",
   "side": "SHORT",
   "zone": [
@@ -196,28 +84,9 @@
   "ts": 1792593041.873448,
   "entered": true,
   "entry_ts": 1792593300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "BTCUSDT",
-  "side": "LONG",
-  "zone": [
-   84575.71,
-   84363.18405497112
+  "hits": [
+   1792639800.0
   ],
-  "tps": [
-   85107.0248625722,
-   85532.07675262996,
-   86169.65458771659
-  ],
-  "sl": 83789.36400339314,
-  "ts": 1792596256.0635026,
-  "entered": true,
-  "entry_ts": 1792596300.0,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -267,27 +136,6 @@
   "dry": false
  },
  {
-  "sym": "ETHUSDT",
-  "side": "LONG",
-  "zone": [
-   2494.54,
-   2485.0911837817625
-  ],
-  "tps": [
-   2518.1620405455938,
-   2537.059672982069,
-   2565.4061216367813
-  ],
-  "sl": 2459.5793799925214,
-  "ts": 1792614993.3907714,
-  "entered": true,
-  "entry_ts": 1792615500.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "TRXUSDT",
   "side": "SHORT",
   "zone": [
@@ -303,7 +151,9 @@
   "ts": 1792619382.7997596,
   "entered": true,
   "entry_ts": 1792621500.0,
-  "hits": [],
+  "hits": [
+   1792631100.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -330,27 +180,6 @@
   "dry": false
  },
  {
-  "sym": "XRPUSDT",
-  "side": "LONG",
-  "zone": [
-   1.3716,
-   1.3657016913646356
-  ],
-  "tps": [
-   1.3863457715884109,
-   1.3981423888591396,
-   1.4158373147652328
-  ],
-  "sl": 1.3497762580491515,
-  "ts": 1792625947.767093,
-  "entered": true,
-  "entry_ts": 1792626900.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "ZECUSDT",
   "side": "LONG",
   "zone": [
@@ -364,8 +193,8 @@
   ],
   "sl": 1270.911970229473,
   "ts": 1792628171.4439065,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792632900.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -385,6 +214,27 @@
   ],
   "sl": 0.011634711817442786,
   "ts": 1792631112.3876283,
+  "entered": true,
+  "entry_ts": 1792631400.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "HYPEUSDT",
+  "side": "SHORT",
+  "zone": [
+   79.27,
+   79.72026760213537
+  ],
+  "tps": [
+   78.14433099466159,
+   77.24379579039086,
+   75.89299298398477
+  ],
+  "sl": 80.93599012790085,
+  "ts": 1792640555.3132412,
   "entered": false,
   "entry_ts": null,
   "hits": [],
