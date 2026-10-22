@@ -1,28 +1,5 @@
 [
  {
-  "sym": "USD1USDT",
-  "side": "SHORT",
-  "zone": [
-   0.99983,
-   0.9999001906259194
-  ],
-  "tps": [
-   0.9996545234352016,
-   0.9995141421833628,
-   0.9993035703056045
-  ],
-  "sl": 1.000089705315902,
-  "ts": 1792448878.6665385,
-  "entered": true,
-  "entry_ts": 1792449000.0,
-  "hits": [
-   1792635600.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "TAOUSDT",
   "side": "SHORT",
   "zone": [
@@ -258,8 +235,8 @@
   ],
   "sl": 4063.230869603627,
   "ts": 1792699076.0346804,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792705800.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -300,6 +277,27 @@
   ],
   "sl": 2414.2510937308225,
   "ts": 1792705470.5547943,
+  "entered": true,
+  "entry_ts": 1792706400.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "UNIUSDT",
+  "side": "SHORT",
+  "zone": [
+   7.035,
+   7.0844415347955545
+  ],
+  "tps": [
+   6.911396163011115,
+   6.812513093420006,
+   6.664188489033343
+  ],
+  "sl": 7.2179336787435515,
+  "ts": 1792708663.4834378,
   "entered": false,
   "entry_ts": null,
   "hits": [],
