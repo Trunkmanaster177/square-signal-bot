@@ -46,27 +46,6 @@
   "dry": false
  },
  {
-  "sym": "HYPEUSDT",
-  "side": "SHORT",
-  "zone": [
-   79.27,
-   79.72026760213537
-  ],
-  "tps": [
-   78.14433099466159,
-   77.24379579039086,
-   75.89299298398477
-  ],
-  "sl": 80.93599012790085,
-  "ts": 1792640555.3132412,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "XAUTUSDT",
   "side": "SHORT",
   "zone": [
@@ -231,6 +210,27 @@
   ],
   "sl": 1339.629928386989,
   "ts": 1792682689.4827592,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "SOXLBUSDT",
+  "side": "SHORT",
+  "zone": [
+   86.13,
+   87.39658680695878
+  ],
+  "tps": [
+   82.96353298260306,
+   80.4303593686855,
+   76.63059894780918
+  ],
+  "sl": 90.81637118574749,
+  "ts": 1792684614.2197824,
   "entered": false,
   "entry_ts": null,
   "hits": [],
