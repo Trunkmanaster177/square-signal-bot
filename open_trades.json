@@ -266,6 +266,27 @@
   "dry": false
  },
  {
+  "sym": "HYPEUSDT",
+  "side": "SHORT",
+  "zone": [
+   77.58,
+   78.0005316377677
+  ],
+  "tps": [
+   76.52867090558077,
+   75.68760763004538,
+   74.42601271674229
+  ],
+  "sl": 79.13596705974048,
+  "ts": 1792701188.2825422,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
