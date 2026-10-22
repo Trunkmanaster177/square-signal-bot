@@ -69,27 +69,6 @@
   "dry": false
  },
  {
-  "sym": "SUIUSDT",
-  "side": "LONG",
-  "zone": [
-   1.0458,
-   1.0402263329440322
-  ],
-  "tps": [
-   1.0597341676399195,
-   1.070881501751855,
-   1.0876025029197582
-  ],
-  "sl": 1.0251774318929194,
-  "ts": 1792622161.066764,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "HYPEUSDT",
   "side": "SHORT",
   "zone": [
@@ -187,6 +166,27 @@
   ],
   "sl": 0.08019776006623018,
   "ts": 1792661703.3284721,
+  "entered": true,
+  "entry_ts": 1792662000.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "SUIUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.9865,
+   0.9919937648468666
+  ],
+  "tps": [
+   0.9727655878828334,
+   0.9617780581891001,
+   0.9452967636485003
+  ],
+  "sl": 1.0068269299334065,
+  "ts": 1792665532.3761544,
   "entered": false,
   "entry_ts": null,
   "hits": [],
