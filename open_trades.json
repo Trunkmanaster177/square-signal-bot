@@ -223,6 +223,27 @@
   "dry": false
  },
  {
+  "sym": "NEARUSDT",
+  "side": "SHORT",
+  "zone": [
+   4.886,
+   4.930713096064331
+  ],
+  "tps": [
+   4.7742172598391726,
+   4.684791067710512,
+   4.55065177951752
+  ],
+  "sl": 5.051438455438023,
+  "ts": 1792692681.0508769,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
