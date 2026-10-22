@@ -23,29 +23,6 @@
   "dry": false
  },
  {
-  "sym": "TRXUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.3312,
-   0.33150346962415256
-  ],
-  "tps": [
-   0.3304413259396186,
-   0.3298343866913135,
-   0.32892397781885585
-  ],
-  "sl": 0.3323228376093644,
-  "ts": 1792619382.7997596,
-  "entered": true,
-  "entry_ts": 1792621500.0,
-  "hits": [
-   1792631100.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "XAUTUSDT",
   "side": "SHORT",
   "zone": [
@@ -83,7 +60,8 @@
   "entered": true,
   "entry_ts": 1792677600.0,
   "hits": [
-   1792660200.0
+   1792660200.0,
+   1792687500.0
   ],
   "closed": false,
   "outcome": null,
@@ -105,7 +83,9 @@
   "ts": 1792661703.3284721,
   "entered": true,
   "entry_ts": 1792662000.0,
-  "hits": [],
+  "hits": [
+   1792687500.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -149,28 +129,9 @@
   "ts": 1792672399.1721907,
   "entered": true,
   "entry_ts": 1792672800.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "RLUSDUSDT",
-  "side": "SHORT",
-  "zone": [
-   1.0009,
-   1.0009859346003416
+  "hits": [
+   1792687500.0
   ],
-  "tps": [
-   1.000685163499146,
-   1.000513294298463,
-   1.0002554904974383
-  ],
-  "sl": 1.001217958021264,
-  "ts": 1792675984.221997,
-  "entered": true,
-  "entry_ts": 1792676100.0,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -231,6 +192,29 @@
   ],
   "sl": 90.81637118574749,
   "ts": 1792684614.2197824,
+  "entered": true,
+  "entry_ts": 1792684800.0,
+  "hits": [
+   1792687800.0
+  ],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "TRXUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.329,
+   0.32930018764472013
+  ],
+  "tps": [
+   0.32824953088819975,
+   0.3276491555987595,
+   0.3267485926645992
+  ],
+  "sl": 0.33011069428546436,
+  "ts": 1792690739.2581735,
   "entered": false,
   "entry_ts": null,
   "hits": [],
