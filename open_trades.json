@@ -1,52 +1,5 @@
 [
  {
-  "sym": "TAOUSDT",
-  "side": "SHORT",
-  "zone": [
-   262.0,
-   263.5539743769615
-  ],
-  "tps": [
-   258.1150640575962,
-   255.00711530367317,
-   250.34519217278864
-  ],
-  "sl": 267.7497051947576,
-  "ts": 1792658921.3849802,
-  "entered": true,
-  "entry_ts": 1792677600.0,
-  "hits": [
-   1792660200.0,
-   1792687500.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "SUIUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.9865,
-   0.9919937648468666
-  ],
-  "tps": [
-   0.9727655878828334,
-   0.9617780581891001,
-   0.9452967636485003
-  ],
-  "sl": 1.0068269299334065,
-  "ts": 1792665532.3761544,
-  "entered": true,
-  "entry_ts": 1792665600.0,
-  "hits": [
-   1792681800.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "SOLUSDT",
   "side": "SHORT",
   "zone": [
@@ -63,7 +16,8 @@
   "entered": true,
   "entry_ts": 1792672800.0,
   "hits": [
-   1792687500.0
+   1792687500.0,
+   1792795500.0
   ],
   "closed": false,
   "outcome": null,
@@ -110,7 +64,8 @@
   "entered": true,
   "entry_ts": 1792695300.0,
   "hits": [
-   1792782300.0
+   1792782300.0,
+   1792794600.0
   ],
   "closed": false,
   "outcome": null,
@@ -156,7 +111,9 @@
   "ts": 1792701188.2825422,
   "entered": true,
   "entry_ts": 1792701300.0,
-  "hits": [],
+  "hits": [
+   1792795800.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -200,7 +157,10 @@
   "ts": 1792717516.5130842,
   "entered": true,
   "entry_ts": 1792717800.0,
-  "hits": [],
+  "hits": [
+   1792795500.0,
+   1792796100.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -230,29 +190,6 @@
   "dry": false
  },
  {
-  "sym": "BNBUSDT",
-  "side": "LONG",
-  "zone": [
-   744.82,
-   743.1444274037691
-  ],
-  "tps": [
-   749.0089314905774,
-   752.3600766830393,
-   757.3867944717322
-  ],
-  "sl": 738.6203813939455,
-  "ts": 1792745081.8195732,
-  "entered": true,
-  "entry_ts": 1792746000.0,
-  "hits": [
-   1792750500.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "ETHUSDT",
   "side": "SHORT",
   "zone": [
@@ -269,7 +206,8 @@
   "entered": true,
   "entry_ts": 1792761600.0,
   "hits": [
-   1792764900.0
+   1792764900.0,
+   1792795500.0
   ],
   "closed": false,
   "outcome": null,
@@ -320,52 +258,6 @@
   "dry": false
  },
  {
-  "sym": "UNIUSDT",
-  "side": "SHORT",
-  "zone": [
-   7.156,
-   7.200662690052111
-  ],
-  "tps": [
-   7.044343274869721,
-   6.955017894765499,
-   6.821029824609164
-  ],
-  "sl": 7.321251953192812,
-  "ts": 1792764918.9671102,
-  "entered": true,
-  "entry_ts": 1792767000.0,
-  "hits": [
-   1792765200.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "ENAUSDT",
-  "side": "LONG",
-  "zone": [
-   0.2056,
-   0.20370497897702272
-  ],
-  "tps": [
-   0.21033755255744324,
-   0.2141275946033978,
-   0.2198126576723297
-  ],
-  "sl": 0.19858842221498402,
-  "ts": 1792768436.3810387,
-  "entered": true,
-  "entry_ts": 1792768500.0,
-  "hits": [
-   1792773900.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "PAXGUSDT",
   "side": "SHORT",
   "zone": [
@@ -381,7 +273,9 @@
   "ts": 1792770541.1351764,
   "entered": true,
   "entry_ts": 1792770600.0,
-  "hits": [],
+  "hits": [
+   1792795800.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -423,7 +317,10 @@
   "ts": 1792778338.3931088,
   "entered": true,
   "entry_ts": 1792778400.0,
-  "hits": [],
+  "hits": [
+   1792794600.0,
+   1792795800.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -442,29 +339,8 @@
   ],
   "sl": 149.81563449557294,
   "ts": 1792785343.2677562,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "PEPEUSDT",
-  "side": "LONG",
-  "zone": [
-   4.7e-06,
-   4.647331554439691e-06
-  ],
-  "tps": [
-   4.8316711139007725e-06,
-   4.93700800502139e-06,
-   5.095013341702317e-06
-  ],
-  "sl": 4.505126751426857e-06,
-  "ts": 1792787097.6232226,
   "entered": true,
-  "entry_ts": 1792787100.0,
+  "entry_ts": 1792795500.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -486,7 +362,10 @@
   "ts": 1792791048.9148915,
   "entered": true,
   "entry_ts": 1792791300.0,
-  "hits": [],
+  "hits": [
+   1792794600.0,
+   1792795800.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -505,6 +384,29 @@
   ],
   "sl": 0.3310309377289157,
   "ts": 1792794610.5648377,
+  "entered": true,
+  "entry_ts": 1792795200.0,
+  "hits": [
+   1792795800.0
+  ],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "PUMPUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.004295,
+   0.004345722955989186
+  ],
+  "tps": [
+   0.004168192610027037,
+   0.004066746698048666,
+   0.003914577830081109
+  ],
+  "sl": 0.0044826749371599875,
+  "ts": 1792798388.7780218,
   "entered": false,
   "entry_ts": null,
   "hits": [],
