@@ -353,7 +353,9 @@
   "ts": 1792764918.9671102,
   "entered": true,
   "entry_ts": 1792767000.0,
-  "hits": [],
+  "hits": [
+   1792765200.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -372,6 +374,27 @@
   ],
   "sl": 0.19858842221498402,
   "ts": 1792768436.3810387,
+  "entered": true,
+  "entry_ts": 1792768500.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "PAXGUSDT",
+  "side": "SHORT",
+  "zone": [
+   4016.54,
+   4024.1449567497584
+  ],
+  "tps": [
+   3997.5276081256043,
+   3982.3176946260874,
+   3959.5028243768124
+  ],
+  "sl": 4044.6783399741057,
+  "ts": 1792770541.1351764,
   "entered": false,
   "entry_ts": null,
   "hits": [],
