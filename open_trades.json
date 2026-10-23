@@ -306,6 +306,27 @@
   "dry": false
  },
  {
+  "sym": "AIUSDT",
+  "side": "LONG",
+  "zone": [
+   0.0198,
+   0.019568362277089777
+  ],
+  "tps": [
+   0.02037909430727556,
+   0.020842369753096005,
+   0.021537282921826675
+  ],
+  "sl": 0.018942940425232174,
+  "ts": 1792714331.844664,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
