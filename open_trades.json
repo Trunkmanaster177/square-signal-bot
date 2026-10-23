@@ -263,7 +263,9 @@
   "ts": 1792747884.6620326,
   "entered": true,
   "entry_ts": 1792761600.0,
-  "hits": [],
+  "hits": [
+   1792764900.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -328,7 +330,9 @@
   "ts": 1792760941.3792422,
   "entered": true,
   "entry_ts": 1792761300.0,
-  "hits": [],
+  "hits": [
+   1792764900.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -347,6 +351,27 @@
   ],
   "sl": 7.321251953192812,
   "ts": 1792764918.9671102,
+  "entered": true,
+  "entry_ts": 1792767000.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "ENAUSDT",
+  "side": "LONG",
+  "zone": [
+   0.2056,
+   0.20370497897702272
+  ],
+  "tps": [
+   0.21033755255744324,
+   0.2141275946033978,
+   0.2198126576723297
+  ],
+  "sl": 0.19858842221498402,
+  "ts": 1792768436.3810387,
   "entered": false,
   "entry_ts": null,
   "hits": [],
