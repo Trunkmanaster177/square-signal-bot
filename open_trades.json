@@ -471,6 +471,27 @@
   "dry": false
  },
  {
+  "sym": "PEPEUSDT",
+  "side": "LONG",
+  "zone": [
+   4.7e-06,
+   4.647331554439691e-06
+  ],
+  "tps": [
+   4.8316711139007725e-06,
+   4.93700800502139e-06,
+   5.095013341702317e-06
+  ],
+  "sl": 4.505126751426857e-06,
+  "ts": 1792787097.6232226,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
