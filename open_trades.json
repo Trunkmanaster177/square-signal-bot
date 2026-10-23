@@ -132,7 +132,9 @@
   "ts": 1792690739.2581735,
   "entered": true,
   "entry_ts": 1792718400.0,
-  "hits": [],
+  "hits": [
+   1792692000.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -225,27 +227,6 @@
   "dry": false
  },
  {
-  "sym": "UNIUSDT",
-  "side": "SHORT",
-  "zone": [
-   7.035,
-   7.0844415347955545
-  ],
-  "tps": [
-   6.911396163011115,
-   6.812513093420006,
-   6.664188489033343
-  ],
-  "sl": 7.2179336787435515,
-  "ts": 1792708663.4834378,
-  "entered": true,
-  "entry_ts": 1792716300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "AIUSDT",
   "side": "LONG",
   "zone": [
@@ -303,6 +284,29 @@
   ],
   "sl": 4.412196866453397e-06,
   "ts": 1792727178.7633576,
+  "entered": true,
+  "entry_ts": 1792727400.0,
+  "hits": [
+   1792732200.0
+  ],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "SNDKBUSDT",
+  "side": "SHORT",
+  "zone": [
+   1280.65,
+   1291.0973563926361
+  ],
+  "tps": [
+   1254.5316090184099,
+   1233.6368962331378,
+   1202.2948270552297
+  ],
+  "sl": 1319.3052186527534,
+  "ts": 1792735177.800481,
   "entered": false,
   "entry_ts": null,
   "hits": [],
