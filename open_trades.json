@@ -261,8 +261,8 @@
   ],
   "sl": 2436.1606622023764,
   "ts": 1792747884.6620326,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792761600.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -326,6 +326,27 @@
   ],
   "sl": 1.0009088019125707,
   "ts": 1792760941.3792422,
+  "entered": true,
+  "entry_ts": 1792761300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "UNIUSDT",
+  "side": "SHORT",
+  "zone": [
+   7.156,
+   7.200662690052111
+  ],
+  "tps": [
+   7.044343274869721,
+   6.955017894765499,
+   6.821029824609164
+  ],
+  "sl": 7.321251953192812,
+  "ts": 1792764918.9671102,
   "entered": false,
   "entry_ts": null,
   "hits": [],
