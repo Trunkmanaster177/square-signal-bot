@@ -93,27 +93,6 @@
   "dry": false
  },
  {
-  "sym": "UUSDT",
-  "side": "SHORT",
-  "zone": [
-   1.0001,
-   1.0001829926696848
-  ],
-  "tps": [
-   0.9998925183257878,
-   0.9997265329864182,
-   0.9994775549773639
-  ],
-  "sl": 1.0004070728778336,
-  "ts": 1792679515.607791,
-  "entered": true,
-  "entry_ts": 1792679700.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "SNDKBUSDT",
   "side": "SHORT",
   "zone": [
@@ -298,8 +277,8 @@
   ],
   "sl": 7.2179336787435515,
   "ts": 1792708663.4834378,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792716300.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -319,6 +298,27 @@
   ],
   "sl": 0.018942940425232174,
   "ts": 1792714331.844664,
+  "entered": true,
+  "entry_ts": 1792714500.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "BTCUSDT",
+  "side": "SHORT",
+  "zone": [
+   81455.93,
+   81646.2011322376
+  ],
+  "tps": [
+   80980.25216940598,
+   80599.70990493077,
+   80028.89650821795
+  ],
+  "sl": 82159.93318927915,
+  "ts": 1792717516.5130842,
   "entered": false,
   "entry_ts": null,
   "hits": [],
