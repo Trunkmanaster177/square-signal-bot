@@ -93,27 +93,6 @@
   "dry": false
  },
  {
-  "sym": "SNDKBUSDT",
-  "side": "SHORT",
-  "zone": [
-   1304.2,
-   1313.775656320808
-  ],
-  "tps": [
-   1280.2608591979806,
-   1261.109546556365,
-   1232.382577593942
-  ],
-  "sl": 1339.629928386989,
-  "ts": 1792682689.4827592,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "SOXLBUSDT",
   "side": "SHORT",
   "zone": [
@@ -151,8 +130,8 @@
   ],
   "sl": 0.33011069428546436,
   "ts": 1792690739.2581735,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792718400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -216,7 +195,10 @@
   "ts": 1792699076.0346804,
   "entered": true,
   "entry_ts": 1792705800.0,
-  "hits": [],
+  "hits": [
+   1792720200.0,
+   1792720800.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -237,27 +219,6 @@
   "ts": 1792701188.2825422,
   "entered": true,
   "entry_ts": 1792701300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
-  "sym": "ETHUSDT",
-  "side": "SHORT",
-  "zone": [
-   2383.06,
-   2391.4900253326546
-  ],
-  "tps": [
-   2361.984936668363,
-   2345.1248860030537,
-   2319.8348100050894
-  ],
-  "sl": 2414.2510937308225,
-  "ts": 1792705470.5547943,
-  "entered": true,
-  "entry_ts": 1792706400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -300,7 +261,9 @@
   "ts": 1792714331.844664,
   "entered": true,
   "entry_ts": 1792714500.0,
-  "hits": [],
+  "hits": [
+   1792721100.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -319,6 +282,27 @@
   ],
   "sl": 82159.93318927915,
   "ts": 1792717516.5130842,
+  "entered": true,
+  "entry_ts": 1792717800.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false
+ },
+ {
+  "sym": "PEPEUSDT",
+  "side": "LONG",
+  "zone": [
+   4.53e-06,
+   4.498161315257675e-06
+  ],
+  "tps": [
+   4.609596711855812e-06,
+   4.6732740813404625e-06,
+   4.768790135567437e-06
+  ],
+  "sl": 4.412196866453397e-06,
+  "ts": 1792727178.7633576,
   "entered": false,
   "entry_ts": null,
   "hits": [],
