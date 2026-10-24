@@ -461,6 +461,28 @@
   "score": 4
  },
  {
+  "sym": "ENAUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.1879,
+   0.18968131441714087
+  ],
+  "tps": [
+   0.18344671395714784,
+   0.1798840851228661,
+   0.1745401418714435
+  ],
+  "sl": 0.19449086334342122,
+  "ts": 1792850619.112973,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
