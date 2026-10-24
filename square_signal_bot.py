@@ -444,7 +444,7 @@ def check_trades():
     now = time.time()
     for idx, t in enumerate(trades):
         if t["closed"]: continue
-               if t.get("dry") and not DRY_RUN:          # test trade, never posted live
+        if t.get("dry") and not DRY_RUN:          # test trade, never posted live
             t["closed"], t["outcome"] = True, "dry"; continue
         n = copy.deepcopy(t)
         d = 1 if n["side"] == "LONG" else -1
