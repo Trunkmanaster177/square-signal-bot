@@ -444,4 +444,87 @@ def check_trades():
     now = time.time()
     for idx, t in enumerate(trades):
         if t["closed"]: continue
-        if t.get("dry") and not DRY_RUN:          # test 
+               if t.get("dry") and not DRY_RUN:          # test trade, never posted live
+            t["closed"], t["outcome"] = True, "dry"; continue
+        n = copy.deepcopy(t)
+        d = 1 if n["side"] == "LONG" else -1
+        top, bot = max(n["zone"]), min(n["zone"])
+        k = get_klines(n["sym"], "5m", 1000, int(n["ts"] * 1000))
+        before, sl_hit = len(n["hits"]), False
+        for c in k:
+            ct, hi, lo = c[0] / 1000, float(c[2]), float(c[3])
+            if not n["entered"]:
+                if lo <= top and hi >= bot: n["entered"], n["entry_ts"] = True, ct
+                else: continue
+            if (lo <= n["sl"]) if d == 1 else (hi >= n["sl"]):   # SL checked first = conservative
+                sl_hit = True; break
+            while len(n["hits"]) < 3:
+                tp = n["tps"][len(n["hits"])]
+                if (hi >= tp) if d == 1 else (lo <= tp): n["hits"].append(ct)
+                else: break
+            if len(n["hits"]) == 3: break
+        new_tps = len(n["hits"]) - before
+        if sl_hit or len(n["hits"]) == 3:
+            n["closed"], n["outcome"] = True, ("SL" if sl_hit else "TP")
+        elif not n["entered"] and now - n["ts"] > ENTRY_TIMEOUT:
+            n["closed"], n["outcome"] = True, "cancelled"
+        elif now - n["ts"] > TRADE_EXPIRY:
+            n["closed"], n["outcome"] = True, "expired"
+        if new_tps or sl_hit:
+            snapshot = trades[:idx] + [n] + trades[idx + 1:]
+            if post_to_square(build_update(n, snapshot, new_tps, sl_hit),
+                              safe_chart(n, f"chart_update_{n['sym']}.png")):
+                trades[idx] = n
+        else:
+            trades[idx] = n                          # silent changes (entered/cancelled/expired)
+    save_trades(trades)
+
+
+def run_once():
+    try:
+        check_trades()
+    except Exception as e:
+        logging.error("Tracker failed: %s", e)
+    trades = load_trades()
+    active = {t["sym"] for t in trades if not t["closed"]}
+    forced = os.getenv("FORCE_SYMBOL", "").strip().upper()
+    if forced:                                    # manual run for one chosen symbol
+        best = analyse(forced if forced.endswith("USDT") else forced + "USDT")
+        logging.info("Forced symbol %s, score %s/6", best["sym"], best["score"])
+    else:
+        results = []
+        for t in get_candidates():
+            try:
+                r = analyse(t["symbol"])
+                r["chg"] = float(t["priceChangePercent"]); r["qvol"] = float(t["quoteVolume"])
+                results.append(r)
+            except Exception as e:
+                logging.warning("skip %s: %s", t["symbol"], e)
+        good = [r for r in results if r["score"] >= MIN_SCORE
+                and r["sym"] not in recent and r["sym"] not in active]
+        if not good:
+            logging.info("No high-quality setup this round, skipping post."); return
+        best = max(good, key=lambda r: (r["score"], r["vol"]))
+    lv = build_levels(best)
+    sig = dict(sym=best["sym"], side=best["side"], zone=list(lv["zone"]), tps=lv["tps"],
+               sl=lv["sl"], ts=time.time(), hits=[], score=best["score"])
+    if post_to_square(build_post(best, lv), safe_chart(sig, "chart_signal.png")):
+        recent.append(best["sym"]); del recent[:-4]
+        json.dump(recent, open(STATE_FILE, "w"))
+        trades.append(dict(sym=best["sym"], side=best["side"], zone=list(lv["zone"]),
+                           tps=lv["tps"], sl=lv["sl"], ts=time.time(), entered=False,
+                           entry_ts=None, hits=[], closed=False, outcome=None, dry=DRY_RUN,
+                           score=best["score"]))
+        save_trades(trades)
+
+
+if __name__ == "__main__":
+    if os.getenv("RUN_ONCE", "false").lower() == "true":   # GitHub Actions mode
+        run_once()
+        raise SystemExit
+    while True:
+        try:
+            run_once()
+        except Exception as e:
+            logging.error("Run failed: %s", e)
+        time.sleep(POST_EVERY)
