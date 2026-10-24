@@ -322,7 +322,10 @@
   "ts": 1792848066.171585,
   "entered": true,
   "entry_ts": 1792854900.0,
-  "hits": [],
+  "hits": [
+   1792848300.0,
+   1792848300.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -386,13 +389,35 @@
   ],
   "sl": 2339.149220668763,
   "ts": 1792858534.0975971,
+  "entered": true,
+  "entry_ts": 1792860300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "TAOUSDT",
+  "side": "SHORT",
+  "zone": [
+   248.3,
+   249.77935131816878
+  ],
+  "tps": [
+   244.60162170457806,
+   241.6429190682405,
+   237.20486511373417
+  ],
+  "sl": 253.77359987722448,
+  "ts": 1792861261.645762,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
