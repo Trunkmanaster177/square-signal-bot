@@ -63,6 +63,24 @@ def fmt(p):
     return f"{p:.8f}"
 
 
+FAPI_FUT = "https://fapi.binance.com"
+
+def get_klines(sym, interval, limit, start=None):
+    """Spot data first, then futures (for futures-only symbols like XAUUSDT)."""
+    params = {"symbol": sym, "interval": interval, "limit": limit}
+    if start: params["startTime"] = start
+    last = None
+    for url in (f"{FAPI}/api/v3/klines", f"{FAPI_FUT}/fapi/v1/klines"):
+        try:
+            r = requests.get(url, params=params, timeout=15)
+            d = r.json()
+            if isinstance(d, list) and d: return d
+            last = d
+        except Exception as e:
+            last = e
+    raise RuntimeError(f"no candle data for {sym}: {last}")
+
+
 # ---------- market scan ----------
 def get_candidates():
     data = requests.get(f"{FAPI}/api/v3/ticker/24hr", timeout=15).json()
@@ -72,8 +90,7 @@ def get_candidates():
     return usdt[:TOP_N]
 
 def analyse(sym):
-    k = requests.get(f"{FAPI}/api/v3/klines",
-                     params={"symbol": sym, "interval": "1h", "limit": 250}, timeout=15).json()
+    k = get_klines(sym, "1h", 250)
     o = [float(x[1]) for x in k]; h = [float(x[2]) for x in k]
     l = [float(x[3]) for x in k]; c = [float(x[4]) for x in k]
     v = [float(x[5]) for x in k]
@@ -112,90 +129,175 @@ def build_levels(s):
 
 
 # ---------- post writer ----------
+BRAND = os.getenv("BRAND_NAME", "Crypto Signals")
 INTROS = ["Heyyy traders 💖", "Hi cuties ✨", "Gm gm lovelies 🌸", "Hello my crypto fam 💕", "Heyy besties 🎀"]
 OUTROS = ["Trade smart, stay cute & manage your risk okay? 💗", "Don't forget your stop loss, babes 🌷",
-          "Patience pays, loves ✨ Not financial advice 💕", "Risk 1-2% only, pretty please 🥺💖"]
+          "Patience pays, loves ✨", "Risk 1-2% only, pretty please 🥺💖"]
+QUESTIONS = ["🗳 Are you taking this trade? Comment 🔥 if yes or 🧊 if you're waiting!",
+             "💬 Long or short, what's YOUR view? Tell me below 👇",
+             "👀 Which target hits first, TP1, TP2 or TP3? Drop your guess!",
+             "🤔 Would you trade this one? Comment YES or NO and I'll reply to everyone 💕"]
+
+def money(x):
+    for div, suf in ((1e9, "B"), (1e6, "M"), (1e3, "K")):
+        if x >= div: return f"${x / div:.1f}{suf}"
+    return f"${x:.0f}"
+
+def hook(s, coin):
+    breakout = any("breakout" in w or "breakdown" in w for w in s["why"])
+    if s["vol"] > 2:
+        return f"🔥 Volume on ${coin} just exploded ({s['vol']:.1f}x the average)! Here's my setup 👇"
+    if breakout:
+        return f"🚨 ${coin} just {'broke out' if s['side'] == 'LONG' else 'broke down'}! Don't miss this one 👀"
+    return random.choice([f"✨ Heyy besties! ${coin} is giving a clean {s['side'].lower()} setup 💖",
+                          f"🌸 Gm lovelies! I found a high-volume setup on ${coin} 👀",
+                          f"💕 Hi cuties! Today's top pick is ${coin} 🎯"])
 
 def build_post(s, lv=None):
     lv = lv or build_levels(s)
-    coin = s["sym"].replace("USDT", "")
-    tag = "$" + coin
-    z1, z2 = lv["zone"]
-    tps = lv["tps"]
-    risk = abs((z1 + z2) / 2 - lv["sl"])
-    rr = abs(tps[1] - (z1 + z2) / 2) / risk
-    reasons = "\n".join(f"✅ {w}" for w in s["why"][:4])
-    return f"""{random.choice(INTROS)}
+    coin = s["sym"].replace("USDT", ""); tag = "$" + coin
+    side = s["side"]; d = 1 if side == "LONG" else -1
+    z1, z2 = lv["zone"]; mid = (z1 + z2) / 2; tps = lv["tps"]; sl = lv["sl"]
+    rr = abs(tps[1] - mid) / abs(mid - sl)
+    pc = lambda x: f"{(x - mid) / mid * 100 * d:+.2f}%"
+    reasons = "\n".join(f"✅ {w}" for w in s["why"][:4]) or "✅ Mixed signals, so keep position size small"
+    extra = ""
+    if s.get("chg") is not None: extra += f" | 24h {s['chg']:+.1f}%"
+    if s.get("qvol"): extra += f" | Vol {money(s['qvol'])}"
+    dot = "🟢 LONG" if side == "LONG" else "🔴 SHORT"
+    return f"""{hook(s, coin)}
 
-{tag} {s['side'].title()} setup.
+{dot} {tag} setup | ⏱ 1H
 
-Entry zone: {fmt(z1)} - {fmt(z2)}
+📍 Entry zone: {fmt(z1)} - {fmt(z2)}
 Take profit:
-🎯TP1: {fmt(tps[0])}
-🎯TP2: {fmt(tps[1])}
-🎯TP3: {fmt(tps[2])}
-Stop loss: {fmt(lv['sl'])}
+🎯TP1: {fmt(tps[0])} ({pc(tps[0])})
+🎯TP2: {fmt(tps[1])} ({pc(tps[1])})
+🎯TP3: {fmt(tps[2])} ({pc(tps[2])})
+🛑 Stop loss: {fmt(sl)} ({pc(sl)})
+⚖️ Risk:Reward ≈ 1:{rr:.1f}
 
-💡 Why this setup is possible:
+🧠 Why this trade:
 {reasons}
-📊 Setup score {s['score']}/6 | Risk:Reward to TP2 ≈ 1:{rr:.1f}
+📊 Score {s['score']}/6{extra}
 
-📝 Tip: Wait for price to tap the entry zone, don't chase. Move SL to entry after TP1 hits.
+💡 Tip: wait for price to tap the zone, don't chase. Move SL to entry after TP1.
+
+{random.choice(QUESTIONS)}
 
 Trade {tag} Here👇
 
 {random.choice(OUTROS)}
 ⚠️ Not financial advice. DYOR.
-#{coin} #BinanceSquare #TradingSignals #{ 'Long' if s['side']=='LONG' else 'Short' }"""
+#BinanceSquare #Crypto #TradingSignals #{coin} #Futures #{'Long' if side == 'LONG' else 'Short'}"""
 
 
 # ---------- chart image ----------
+def ema_series(vals, n):
+    k, out = 2 / (n + 1), [vals[0]]
+    for v in vals[1:]:
+        out.append(v * k + out[-1] * (1 - k))
+    return out
+
 def make_chart(t, path):
-    """Candlestick chart with entry zone, TP1-3, SL, signal time and hit markers."""
+    """Dark, Binance-style 1:1 chart: candles, EMA20/50, volume, entry zone, TP/SL pills, R:R zones."""
     import matplotlib; matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     from matplotlib.patches import Rectangle
-    k = requests.get(f"{FAPI}/api/v3/klines", timeout=15,
-                     params={"symbol": t["sym"], "interval": "1h", "limit": 72}).json()
-    n = len(k)
-    fig, ax = plt.subplots(figsize=(8, 5), dpi=140)
-    fig.patch.set_facecolor("#fff5fa"); ax.set_facecolor("#fff5fa")
-    for i, c in enumerate(k):
-        o, h, l, cl = (float(c[1]), float(c[2]), float(c[3]), float(c[4]))
-        col = "#1ea97c" if cl >= o else "#e0457b"
-        ax.vlines(i, l, h, color=col, lw=1)
-        ax.add_patch(Rectangle((i - 0.3, min(o, cl)), 0.6, max(abs(cl - o), (h - l) * 0.02), color=col))
-    top, bot = max(t["zone"]), min(t["zone"])
-    ax.fill_between([-1, n + 1], bot, top, color="#ff8fc0", alpha=0.35, lw=0)
-    xr = n + 10
-    ax.text(xr, (top + bot) / 2, "Entry " + fmt((top + bot) / 2), color="#c2185b", va="center", fontsize=8, weight="bold")
-    for i, tp in enumerate(t["tps"]):
-        done = i < len(t["hits"])
-        ax.hlines(tp, -1, n + 1, color="#1ea97c", ls="-" if done else "--", lw=1.2)
-        ax.text(xr, tp, f"TP{i+1} {fmt(tp)}" + (" ✓" if done else ""), color="#0b7a57",
-                va="center", fontsize=8, weight="bold")
-    ax.hlines(t["sl"], -1, n + 1, color="#d32f2f", lw=1.3)
-    ax.text(xr, t["sl"], "SL " + fmt(t["sl"]), color="#d32f2f", va="center", fontsize=8, weight="bold")
+    from datetime import datetime, timezone
+    BG, PANEL, GRID = "#0b0e11", "#12161c", "#1e2329"
+    TXT, MUTED = "#eaecef", "#848e9c"
+    GREEN, RED, GOLD, BLUE = "#0ecb81", "#f6465d", "#f0b90b", "#5aa9ff"
+    SHOW = 60
+    allk = get_klines(t["sym"], "1h", 200)
+    closes_all = [float(c[4]) for c in allk]
+    e20, e50 = ema_series(closes_all, 20)[-SHOW:], ema_series(closes_all, 50)[-SHOW:]
+    k = allk[-SHOW:]; n = len(k)
+    o = [float(c[1]) for c in k]; h = [float(c[2]) for c in k]; l = [float(c[3]) for c in k]
+    cl = [float(c[4]) for c in k]; v = [float(c[5]) for c in k]
+    side = t["side"]; d = 1 if side == "LONG" else -1
+    top, bot = max(t["zone"]), min(t["zone"]); mid = (top + bot) / 2
+    tps, sl = t["tps"], t["sl"]
+    rr = abs(tps[1] - mid) / abs(mid - sl)
+    coin = t["sym"].replace("USDT", "")
+
+    fig = plt.figure(figsize=(7.2, 7.2), dpi=150, facecolor=BG)
+    gs = fig.add_gridspec(2, 1, height_ratios=[5, 1], hspace=0.03, left=0.03, right=0.97, top=0.855, bottom=0.085)
+    ax = fig.add_subplot(gs[0]); axv = fig.add_subplot(gs[1], sharex=ax)
+    for a in (ax, axv):
+        a.set_facecolor(PANEL); a.grid(color=GRID, lw=0.6); a.set_axisbelow(True)
+        for sp in a.spines.values(): sp.set_visible(False)
+        a.tick_params(colors=MUTED, labelsize=7, length=0); a.yaxis.tick_right()
+    xend = n + 27
+    ax.set_xlim(-1, xend)
+
     def idx_of(ts):
         best = 0
         for i, c in enumerate(k):
             if c[0] / 1000 <= ts: best = i
         return best
-    sig = idx_of(t["ts"])
-    ax.axvline(sig, color="#777", ls=":", lw=1)
-    ax.text(sig, ax.get_ylim()[1], " signal", fontsize=7, color="#777", va="top")
+    x0 = idx_of(t["ts"])
+
+    ax.add_patch(Rectangle((x0, mid), xend - x0, tps[2] - mid, color=GREEN, alpha=0.07, lw=0))
+    ax.add_patch(Rectangle((x0, mid), xend - x0, sl - mid, color=RED, alpha=0.10, lw=0))
+    ax.add_patch(Rectangle((x0, bot), xend - x0, top - bot, color=GOLD, alpha=0.22, lw=0))
+    for i in range(n):
+        col = GREEN if cl[i] >= o[i] else RED
+        ax.vlines(i, l[i], h[i], color=col, lw=0.9, zorder=3)
+        ax.add_patch(Rectangle((i - 0.32, min(o[i], cl[i])), 0.64, max(abs(cl[i] - o[i]), (h[i] - l[i]) * 0.02),
+                               color=col, zorder=3))
+        axv.bar(i, v[i], color=col, alpha=0.75, width=0.7)
+    ax.plot(range(n), e20, color=GOLD, lw=1.0, alpha=0.9, zorder=4)
+    ax.plot(range(n), e50, color=BLUE, lw=1.0, alpha=0.9, zorder=4)
+
+    labels = []
+    def level(y, text, fc, tc, ec="none", ls="--", lc=None):
+        ax.hlines(y, x0, n + 1, color=lc or fc, ls=ls, lw=1.0, zorder=2)
+        labels.append([y, text, fc, tc, ec])
+    pc = lambda x: f"{(x - mid) / mid * 100 * d:+.1f}%"
+    level(mid, f"ENTRY {fmt(mid)}", GOLD, BG, ls="-")
+    for i, tp in enumerate(tps):
+        done = i < len(t["hits"])
+        level(tp, f"TP{i+1} {fmt(tp)} {pc(tp)}" + (" ✓" if done else ""),
+              GREEN if done else BG, BG if done else GREEN, ec=GREEN, lc=GREEN, ls="-" if done else "--")
+    level(sl, f"SL {fmt(sl)} {pc(sl)}", RED, "white", ls="-")
+    ax.hlines(cl[-1], 0, n + 1, color=MUTED, ls=":", lw=0.8, zorder=2)
+    labels.append([cl[-1], fmt(cl[-1]), "#2b3139", TXT, "none"])
+    ax.axvline(x0, color=MUTED, ls=":", lw=0.9, zorder=2)
     for i, hts in enumerate(t["hits"]):
-        ax.scatter(idx_of(hts), t["tps"][i], marker="*", s=220, color="#ffc107", edgecolor="#b8860b", zorder=5)
-    levels = t["tps"] + [t["sl"], top, bot]
-    lows = [float(c[3]) for c in k]; highs = [float(c[2]) for c in k]
-    lo, hi = min(lows + levels), max(highs + levels); pad = (hi - lo) * 0.06
-    ax.set_ylim(lo - pad, hi + pad); ax.set_xlim(-1, n + 22)
-    ax.set_xticks([])
-    for sp in ("top", "right"): ax.spines[sp].set_visible(False)
-    status = "TP%d hit" % len(t["hits"]) if t["hits"] else "Setup"
-    ax.set_title(f"${t['sym'].replace('USDT','')} {t['side']}  |  {status}  |  1h chart",
-                 color="#880e4f", fontsize=12, weight="bold")
-    fig.tight_layout(); fig.savefig(path, facecolor=fig.get_facecolor()); plt.close(fig)
+        ax.scatter(idx_of(hts), tps[i], marker="*", s=230, color=GOLD, edgecolor="white", linewidth=0.6, zorder=7)
+
+    levels = list(tps) + [sl, top, bot]
+    lo, hi = min(l[-36:] + levels), max(h[-36:] + levels); pad = (hi - lo) * 0.12
+    ax.set_ylim(lo - pad, hi + pad)
+    gap = (hi - lo + 2 * pad) * 0.055                      # keep price pills from overlapping
+    labels.sort(key=lambda x: x[0])
+    ys = [x[0] for x in labels]
+    for i in range(1, len(ys)):
+        if ys[i] - ys[i - 1] < gap: ys[i] = ys[i - 1] + gap
+    shift = (sum(ys) - sum(x[0] for x in labels)) / len(ys)
+    for (y0, text, fc, tc, ec), y in zip(labels, ys):
+        ax.text(n + 1.6, y - shift, text, color=tc, fontsize=7, weight="bold", va="center", ha="left", zorder=6,
+                bbox=dict(boxstyle="round,pad=0.28", fc=fc, ec=ec, lw=0.8))
+    ax.text(x0, hi + pad * 0.55, " SIGNAL", color=MUTED, fontsize=7, va="center", ha="left", zorder=6)
+    ax.text(0.5, 0.5, BRAND, transform=ax.transAxes, fontsize=34, color="white", alpha=0.035,
+            ha="center", va="center", rotation=18, weight="bold")
+    plt.setp(ax.get_xticklabels(), visible=False)
+    ticks = list(range(0, n, 15))
+    axv.set_xticks(ticks)
+    axv.set_xticklabels([datetime.fromtimestamp(k[i][0] / 1000, timezone.utc).strftime("%d %b\n%H:%M") for i in ticks])
+    axv.set_yticks([])
+
+    fig.text(0.04, 0.945, f"{coin}/USDT", fontsize=21, weight="bold", color=TXT, va="center")
+    sub = f"1H  ·  R:R 1:{rr:.1f}" + (f"  ·  Score {t['score']}/6" if t.get("score") else "")
+    fig.text(0.04, 0.897, sub, fontsize=9.5, color=MUTED, va="center")
+    fig.text(0.96, 0.943, "▲ LONG" if d == 1 else "▼ SHORT", fontsize=13, weight="bold", color=BG,
+             ha="right", va="center", bbox=dict(boxstyle="round,pad=0.45", fc=GREEN if d == 1 else RED, ec="none"))
+    if t["hits"]:
+        fig.text(0.96, 0.895, f"TP{len(t['hits'])} HIT ✓", fontsize=9.5, weight="bold", color=GOLD, ha="right", va="center")
+    fig.text(0.04, 0.035, BRAND, fontsize=10, weight="bold", color=GOLD, va="center")
+    fig.text(0.96, 0.035, "Not financial advice  ·  DYOR", fontsize=8, color=MUTED, ha="right", va="center")
+    fig.savefig(path, facecolor=BG); plt.close(fig)
     return path
 
 def safe_chart(t, path):
@@ -342,81 +444,4 @@ def check_trades():
     now = time.time()
     for idx, t in enumerate(trades):
         if t["closed"]: continue
-        if t.get("dry") and not DRY_RUN:          # test trade, never posted live
-            t["closed"], t["outcome"] = True, "dry"; continue
-        n = copy.deepcopy(t)
-        d = 1 if n["side"] == "LONG" else -1
-        top, bot = max(n["zone"]), min(n["zone"])
-        k = requests.get(f"{FAPI}/api/v3/klines", timeout=15,
-                         params={"symbol": n["sym"], "interval": "5m",
-                                 "startTime": int(n["ts"] * 1000), "limit": 1000}).json()
-        before, sl_hit = len(n["hits"]), False
-        for c in k:
-            ct, hi, lo = c[0] / 1000, float(c[2]), float(c[3])
-            if not n["entered"]:
-                if lo <= top and hi >= bot: n["entered"], n["entry_ts"] = True, ct
-                else: continue
-            if (lo <= n["sl"]) if d == 1 else (hi >= n["sl"]):   # SL checked first = conservative
-                sl_hit = True; break
-            while len(n["hits"]) < 3:
-                tp = n["tps"][len(n["hits"])]
-                if (hi >= tp) if d == 1 else (lo <= tp): n["hits"].append(ct)
-                else: break
-            if len(n["hits"]) == 3: break
-        new_tps = len(n["hits"]) - before
-        if sl_hit or len(n["hits"]) == 3:
-            n["closed"], n["outcome"] = True, ("SL" if sl_hit else "TP")
-        elif not n["entered"] and now - n["ts"] > ENTRY_TIMEOUT:
-            n["closed"], n["outcome"] = True, "cancelled"
-        elif now - n["ts"] > TRADE_EXPIRY:
-            n["closed"], n["outcome"] = True, "expired"
-        if new_tps or sl_hit:
-            snapshot = trades[:idx] + [n] + trades[idx + 1:]
-            if post_to_square(build_update(n, snapshot, new_tps, sl_hit),
-                              safe_chart(n, f"chart_update_{n['sym']}.png")):
-                trades[idx] = n
-        else:
-            trades[idx] = n                          # silent changes (entered/cancelled/expired)
-    save_trades(trades)
-
-
-def run_once():
-    try:
-        check_trades()
-    except Exception as e:
-        logging.error("Tracker failed: %s", e)
-    trades = load_trades()
-    active = {t["sym"] for t in trades if not t["closed"]}
-    results = []
-    for t in get_candidates():
-        try:
-            results.append(analyse(t["symbol"]))
-        except Exception as e:
-            logging.warning("skip %s: %s", t["symbol"], e)
-    good = [r for r in results if r["score"] >= MIN_SCORE
-            and r["sym"] not in recent and r["sym"] not in active]
-    if not good:
-        logging.info("No high-quality setup this round, skipping post."); return
-    best = max(good, key=lambda r: (r["score"], r["vol"]))
-    lv = build_levels(best)
-    sig = dict(sym=best["sym"], side=best["side"], zone=list(lv["zone"]), tps=lv["tps"],
-               sl=lv["sl"], ts=time.time(), hits=[])
-    if post_to_square(build_post(best, lv), safe_chart(sig, "chart_signal.png")):
-        recent.append(best["sym"]); del recent[:-4]
-        json.dump(recent, open(STATE_FILE, "w"))
-        trades.append(dict(sym=best["sym"], side=best["side"], zone=list(lv["zone"]),
-                           tps=lv["tps"], sl=lv["sl"], ts=time.time(), entered=False,
-                           entry_ts=None, hits=[], closed=False, outcome=None, dry=DRY_RUN))
-        save_trades(trades)
-
-
-if __name__ == "__main__":
-    if os.getenv("RUN_ONCE", "false").lower() == "true":   # GitHub Actions mode
-        run_once()
-        raise SystemExit
-    while True:
-        try:
-            run_once()
-        except Exception as e:
-            logging.error("Run failed: %s", e)
-        time.sleep(POST_EVERY)
+        if t.get("dry") and not DRY_RUN:          # test 
