@@ -106,92 +106,174 @@ def mood(text):
     if s > b: return "Bearish 🔴"
     return "Neutral ⚪"
 
+BRAND = os.getenv("BRAND_NAME", "Crypto Signals")
+QUESTIONS = ["🗳 Bullish or bearish? Vote in the comments 👇",
+             "💬 Will this move the market? Tell me what you think!",
+             "👀 Are you buying, selling or waiting? Comment below!",
+             "🤔 Is this priced in already? Drop your take 💕"]
+HOOKS = {"Bullish 🟢": ["🚀 Big news just dropped, and it could be bullish for crypto 👀",
+                        "✨ Good news alert, besties! The market might like this 💚"],
+         "Bearish 🔴": ["⚠️ Heads up traders! This news could shake the market 👀",
+                        "🚨 Breaking: this could add pressure on prices, stay alert 💗"],
+         "Neutral ⚪": ["📰 Crypto news alert! Here's what you need to know 👇",
+                        "🌸 Fresh crypto headline just landed, quick read for you 💖"]}
+
+
+def fmt_price(p):
+    if p >= 1000: return f"{p:,.0f}"
+    if p >= 1: return f"{p:,.2f}"
+    return f"{p:.5f}"
+
+def coin_prices(coins):
+    out = []
+    for c in coins:
+        try:
+            d = requests.get("https://data-api.binance.vision/api/v3/ticker/24hr",
+                             params={"symbol": c + "USDT"}, timeout=10).json()
+            out.append(dict(coin=c, price=float(d["lastPrice"]), chg=float(d["priceChangePercent"])))
+        except Exception:
+            pass
+    return out
+
 def ai_write(item):
-    """Optional: cute AI summary. Returns (summary, meaning) or None."""
+    """Optional AI copy. Returns dict(hook, bullets, meaning, question) or None."""
     if not AI_KEY: return None
     try:
         r = requests.post("https://api.anthropic.com/v1/messages", timeout=40,
-            headers={"x-api-key": AI_KEY, "anthropic-version": "2023-06-01",
-                     "content-type": "application/json"},
-            json={"model": "claude-sonnet-4-6", "max_tokens": 400, "messages": [{"role": "user",
+            headers={"x-api-key": AI_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+            json={"model": "claude-sonnet-4-6", "max_tokens": 600, "messages": [{"role": "user",
                   "content": "You write crypto news posts for Binance Square in a cute, friendly girl voice "
-                             "(light emojis, never cringe, factual). From this article return ONLY JSON "
-                             '{"summary": "2 short sentences", "meaning": "1 sentence on what it could mean '
-                             'for traders, no financial advice"}.\n\nTitle: %s\nText: %s'
-                             % (item["title"], item["desc"][:800])}]})
+                             "(light emojis, factual, never promise profit). From this article return ONLY JSON: "
+                             '{"hook": "one scroll-stopping first line with 1 emoji, max 90 chars", '
+                             '"bullets": ["2-3 short facts, max 110 chars each"], '
+                             '"meaning": "1 sentence on what it could mean for traders, no financial advice", '
+                             '"question": "1 short question that makes readers comment, with 1 emoji"}.\n\n'
+                             "Title: %s\nText: %s" % (item["title"], item["desc"][:900])}]})
         txt = r.json()["content"][0]["text"].replace("```json", "").replace("```", "")
         d = json.loads(txt)
-        return d["summary"], d["meaning"]
+        if d.get("hook") and d.get("bullets") and d.get("meaning") and d.get("question"): return d
     except Exception as e:
-        logging.warning("AI write failed: %s", e); return None
-
+        logging.warning("AI write failed: %s", e)
+    return None
 
 def build_post(item):
-    coins = detect_coins(item["title"] + " " + item["desc"])
-    m = mood(item["title"] + " " + item["desc"])
+    text = item["title"] + " " + item["desc"]
+    coins = item.get("coins") or detect_coins(text)
+    m = item.get("mood") or mood(text)
+    prices = item.get("prices") or []
     ai = ai_write(item)
-    if ai: summary, meaning = ai
+    if ai:
+        hook, bullets, meaning, question = ai["hook"], ai["bullets"][:3], ai["meaning"], ai["question"]
     else:
-        summary = textwrap.shorten(item["desc"] or item["title"], 260, placeholder="...")
+        hook = random.choice(HOOKS[m]); question = random.choice(QUESTIONS)
+        sents = [x.strip() for x in re.split(r"(?<=[.!?])\s+", item["desc"]) if len(x.strip()) > 25][:2]
+        bullets = [textwrap.shorten(x, 130, placeholder="...") for x in sents] or [item["title"]]
         meaning = {"Bullish 🟢": "This could bring positive momentum, but wait for confirmation on the chart.",
                    "Bearish 🔴": "This could add selling pressure, so protect your positions with a stop loss.",
                    "Neutral ⚪": "No clear direction yet, so watch the volume and key levels."}[m]
-    tags = " ".join("$" + c for c in coins) or "$BTC"
-    hashtags = " ".join("#" + c for c in coins) + " #CryptoNews #BinanceSquare"
-    return f"""{random.choice(INTROS)}
+    pl = " | ".join(f"${p['coin']} {fmt_price(p['price'])} ({p['chg']:+.1f}%)" for p in prices)
+    tags = " ".join("#" + c for c in coins)
+    return f"""{hook}
 
-🚨 {item['title']}
+📰 {item['title']}
 
-📝 {summary}
+{chr(10).join('• ' + b for b in bullets)}
 
-💡 What it means: {meaning}
-📈 Market mood: {m}
-👀 Coins to watch: {tags}
+💡 Why it matters: {meaning}
+📈 Market mood: {m}{chr(10) + '💹 Live: ' + pl if pl else ''}
+
+{question}
 
 🔗 Source: {item['source']}
 
 {random.choice(OUTROS)}
 ⚠️ Not financial advice. DYOR.
-{hashtags}"""
+#CryptoNews #BinanceSquare #Crypto {tags}""".strip()
 
 
 # ---------- image card ----------
 def font(size, bold=True):
-    names = ["/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold
-             else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", "DejaVuSans.ttf"]
+    fn = "DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf"
+    names = ["/usr/share/fonts/truetype/dejavu/" + fn, fn]
+    try:
+        import matplotlib; names.append(os.path.join(matplotlib.get_data_path(), "fonts", "ttf", fn))
+    except Exception:
+        pass
     for n in names:
         try: return ImageFont.truetype(n, size)
         except Exception: pass
     return ImageFont.load_default()
 
+def wrap_px(draw, text, fnt, max_w, max_lines):
+    lines, cur = [], ""
+    for w in text.split():
+        t = (cur + " " + w).strip()
+        if draw.textlength(t, font=fnt) <= max_w: cur = t
+        else: lines.append(cur); cur = w
+    lines.append(cur)
+    if len(lines) > max_lines:
+        lines = lines[:max_lines]; lines[-1] = lines[-1].rstrip(".,") + "..."
+    return lines
+
 def make_card(item, path=CARD_PATH):
-    W, H = 1200, 675
-    img = Image.new("RGB", (W, H))
-    d = ImageDraw.Draw(img)
-    for y in range(H):                                   # pink gradient background
-        t = y / H
-        d.line([(0, y), (W, y)], fill=(int(255 - 40 * t), int(182 - 60 * t), int(214 - 20 * t)))
-    top = 0
-    if item.get("image"):                                # article picture on top
+    """Dark, professional 1:1 news card with headline, mood badge and live coin prices."""
+    W = H = 1080; AH = 580
+    BG, GOLD, GREEN, RED = (11, 14, 17), (240, 185, 11), (14, 203, 129), (246, 70, 93)
+    TXT, MUTED, CHIP = (234, 236, 239), (132, 142, 156), (30, 37, 45)
+    m = item.get("mood") or mood(item["title"] + " " + item["desc"])
+    badge, bcol = {"Bullish 🟢": ("BULLISH", GREEN), "Bearish 🔴": ("BEARISH", RED)}.get(m, ("BREAKING", GOLD))
+    img = Image.new("RGB", (W, H), BG)
+    art = None
+    if item.get("image"):
         try:
             pic = Image.open(io.BytesIO(requests.get(item["image"], headers=HEADERS, timeout=20).content)).convert("RGB")
-            ph = 330
-            ratio = max(W / pic.width, ph / pic.height)
+            ratio = max(W / pic.width, AH / pic.height)
             pic = pic.resize((int(pic.width * ratio), int(pic.height * ratio)))
-            l, t = (pic.width - W) // 2, (pic.height - ph) // 2
-            img.paste(pic.crop((l, t, l + W, t + ph)), (0, 0)); top = ph
+            l, t = (pic.width - W) // 2, (pic.height - AH) // 2
+            art = pic.crop((l, t, l + W, t + AH))
         except Exception as e:
             logging.warning("image load failed: %s", e)
+    if art is None:                                   # fallback artwork: dark gradient + big coin symbol
+        art = Image.new("RGB", (W, AH)); ad = ImageDraw.Draw(art)
+        for y in range(AH):
+            k = y / AH; ad.line([(0, y), (W, y)], fill=(int(40 - 22 * k), int(34 - 16 * k), int(20 - 6 * k)))
+        sym = (item.get("coins") or ["NEWS"])[0]
+        ad.text((W // 2, AH // 2 - 40), sym, font=font(300), fill=(58, 49, 22), anchor="mm")
+    img.paste(art, (0, 0))
+    fade = Image.new("L", (W, AH)); fd = ImageDraw.Draw(fade)
+    for y in range(AH):
+        fd.line([(0, y), (W, y)], fill=int(max(0, min(255, (y - 150) / (AH - 150) * 255))))
+    img.paste(Image.new("RGB", (W, AH), BG), (0, 0), fade)
     d = ImageDraw.Draw(img)
-    d.rounded_rectangle((40, top + 25, 330, top + 80), 27, fill=(255, 255, 255))
-    d.text((70, top + 36), "CRYPTO NEWS", font=font(30), fill=(214, 51, 132))
-    lines = textwrap.wrap(item["title"], 38 if top else 30)[:4 if not top else 3]
-    y = top + 105
+
+    d.rounded_rectangle((50, 46, 50 + d.textlength(BRAND.upper(), font=font(26)) + 44, 100), 27, fill=(11, 14, 17), outline=GOLD, width=2)
+    d.text((72, 73), BRAND.upper(), font=font(26), fill=GOLD, anchor="lm")
+    bw = d.textlength(badge, font=font(28)) + 56
+    d.rounded_rectangle((W - 50 - bw, 46, W - 50, 100), 27, fill=bcol)
+    d.text((W - 50 - bw / 2, 73), badge, font=font(28), fill=BG, anchor="mm")
+
+    d.rectangle((50, 560, 140, 568), fill=GOLD)
+    fnt = font(54)
+    lines = wrap_px(d, item["title"], fnt, W - 100, 4)
+    y = 598
     for ln in lines:
-        d.text((42, y + 2), ln, font=font(46 if top else 58), fill=(120, 20, 70))
-        d.text((40, y), ln, font=font(46 if top else 58), fill=(255, 255, 255))
-        y += 58 if top else 72
-    d.text((40, H - 55), f"Source: {item['source']}  |  Not financial advice", font=font(24, False), fill=(255, 255, 255))
+        d.text((50, y), ln, font=fnt, fill=TXT); y += 68
+
+    prices = (item.get("prices") or [])[:3]
+    cy = 905
+    if prices:
+        cw = (W - 100 - 20 * (len(prices) - 1)) // len(prices); x = 50
+        for p in prices:
+            d.rounded_rectangle((x, cy, x + cw, cy + 84), 20, fill=CHIP)
+            d.text((x + 22, cy + 28), p["coin"], font=font(26), fill=TXT, anchor="lm")
+            d.text((x + 22, cy + 61), fmt_price(p["price"]), font=font(22, False), fill=MUTED, anchor="lm")
+            d.text((x + cw - 22, cy + 42), f"{p['chg']:+.1f}%", font=font(28), fill=GREEN if p["chg"] >= 0 else RED, anchor="rm")
+            x += cw + 20
+    else:
+        d.text((50, cy + 40), "Source: " + item["source"], font=font(28, False), fill=MUTED, anchor="lm")
+    d.line((50, 1010, W - 50, 1010), fill=(38, 45, 54), width=2)
+    d.text((50, 1045), f"Source: {item['source']}" if prices else BRAND, font=font(22, False), fill=MUTED, anchor="lm")
+    d.text((W - 50, 1045), "Not financial advice  |  DYOR", font=font(22, False), fill=MUTED, anchor="rm")
     img.save(path)
     return path
 
@@ -280,6 +362,9 @@ def run_once():
         logging.info("No fresh news this round."); return
     with_coins = [i for i in fresh if detect_coins(i["title"] + " " + i["desc"])]
     item = (with_coins or fresh)[0]
+    text = item["title"] + " " + item["desc"]
+    item["coins"] = detect_coins(text); item["mood"] = mood(text)
+    item["prices"] = coin_prices(item["coins"])
     card = make_card(item)
     if post_to_square(build_post(item), card):
         posted.append(item["link"]); save_state(posted)
@@ -292,4 +377,4 @@ if __name__ == "__main__":
         try: run_once()
         except Exception as e: logging.error("Run failed: %s", e)
         time.sleep(POST_EVERY)
-  
+          
