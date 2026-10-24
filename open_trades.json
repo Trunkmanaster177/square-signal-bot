@@ -1,29 +1,5 @@
 [
  {
-  "sym": "SOLUSDT",
-  "side": "SHORT",
-  "zone": [
-   104.46,
-   104.84570761282608
-  ],
-  "tps": [
-   103.49573096793478,
-   102.7243157422826,
-   101.56719290380434
-  ],
-  "sl": 105.88711816745652,
-  "ts": 1792672399.1721907,
-  "entered": true,
-  "entry_ts": 1792672800.0,
-  "hits": [
-   1792687500.0,
-   1792795500.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "SOXLBUSDT",
   "side": "SHORT",
   "zone": [
@@ -282,30 +258,6 @@
   "dry": false
  },
  {
-  "sym": "DOGEUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.07928,
-   0.07957908639055272
-  ],
-  "tps": [
-   0.07853228402361823,
-   0.07793411124251282,
-   0.07703685207085467
-  ],
-  "sl": 0.08038661964504505,
-  "ts": 1792791048.9148915,
-  "entered": true,
-  "entry_ts": 1792791300.0,
-  "hits": [
-   1792794600.0,
-   1792795800.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "TRXUSDT",
   "side": "SHORT",
   "zone": [
@@ -344,7 +296,9 @@
   "ts": 1792798388.7780218,
   "entered": true,
   "entry_ts": 1792799100.0,
-  "hits": [],
+  "hits": [
+   1792833300.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -451,6 +405,28 @@
   ],
   "sl": 4.6734254444641286,
   "ts": 1792832669.2235801,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "WLDUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.4689,
+   0.4734942357842638
+  ],
+  "tps": [
+   0.4574144105393405,
+   0.44822593897081286,
+   0.4344432316180214
+  ],
+  "sl": 0.48589867240177614,
+  "ts": 1792835295.0081222,
   "entered": false,
   "entry_ts": null,
   "hits": [],
