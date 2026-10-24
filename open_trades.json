@@ -88,7 +88,8 @@
   "entered": true,
   "entry_ts": 1792714500.0,
   "hits": [
-   1792721100.0
+   1792721100.0,
+   1792836300.0
   ],
   "closed": false,
   "outcome": null,
@@ -348,50 +349,6 @@
   "dry": false
  },
  {
-  "sym": "BMTUSDT",
-  "side": "LONG",
-  "zone": [
-   0.04408,
-   0.0419716743232218
-  ],
-  "tps": [
-   0.04935081419194551,
-   0.053567465545501916,
-   0.05989244257583652
-  ],
-  "sl": 0.03627919499592065,
-  "ts": 1792827017.4122922,
-  "entered": true,
-  "entry_ts": 1792827300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "ERAUSDT",
-  "side": "LONG",
-  "zone": [
-   0.0915,
-   0.08840671703875043
-  ],
-  "tps": [
-   0.09923320740312391,
-   0.10541977332562305,
-   0.11469962220937174
-  ],
-  "sl": 0.08005485304337662,
-  "ts": 1792829968.8307683,
-  "entered": true,
-  "entry_ts": 1792830900.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "NEARUSDT",
   "side": "SHORT",
   "zone": [
@@ -405,8 +362,8 @@
   ],
   "sl": 4.6734254444641286,
   "ts": 1792832669.2235801,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792837800.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -427,6 +384,28 @@
   ],
   "sl": 0.48589867240177614,
   "ts": 1792835295.0081222,
+  "entered": true,
+  "entry_ts": 1792837800.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "DOGEUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.0776,
+   0.07790337980411201
+  ],
+  "tps": [
+   0.07684155048971997,
+   0.07623479088149594,
+   0.07532465146915991
+  ],
+  "sl": 0.07872250527521443,
+  "ts": 1792842112.5363936,
   "entered": false,
   "entry_ts": null,
   "hits": [],
