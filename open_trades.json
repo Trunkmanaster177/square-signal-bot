@@ -48,30 +48,6 @@
   "dry": false
  },
  {
-  "sym": "NEARUSDT",
-  "side": "SHORT",
-  "zone": [
-   4.886,
-   4.930713096064331
-  ],
-  "tps": [
-   4.7742172598391726,
-   4.684791067710512,
-   4.55065177951752
-  ],
-  "sl": 5.051438455438023,
-  "ts": 1792692681.0508769,
-  "entered": true,
-  "entry_ts": 1792695300.0,
-  "hits": [
-   1792782300.0,
-   1792794600.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "XAUTUSDT",
   "side": "SHORT",
   "zone": [
@@ -112,7 +88,8 @@
   "entered": true,
   "entry_ts": 1792701300.0,
   "hits": [
-   1792795800.0
+   1792795800.0,
+   1792830900.0
   ],
   "closed": false,
   "outcome": null,
@@ -388,7 +365,9 @@
   "ts": 1792800256.5561635,
   "entered": true,
   "entry_ts": 1792800300.0,
-  "hits": [],
+  "hits": [
+   1792832400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false
@@ -450,6 +429,28 @@
   ],
   "sl": 0.08005485304337662,
   "ts": 1792829968.8307683,
+  "entered": true,
+  "entry_ts": 1792830900.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "NEARUSDT",
+  "side": "SHORT",
+  "zone": [
+   4.52,
+   4.561466336341656
+  ],
+  "tps": [
+   4.416334159145858,
+   4.333401486462545,
+   4.209002477437575
+  ],
+  "sl": 4.6734254444641286,
+  "ts": 1792832669.2235801,
   "entered": false,
   "entry_ts": null,
   "hits": [],
