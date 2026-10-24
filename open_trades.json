@@ -369,33 +369,14 @@
   "ts": 1792853011.3843868,
   "entered": true,
   "entry_ts": 1792866300.0,
-  "hits": [],
+  "hits": [
+   1792853100.0,
+   1792854300.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
   "score": 4
- },
- {
-  "sym": "ETHUSDT",
-  "side": "SHORT",
-  "zone": [
-   2306.41,
-   2315.2584380185845
-  ],
-  "tps": [
-   2284.2889049535383,
-   2266.592028916369,
-   2240.0467148606153
-  ],
-  "sl": 2339.149220668763,
-  "ts": 1792858534.0975971,
-  "entered": true,
-  "entry_ts": 1792860300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
  },
  {
   "sym": "TAOUSDT",
@@ -455,6 +436,28 @@
   ],
   "sl": 1196.5174599478103,
   "ts": 1792867456.212799,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "SUIUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.9367,
+   0.942529517498389
+  ],
+  "tps": [
+   0.9221262062540274,
+   0.9104671712572493,
+   0.8929786187620822
+  ],
+  "sl": 0.9582692147440395,
+  "ts": 1792870137.229978,
   "entered": false,
   "entry_ts": null,
   "hits": [],
