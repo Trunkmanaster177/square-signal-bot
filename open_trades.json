@@ -509,6 +509,28 @@
   "score": 4
  },
  {
+  "sym": "NEARUSDT",
+  "side": "SHORT",
+  "zone": [
+   4.571,
+   4.605711964431939
+  ],
+  "tps": [
+   4.48422008892015,
+   4.414796160056271,
+   4.310660266760453
+  ],
+  "sl": 4.699434268398176,
+  "ts": 1792965558.0425248,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
