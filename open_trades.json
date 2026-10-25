@@ -211,31 +211,6 @@
   "dry": false
  },
  {
-  "sym": "NEARUSDT",
-  "side": "SHORT",
-  "zone": [
-   4.52,
-   4.561466336341656
-  ],
-  "tps": [
-   4.416334159145858,
-   4.333401486462545,
-   4.209002477437575
-  ],
-  "sl": 4.6734254444641286,
-  "ts": 1792832669.2235801,
-  "entered": true,
-  "entry_ts": 1792837800.0,
-  "hits": [
-   1792851000.0,
-   1792851300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "BMTUSDT",
   "side": "LONG",
   "zone": [
@@ -255,28 +230,6 @@
    1792847400.0,
    1792851600.0
   ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "TAOUSDT",
-  "side": "SHORT",
-  "zone": [
-   248.3,
-   249.77935131816878
-  ],
-  "tps": [
-   244.60162170457806,
-   241.6429190682405,
-   237.20486511373417
-  ],
-  "sl": 253.77359987722448,
-  "ts": 1792861261.645762,
-  "entered": true,
-  "entry_ts": 1792866300.0,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -443,7 +396,9 @@
   "ts": 1792917460.1570425,
   "entered": true,
   "entry_ts": 1792940400.0,
-  "hits": [],
+  "hits": [
+   1792919400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -487,28 +442,6 @@
   "ts": 1792930155.3087368,
   "entered": true,
   "entry_ts": 1792930200.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "BNBUSDT",
-  "side": "LONG",
-  "zone": [
-   743.54,
-   741.5872003108597
-  ],
-  "tps": [
-   748.4219992228508,
-   752.3275986011315,
-   758.1859976685524
-  ],
-  "sl": 736.3146411501808,
-  "ts": 1792933221.470223,
-  "entered": true,
-  "entry_ts": 1792940400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -573,6 +506,28 @@
   ],
   "sl": 0.4729448190803795,
   "ts": 1792946969.696914,
+  "entered": true,
+  "entry_ts": 1792947000.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "GTCUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.25164,
+   0.2582625331599902
+  ],
+  "tps": [
+   0.23508366710002448,
+   0.22183860078004408,
+   0.20197100130007348
+  ],
+  "sl": 0.27614337269196376,
+  "ts": 1792948514.169485,
   "entered": false,
   "entry_ts": null,
   "hits": [],
