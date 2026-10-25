@@ -1,29 +1,5 @@
 [
  {
-  "sym": "SOXLBUSDT",
-  "side": "SHORT",
-  "zone": [
-   86.13,
-   87.39658680695878
-  ],
-  "tps": [
-   82.96353298260306,
-   80.4303593686855,
-   76.63059894780918
-  ],
-  "sl": 90.81637118574749,
-  "ts": 1792684614.2197824,
-  "entered": true,
-  "entry_ts": 1792684800.0,
-  "hits": [
-   1792687800.0,
-   1792698300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "XAUTUSDT",
   "side": "SHORT",
   "zone": [
@@ -465,35 +441,13 @@
   ],
   "sl": 2374.2006114223486,
   "ts": 1792917460.1570425,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792940400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
   "score": 4
- },
- {
-  "sym": "WLDUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.4423,
-   0.4466157890738785
-  ],
-  "tps": [
-   0.4315105273153038,
-   0.42287894916754687,
-   0.4099315819459114
-  ],
-  "sl": 0.45826841957335046,
-  "ts": 1792920056.6660697,
-  "entered": true,
-  "entry_ts": 1792920300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
  },
  {
   "sym": "BTCUSDT",
@@ -553,8 +507,8 @@
   ],
   "sl": 736.3146411501808,
   "ts": 1792933221.470223,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1792940400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -597,6 +551,28 @@
   ],
   "sl": 0.2007773367164457,
   "ts": 1792940390.751575,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "WLDUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.4569,
+   0.4612364375892917
+  ],
+  "tps": [
+   0.4460589060267706,
+   0.4373860308481871,
+   0.42437671808031185
+  ],
+  "sl": 0.4729448190803795,
+  "ts": 1792946969.696914,
   "entered": false,
   "entry_ts": null,
   "hits": [],
