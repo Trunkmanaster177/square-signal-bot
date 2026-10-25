@@ -260,30 +260,6 @@
   "score": 4
  },
  {
-  "sym": "WLDUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.4689,
-   0.4734942357842638
-  ],
-  "tps": [
-   0.4574144105393405,
-   0.44822593897081286,
-   0.4344432316180214
-  ],
-  "sl": 0.48589867240177614,
-  "ts": 1792835295.0081222,
-  "entered": true,
-  "entry_ts": 1792837800.0,
-  "hits": [
-   1792916700.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "BMTUSDT",
   "side": "LONG",
   "zone": [
@@ -371,7 +347,9 @@
   "ts": 1792878322.5269713,
   "entered": true,
   "entry_ts": 1792879500.0,
-  "hits": [],
+  "hits": [
+   1792919400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -394,7 +372,8 @@
   "entered": true,
   "entry_ts": 1792881900.0,
   "hits": [
-   1792910400.0
+   1792910400.0,
+   1792919700.0
   ],
   "closed": false,
   "outcome": null,
@@ -417,7 +396,9 @@
   "ts": 1792885588.150935,
   "entered": true,
   "entry_ts": 1792886400.0,
-  "hits": [],
+  "hits": [
+   1792919700.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -440,7 +421,8 @@
   "entered": true,
   "entry_ts": 1792889100.0,
   "hits": [
-   1792908000.0
+   1792908000.0,
+   1792918200.0
   ],
   "closed": false,
   "outcome": null,
@@ -466,28 +448,6 @@
   "hits": [
    1792911600.0
   ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "BNBUSDT",
-  "side": "LONG",
-  "zone": [
-   743.83,
-   742.0297944757691
-  ],
-  "tps": [
-   748.3305138105774,
-   751.9309248590392,
-   757.331541431732
-  ],
-  "sl": 737.1692395603455,
-  "ts": 1792908025.934791,
-  "entered": true,
-  "entry_ts": 1792908300.0,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -536,6 +496,28 @@
   "outcome": null,
   "dry": false,
   "score": 4
+ },
+ {
+  "sym": "WLDUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.4423,
+   0.4466157890738785
+  ],
+  "tps": [
+   0.4315105273153038,
+   0.42287894916754687,
+   0.4099315819459114
+  ],
+  "sl": 0.45826841957335046,
+  "ts": 1792920056.6660697,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
  },
  {
   "sym": "UUSDT",
