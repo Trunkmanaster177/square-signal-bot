@@ -487,28 +487,6 @@
   "score": 4
  },
  {
-  "sym": "XAUTUSDT",
-  "side": "SHORT",
-  "zone": [
-   3997.07,
-   3998.4886197463625
-  ],
-  "tps": [
-   3993.523450634094,
-   3990.6862111413693,
-   3986.430351902282
-  ],
-  "sl": 4002.318893061541,
-  "ts": 1792961886.9038131,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "NEARUSDT",
   "side": "SHORT",
   "zone": [
@@ -522,6 +500,28 @@
   ],
   "sl": 4.699434268398176,
   "ts": 1792965558.0425248,
+  "entered": true,
+  "entry_ts": 1792965600.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "HYPEUSDT",
+  "side": "SHORT",
+  "zone": [
+   76.41,
+   76.68730681592844
+  ],
+  "tps": [
+   75.71673296017892,
+   75.16211932832205,
+   74.33019888053674
+  ],
+  "sl": 77.43603521893522,
+  "ts": 1792968558.9848742,
   "entered": false,
   "entry_ts": null,
   "hits": [],
