@@ -307,31 +307,6 @@
   "score": 4
  },
  {
-  "sym": "ERAUSDT",
-  "side": "LONG",
-  "zone": [
-   0.0855,
-   0.08225127604686487
-  ],
-  "tps": [
-   0.09362180988283784,
-   0.1001192577891081,
-   0.10986542964851351
-  ],
-  "sl": 0.0734797213734,
-  "ts": 1792848066.171585,
-  "entered": true,
-  "entry_ts": 1792854900.0,
-  "hits": [
-   1792848300.0,
-   1792848300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "TAOUSDT",
   "side": "SHORT",
   "zone": [
@@ -347,28 +322,6 @@
   "ts": 1792861261.645762,
   "entered": true,
   "entry_ts": 1792866300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "BTCUSDT",
-  "side": "SHORT",
-  "zone": [
-   80219.31,
-   80423.08236451901
-  ],
-  "tps": [
-   79709.87908870248,
-   79302.33435966446,
-   78691.01726610743
-  ],
-  "sl": 80973.26774872033,
-  "ts": 1792864151.5018172,
-  "entered": true,
-  "entry_ts": 1792864200.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -413,28 +366,6 @@
   "ts": 1792870137.229978,
   "entered": true,
   "entry_ts": 1792870200.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "ETHUSDT",
-  "side": "SHORT",
-  "zone": [
-   2339.62,
-   2348.227561799005
-  ],
-  "tps": [
-   2318.1010955024867,
-   2300.8859719044763,
-   2275.0632865074604
-  ],
-  "sl": 2371.467978656319,
-  "ts": 1792875497.2657185,
-  "entered": true,
-  "entry_ts": 1792875600.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -521,6 +452,28 @@
   ],
   "sl": 0.07881028444309063,
   "ts": 1792888825.9103007,
+  "entered": true,
+  "entry_ts": 1792889100.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "AAVEUSDT",
+  "side": "SHORT",
+  "zone": [
+   137.77,
+   138.47468235717582
+  ],
+  "tps": [
+   136.00829410706046,
+   134.59892939270884,
+   132.48488232118137
+  ],
+  "sl": 140.37732472155056,
+  "ts": 1792899488.2781708,
   "entered": false,
   "entry_ts": null,
   "hits": [],
