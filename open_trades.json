@@ -511,13 +511,35 @@
   ],
   "sl": 0.45826841957335046,
   "ts": 1792920056.6660697,
+  "entered": true,
+  "entry_ts": 1792920300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "BTCUSDT",
+  "side": "SHORT",
+  "zone": [
+   80328.32,
+   80474.9178693142
+  ],
+  "tps": [
+   79961.82532671453,
+   79668.62958808616,
+   79228.83598014359
+  ],
+  "sl": 80870.73211646252,
+  "ts": 1792922918.5126946,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
