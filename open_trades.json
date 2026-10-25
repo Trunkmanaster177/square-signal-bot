@@ -329,28 +329,6 @@
   "score": 4
  },
  {
-  "sym": "ZECUSDT",
-  "side": "SHORT",
-  "zone": [
-   1159.59,
-   1169.5703945804892
-  ],
-  "tps": [
-   1134.6390135487768,
-   1114.678224387798,
-   1084.7370406463303
-  ],
-  "sl": 1196.5174599478103,
-  "ts": 1792867456.212799,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "SUIUSDT",
   "side": "SHORT",
   "zone": [
@@ -412,7 +390,9 @@
   "ts": 1792881869.0223906,
   "entered": true,
   "entry_ts": 1792881900.0,
-  "hits": [],
+  "hits": [
+   1792910400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -456,7 +436,9 @@
   "ts": 1792888825.9103007,
   "entered": true,
   "entry_ts": 1792889100.0,
-  "hits": [],
+  "hits": [
+   1792908000.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -478,7 +460,9 @@
   "ts": 1792899488.2781708,
   "entered": true,
   "entry_ts": 1792899600.0,
-  "hits": [],
+  "hits": [
+   1792911600.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -498,6 +482,28 @@
   ],
   "sl": 737.1692395603455,
   "ts": 1792908025.934791,
+  "entered": true,
+  "entry_ts": 1792908300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "XRPUSDT",
+  "side": "SHORT",
+  "zone": [
+   1.2948,
+   1.299275087609634
+  ],
+  "tps": [
+   1.2836122809759152,
+   1.2746621057566474,
+   1.2612368429277456
+  ],
+  "sl": 1.3113578241556456,
+  "ts": 1792913881.4432635,
   "entered": false,
   "entry_ts": null,
   "hits": [],
