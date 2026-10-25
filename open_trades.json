@@ -586,6 +586,28 @@
   "score": 4
  },
  {
+  "sym": "ADAUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.2044,
+   0.20530007411651827
+  ],
+  "tps": [
+   0.2021498147087043,
+   0.20034966647566774,
+   0.19764944412611288
+  ],
+  "sl": 0.20773027423111762,
+  "ts": 1792935836.5037668,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
