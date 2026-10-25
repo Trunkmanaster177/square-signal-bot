@@ -325,30 +325,9 @@
   "entered": true,
   "entry_ts": 1792940400.0,
   "hits": [
-   1792919400.0
+   1792919400.0,
+   1792971000.0
   ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "ZECUSDT",
-  "side": "LONG",
-  "zone": [
-   1218.82,
-   1209.7856008453527
-  ],
-  "tps": [
-   1241.405997886618,
-   1259.4747961959124,
-   1286.5779936598542
-  ],
-  "sl": 1185.392723127805,
-  "ts": 1792930155.3087368,
-  "entered": true,
-  "entry_ts": 1792930200.0,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -370,7 +349,9 @@
   "ts": 1792935836.5037668,
   "entered": true,
   "entry_ts": 1792935900.0,
-  "hits": [],
+  "hits": [
+   1792971000.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -414,7 +395,9 @@
   "ts": 1792946969.696914,
   "entered": true,
   "entry_ts": 1792947000.0,
-  "hits": [],
+  "hits": [
+   1792971000.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -465,28 +448,6 @@
   "score": 4
  },
  {
-  "sym": "BNBUSDT",
-  "side": "LONG",
-  "zone": [
-   743.1,
-   741.2188100540484
-  ],
-  "tps": [
-   747.8029748648792,
-   751.5653547567824,
-   757.2089245946374
-  ],
-  "sl": 736.1395971999789,
-  "ts": 1792954440.0138516,
-  "entered": true,
-  "entry_ts": 1792954500.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "NEARUSDT",
   "side": "SHORT",
   "zone": [
@@ -522,13 +483,35 @@
   ],
   "sl": 77.43603521893522,
   "ts": 1792968558.9848742,
+  "entered": true,
+  "entry_ts": 1792969200.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "ZECUSDT",
+  "side": "LONG",
+  "zone": [
+   1218.43,
+   1209.734711378336
+  ],
+  "tps": [
+   1240.1682215541605,
+   1257.5587987974886,
+   1283.644664662481
+  ],
+  "sl": 1186.2574320998428,
+  "ts": 1792971397.7749178,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
