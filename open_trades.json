@@ -16,7 +16,8 @@
   "entered": true,
   "entry_ts": 1792761300.0,
   "hits": [
-   1792764900.0
+   1792764900.0,
+   1792985700.0
   ],
   "closed": false,
   "outcome": null,
@@ -255,7 +256,8 @@
   "entered": true,
   "entry_ts": 1792899600.0,
   "hits": [
-   1792911600.0
+   1792911600.0,
+   1792978500.0
   ],
   "closed": false,
   "outcome": null,
@@ -278,7 +280,9 @@
   "ts": 1792913881.4432635,
   "entered": true,
   "entry_ts": 1792916700.0,
-  "hits": [],
+  "hits": [
+   1792979100.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -328,28 +332,6 @@
   "hits": [
    1792971000.0
   ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "ENAUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.1947,
-   0.19634252343687722
-  ],
-  "tps": [
-   0.19059369140780696,
-   0.18730864453405252,
-   0.18238107422342087
-  ],
-  "sl": 0.2007773367164457,
-  "ts": 1792940390.751575,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -441,7 +423,9 @@
   "ts": 1792965558.0425248,
   "entered": true,
   "entry_ts": 1792965600.0,
-  "hits": [],
+  "hits": [
+   1792978200.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -463,33 +447,14 @@
   "ts": 1792968558.9848742,
   "entered": true,
   "entry_ts": 1792969200.0,
-  "hits": [],
+  "hits": [
+   1792982100.0,
+   1792983000.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
   "score": 4
- },
- {
-  "sym": "ZECUSDT",
-  "side": "LONG",
-  "zone": [
-   1218.43,
-   1209.734711378336
-  ],
-  "tps": [
-   1240.1682215541605,
-   1257.5587987974886,
-   1283.644664662481
-  ],
-  "sl": 1186.2574320998428,
-  "ts": 1792971397.7749178,
-  "entered": true,
-  "entry_ts": 1792972500.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
  },
  {
   "sym": "SNDKBUSDT",
@@ -512,6 +477,28 @@
   "outcome": null,
   "dry": false,
   "score": 5
+ },
+ {
+  "sym": "SOXLBUSDT",
+  "side": "SHORT",
+  "zone": [
+   82.45,
+   83.05889169789697
+  ],
+  "tps": [
+   80.9277707552576,
+   79.7099873594637,
+   77.88331226577282
+  ],
+  "sl": 84.70289928221874,
+  "ts": 1792986072.466344,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 6
  },
  {
   "sym": "UUSDT",
