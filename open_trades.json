@@ -362,28 +362,6 @@
   "score": 5
  },
  {
-  "sym": "USD1USDT",
-  "side": "LONG",
-  "zone": [
-   1.00028,
-   1.0002223148215033
-  ],
-  "tps": [
-   1.000424212946242,
-   1.0005395833032358,
-   1.0007126388387262
-  ],
-  "sl": 1.0000665648395617,
-  "ts": 1793033453.6479843,
-  "entered": true,
-  "entry_ts": 1793046000.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "CRCLBUSDT",
   "side": "SHORT",
   "zone": [
@@ -463,8 +441,8 @@
   ],
   "sl": 80821.535143183,
   "ts": 1793045867.938074,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793049600.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -485,6 +463,28 @@
   ],
   "sl": 1.0012512106493137,
   "ts": 1793048368.4925306,
+  "entered": true,
+  "entry_ts": 1793048400.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "SPCXBUSDT",
+  "side": "SHORT",
+  "zone": [
+   147.61,
+   148.23231807122175
+  ],
+  "tps": [
+   146.05420482194563,
+   144.80956867950212,
+   142.94261446583687
+  ],
+  "sl": 149.91257686352048,
+  "ts": 1793050707.4795406,
   "entered": false,
   "entry_ts": null,
   "hits": [],
