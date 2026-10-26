@@ -1,0 +1,71 @@
+name: YouTube Live Signal
+
+on:
+  schedule:
+    - cron: "5 * * * *"      # hourly check; the script only goes live in today's random slot
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Go live now (ignore the random daily slot)"
+        required: false
+        default: "false"
+      minutes:
+        description: "Max stream length in minutes (use 5 for a test)"
+        required: false
+        default: "120"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-stream
+  cancel-in-progress: false
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check today's random slot
+        id: gate
+        env:
+          FORCE_START: ${{ github.event.inputs.force }}
+          START_WINDOW: "6-22"          # UTC hours the stream may start in
+        run: python3 live_stream.py --gate >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.go == 'true'
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg and packages
+        if: steps.gate.outputs.go == 'true'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -r requirements.txt
+
+      - name: Go live
+        if: steps.gate.outputs.go == 'true'
+        env:
+          YOUTUBE_STREAM_KEY: ${{ secrets.YOUTUBE_STREAM_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FORCE_START: ${{ github.event.inputs.force }}
+          STREAM_MINUTES: ${{ github.event.inputs.minutes || '120' }}
+          RANDOM_DELAY_MIN: "30"
+          END_ON_TP: "2"
+          BRAND_NAME: "Crypto Signals"
+          YT_LIVE_URL: ""               # optional: your channel's /live link for the Telegram announcement
+        run: python live_stream.py
+
+      - name: Save state
+        if: always() && steps.gate.outputs.go == 'true'
+        run: |
+          git config user.name "live-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git pull --rebase || true
+          git add live_state.json || true
+          git diff --cached --quiet || (git commit -m "update live state" && git push)
