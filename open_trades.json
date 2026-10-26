@@ -363,28 +363,6 @@
   "score": 4
  },
  {
-  "sym": "BTCUSDT",
-  "side": "SHORT",
-  "zone": [
-   80796.0,
-   80938.31559334154
-  ],
-  "tps": [
-   80440.21101664615,
-   80155.57982996307,
-   79728.63304993843
-  ],
-  "sl": 81322.5676953637,
-  "ts": 1792951557.2315724,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "NEARUSDT",
   "side": "SHORT",
   "zone": [
@@ -450,7 +428,8 @@
   "entered": true,
   "entry_ts": 1792990800.0,
   "hits": [
-   1792994400.0
+   1792994400.0,
+   1792982700.0
   ],
   "closed": false,
   "outcome": null,
@@ -471,6 +450,28 @@
   ],
   "sl": 0.08608313417449939,
   "ts": 1792994659.235023,
+  "entered": true,
+  "entry_ts": 1792995000.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "USD1USDT",
+  "side": "LONG",
+  "zone": [
+   1.00007,
+   1.0000435281031237
+  ],
+  "tps": [
+   1.0001361797421906,
+   1.000189123535943,
+   1.000268539226572
+  ],
+  "sl": 0.9999720539815579,
+  "ts": 1793001045.6722739,
   "entered": false,
   "entry_ts": null,
   "hits": [],
