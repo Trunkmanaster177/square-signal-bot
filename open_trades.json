@@ -1,29 +1,5 @@
 [
  {
-  "sym": "RLUSDUSDT",
-  "side": "LONG",
-  "zone": [
-   1.0012,
-   1.0011212978142083
-  ],
-  "tps": [
-   1.0013967554644791,
-   1.0015541598360627,
-   1.0017902663934377
-  ],
-  "sl": 1.0009088019125707,
-  "ts": 1792760941.3792422,
-  "entered": true,
-  "entry_ts": 1792761300.0,
-  "hits": [
-   1792764900.0,
-   1792985700.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "PAXGUSDT",
   "side": "SHORT",
   "zone": [
@@ -363,31 +339,6 @@
   "score": 4
  },
  {
-  "sym": "SNDKBUSDT",
-  "side": "SHORT",
-  "zone": [
-   1251.03,
-   1255.134497780023
-  ],
-  "tps": [
-   1240.7687555499426,
-   1232.5597599898967,
-   1220.246266649828
-  ],
-  "sl": 1266.216641786085,
-  "ts": 1792975858.9798281,
-  "entered": true,
-  "entry_ts": 1792990800.0,
-  "hits": [
-   1792994400.0,
-   1792982700.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "USD1USDT",
   "side": "LONG",
   "zone": [
@@ -404,7 +355,8 @@
   "entered": true,
   "entry_ts": 1793001300.0,
   "hits": [
-   1793013600.0
+   1793013600.0,
+   1793016000.0
   ],
   "closed": false,
   "outcome": null,
@@ -447,9 +399,11 @@
   ],
   "sl": 2368.991747190351,
   "ts": 1793010369.0625613,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
+  "entered": true,
+  "entry_ts": 1793015400.0,
+  "hits": [
+   1793021100.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -476,6 +430,28 @@
   "outcome": null,
   "dry": false,
   "score": 5
+ },
+ {
+  "sym": "RLUSDUSDT",
+  "side": "LONG",
+  "zone": [
+   1.0015,
+   1.0014223978262875
+  ],
+  "tps": [
+   1.0016940054342816,
+   1.0018492097817069,
+   1.0020820163028448
+  ],
+  "sl": 1.0012128719572633,
+  "ts": 1793021974.973501,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
  },
  {
   "sym": "UUSDT",
