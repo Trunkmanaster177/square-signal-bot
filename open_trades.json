@@ -92,30 +92,6 @@
   "dry": false
  },
  {
-  "sym": "UNIUSDT",
-  "side": "SHORT",
-  "zone": [
-   6.892,
-   6.946869132710345
-  ],
-  "tps": [
-   6.754827168224137,
-   6.645088902803447,
-   6.480481504672412
-  ],
-  "sl": 7.0950157910282785,
-  "ts": 1792804545.2760441,
-  "entered": true,
-  "entry_ts": 1792804800.0,
-  "hits": [
-   1792851300.0,
-   1792851300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false
- },
- {
   "sym": "BMTUSDT",
   "side": "LONG",
   "zone": [
@@ -387,31 +363,6 @@
   "score": 4
  },
  {
-  "sym": "HYPEUSDT",
-  "side": "SHORT",
-  "zone": [
-   76.41,
-   76.68730681592844
-  ],
-  "tps": [
-   75.71673296017892,
-   75.16211932832205,
-   74.33019888053674
-  ],
-  "sl": 77.43603521893522,
-  "ts": 1792968558.9848742,
-  "entered": true,
-  "entry_ts": 1792969200.0,
-  "hits": [
-   1792982100.0,
-   1792983000.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "SNDKBUSDT",
   "side": "SHORT",
   "zone": [
@@ -437,28 +388,6 @@
   "score": 5
  },
  {
-  "sym": "ERAUSDT",
-  "side": "LONG",
-  "zone": [
-   0.0964,
-   0.09361165788499984
-  ],
-  "tps": [
-   0.10337085528750042,
-   0.10894753951750076,
-   0.11731256586250127
-  ],
-  "sl": 0.08608313417449939,
-  "ts": 1792994659.235023,
-  "entered": true,
-  "entry_ts": 1792995000.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "USD1USDT",
   "side": "LONG",
   "zone": [
@@ -472,13 +401,35 @@
   ],
   "sl": 0.9999720539815579,
   "ts": 1793001045.6722739,
+  "entered": true,
+  "entry_ts": 1793001300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "ENAUSDT",
+  "side": "LONG",
+  "zone": [
+   0.2095,
+   0.20718005376462595
+  ],
+  "tps": [
+   0.21529986558843506,
+   0.21993975805918314,
+   0.22689959676530524
+  ],
+  "sl": 0.20091619892911605,
+  "ts": 1793006074.3666463,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
