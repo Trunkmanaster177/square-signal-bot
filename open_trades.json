@@ -339,31 +339,6 @@
   "score": 4
  },
  {
-  "sym": "USD1USDT",
-  "side": "LONG",
-  "zone": [
-   1.00007,
-   1.0000435281031237
-  ],
-  "tps": [
-   1.0001361797421906,
-   1.000189123535943,
-   1.000268539226572
-  ],
-  "sl": 0.9999720539815579,
-  "ts": 1793001045.6722739,
-  "entered": true,
-  "entry_ts": 1793001300.0,
-  "hits": [
-   1793013600.0,
-   1793016000.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "ENAUSDT",
   "side": "LONG",
   "zone": [
@@ -402,7 +377,8 @@
   "entered": true,
   "entry_ts": 1793015400.0,
   "hits": [
-   1793021100.0
+   1793021100.0,
+   1793022900.0
   ],
   "closed": false,
   "outcome": null,
@@ -445,13 +421,37 @@
   ],
   "sl": 1.0012128719572633,
   "ts": 1793021974.973501,
+  "entered": true,
+  "entry_ts": 1793022000.0,
+  "hits": [
+   1793022300.0
+  ],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "BTCUSDT",
+  "side": "SHORT",
+  "zone": [
+   79702.63,
+   79903.85241853457
+  ],
+  "tps": [
+   79199.5739536636,
+   78797.12911659446,
+   78193.46186099076
+  ],
+  "sl": 80447.1529485779,
+  "ts": 1793026499.7119532,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
