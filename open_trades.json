@@ -403,7 +403,9 @@
   "ts": 1793001045.6722739,
   "entered": true,
   "entry_ts": 1793001300.0,
-  "hits": [],
+  "hits": [
+   1793013600.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -452,6 +454,28 @@
   "outcome": null,
   "dry": false,
   "score": 4
+ },
+ {
+  "sym": "SOXLBUSDT",
+  "side": "SHORT",
+  "zone": [
+   83.51,
+   84.22278878715687
+  ],
+  "tps": [
+   81.72802803210784,
+   80.30245045779412,
+   78.16408409632352
+  ],
+  "sl": 86.14731851248041,
+  "ts": 1793014387.058424,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
  },
  {
   "sym": "UUSDT",
