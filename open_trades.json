@@ -377,8 +377,8 @@
   ],
   "sl": 80447.1529485779,
   "ts": 1793026499.7119532,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793032200.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -399,13 +399,35 @@
   ],
   "sl": 736.1163002836839,
   "ts": 1793030930.6377208,
+  "entered": true,
+  "entry_ts": 1793031000.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "USD1USDT",
+  "side": "LONG",
+  "zone": [
+   1.00028,
+   1.0002223148215033
+  ],
+  "tps": [
+   1.000424212946242,
+   1.0005395833032358,
+   1.0007126388387262
+  ],
+  "sl": 1.0000665648395617,
+  "ts": 1793033453.6479843,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
