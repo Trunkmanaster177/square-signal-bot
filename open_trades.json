@@ -214,7 +214,8 @@
   "entered": true,
   "entry_ts": 1792965600.0,
   "hits": [
-   1792978200.0
+   1792978200.0,
+   1793070600.0
   ],
   "closed": false,
   "outcome": null,
@@ -487,6 +488,28 @@
   "outcome": null,
   "dry": false,
   "score": 4
+ },
+ {
+  "sym": "PUMPUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.004163,
+   0.004199444829487264
+  ],
+  "tps": [
+   0.00407188792628184,
+   0.003998998267307313,
+   0.0038896637788455204
+  ],
+  "sl": 0.004297845869102876,
+  "ts": 1793073897.0635965,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
  },
  {
   "sym": "UUSDT",
