@@ -297,28 +297,6 @@
   "score": 4
  },
  {
-  "sym": "TRXUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.3282,
-   0.32845966703893686
-  ],
-  "tps": [
-   0.32755083240265787,
-   0.3270314983247841,
-   0.32625249720797356
-  ],
-  "sl": 0.32916076804406635,
-  "ts": 1793114668.577766,
-  "entered": true,
-  "entry_ts": 1793114700.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "BNBUSDT",
   "side": "LONG",
   "zone": [
@@ -376,13 +354,35 @@
   ],
   "sl": 4.343838821609539e-06,
   "ts": 1793124993.4332495,
+  "entered": true,
+  "entry_ts": 1793125200.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "HYPEUSDT",
+  "side": "LONG",
+  "zone": [
+   81.51,
+   81.09830710647572
+  ],
+  "tps": [
+   82.53923223381071,
+   83.36261802085929,
+   84.59769670143214
+  ],
+  "sl": 79.98673629396013,
+  "ts": 1793127628.0083444,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
