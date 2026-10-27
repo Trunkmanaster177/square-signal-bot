@@ -247,31 +247,6 @@
   "score": 4
  },
  {
-  "sym": "ZECUSDT",
-  "side": "LONG",
-  "zone": [
-   1226.66,
-   1215.661850470265
-  ],
-  "tps": [
-   1254.1553738243379,
-   1276.151672883808,
-   1309.1461214730132
-  ],
-  "sl": 1185.9668467399804,
-  "ts": 1793043363.6080084,
-  "entered": true,
-  "entry_ts": 1793044800.0,
-  "hits": [
-   1793097900.0,
-   1793104800.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "BTCUSDT",
   "side": "SHORT",
   "zone": [
@@ -381,7 +356,8 @@
   "entered": true,
   "entry_ts": 1793109900.0,
   "hits": [
-   1793114400.0
+   1793114400.0,
+   1793117700.0
   ],
   "closed": false,
   "outcome": null,
@@ -431,6 +407,28 @@
   "outcome": null,
   "dry": false,
   "score": 4
+ },
+ {
+  "sym": "SOXLBUSDT",
+  "side": "LONG",
+  "zone": [
+   99.84,
+   98.73380101302385
+  ],
+  "tps": [
+   102.60549746744037,
+   104.81789544139268,
+   108.13649240232112
+  ],
+  "sl": 95.74706374818825,
+  "ts": 1793119566.7352448,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
  },
  {
   "sym": "UUSDT",
