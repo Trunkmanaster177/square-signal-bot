@@ -239,7 +239,9 @@
   "ts": 1793035816.3098927,
   "entered": true,
   "entry_ts": 1793036100.0,
-  "hits": [],
+  "hits": [
+   1793095800.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -285,7 +287,9 @@
   "ts": 1793043363.6080084,
   "entered": true,
   "entry_ts": 1793044800.0,
-  "hits": [],
+  "hits": [
+   1793097900.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -462,6 +466,28 @@
   ],
   "sl": 4.388848697018395e-06,
   "ts": 1793095273.7801018,
+  "entered": true,
+  "entry_ts": 1793095500.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "AAVEUSDT",
+  "side": "SHORT",
+  "zone": [
+   130.33,
+   131.04308647801818
+  ],
+  "tps": [
+   128.5472838049546,
+   127.12111084891824,
+   124.98185141486373
+  ],
+  "sl": 132.96841996866723,
+  "ts": 1793098777.412206,
   "entered": false,
   "entry_ts": null,
   "hits": [],
