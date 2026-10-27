@@ -1,30 +1,5 @@
 [
  {
-  "sym": "LINKUSDT",
-  "side": "SHORT",
-  "zone": [
-   11.524,
-   11.578536363819607
-  ],
-  "tps": [
-   11.387659090450981,
-   11.278586362811765,
-   11.114977271352943
-  ],
-  "sl": 11.725784546132546,
-  "ts": 1792881869.0223906,
-  "entered": true,
-  "entry_ts": 1792881900.0,
-  "hits": [
-   1792910400.0,
-   1792919700.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "WLDUSDT",
   "side": "SHORT",
   "zone": [
@@ -210,8 +185,8 @@
   ],
   "sl": 737.6804978745861,
   "ts": 1793116587.2480175,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793140500.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -256,7 +231,9 @@
   "ts": 1793124993.4332495,
   "entered": true,
   "entry_ts": 1793125200.0,
-  "hits": [],
+  "hits": [
+   1793141400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -320,8 +297,8 @@
   ],
   "sl": 135.53403463779208,
   "ts": 1793139813.2364976,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793139900.0,
   "hits": [],
   "closed": false,
   "outcome": null,
