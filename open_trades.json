@@ -187,7 +187,10 @@
   "ts": 1793116587.2480175,
   "entered": true,
   "entry_ts": 1793140500.0,
-  "hits": [],
+  "hits": [
+   1793116800.0,
+   1793121600.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -299,6 +302,28 @@
   "ts": 1793139813.2364976,
   "entered": true,
   "entry_ts": 1793139900.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "XRPUSDT",
+  "side": "LONG",
+  "zone": [
+   1.3313,
+   1.3265327194332939
+  ],
+  "tps": [
+   1.3432182014167648,
+   1.3527527625501767,
+   1.3670546042502947
+  ],
+  "sl": 1.3136610619031879,
+  "ts": 1793145751.0110426,
+  "entered": false,
+  "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
