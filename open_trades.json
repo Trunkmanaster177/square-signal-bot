@@ -212,30 +212,8 @@
   "ts": 1793119566.7352448,
   "entered": true,
   "entry_ts": 1793119800.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
-  "sym": "PEPEUSDT",
-  "side": "LONG",
-  "zone": [
-   4.48e-06,
-   4.443199681516092e-06
-  ],
-  "tps": [
-   4.5720007962097715e-06,
-   4.6456014331775886e-06,
-   4.756002388629314e-06
-  ],
-  "sl": 4.343838821609539e-06,
-  "ts": 1793124993.4332495,
-  "entered": true,
-  "entry_ts": 1793125200.0,
   "hits": [
-   1793141400.0
+   1793151600.0
   ],
   "closed": false,
   "outcome": null,
@@ -324,6 +302,28 @@
   "ts": 1793145751.0110426,
   "entered": true,
   "entry_ts": 1793145900.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "ZECUSDT",
+  "side": "LONG",
+  "zone": [
+   1300.6,
+   1291.4601680478984
+  ],
+  "tps": [
+   1323.449579880254,
+   1341.7292437844571,
+   1369.148739640762
+  ],
+  "sl": 1266.7826217772242,
+  "ts": 1793152518.2403395,
+  "entered": false,
+  "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
