@@ -170,30 +170,6 @@
   "score": 4
  },
  {
-  "sym": "XRPUSDT",
-  "side": "LONG",
-  "zone": [
-   1.3313,
-   1.3265327194332939
-  ],
-  "tps": [
-   1.3432182014167648,
-   1.3527527625501767,
-   1.3670546042502947
-  ],
-  "sl": 1.3136610619031879,
-  "ts": 1793145751.0110426,
-  "entered": true,
-  "entry_ts": 1793145900.0,
-  "hits": [
-   1793153700.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "ZECUSDT",
   "side": "LONG",
   "zone": [
@@ -207,8 +183,8 @@
   ],
   "sl": 1266.7826217772242,
   "ts": 1793152518.2403395,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793187600.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -229,6 +205,30 @@
   ],
   "sl": 0.02449282486771835,
   "ts": 1793176638.0886676,
+  "entered": true,
+  "entry_ts": 1793187900.0,
+  "hits": [
+   1793193600.0
+  ],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "SUIUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.9248,
+   0.9289197127627904
+  ],
+  "tps": [
+   0.914500718093024,
+   0.9062612925674433,
+   0.893902154279072
+  ],
+  "sl": 0.9400429372223246,
+  "ts": 1793194681.4984715,
   "entered": false,
   "entry_ts": null,
   "hits": [],
@@ -236,72 +236,6 @@
   "outcome": null,
   "dry": false,
   "score": 4
- },
- {
-  "sym": "SPCXBUSDT",
-  "side": "LONG",
-  "zone": [
-   149.96,
-   149.64298457152753
-  ],
-  "tps": [
-   150.75253857118122,
-   151.38656942812617,
-   152.3376157135436
-  ],
-  "sl": 148.78704291465183,
-  "ts": 1793181337.7349386,
-  "entered": true,
-  "entry_ts": 1793181600.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "UNIUSDT",
-  "side": "LONG",
-  "zone": [
-   7.204,
-   7.166753121757712
-  ],
-  "tps": [
-   7.297117195605719,
-   7.371610952090295,
-   7.483351586817158
-  ],
-  "sl": 7.066186550503535,
-  "ts": 1793184434.3431401,
-  "entered": true,
-  "entry_ts": 1793184600.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "BNBUSDT",
-  "side": "LONG",
-  "zone": [
-   760.3,
-   758.4440397373149
-  ],
-  "tps": [
-   764.9399006567123,
-   768.6518211820822,
-   774.2197019701371
-  ],
-  "sl": 753.4329470280655,
-  "ts": 1793187532.6220047,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
  },
  {
   "sym": "UUSDT",
