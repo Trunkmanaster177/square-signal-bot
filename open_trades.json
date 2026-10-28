@@ -123,31 +123,6 @@
   "score": 4
  },
  {
-  "sym": "BNBUSDT",
-  "side": "LONG",
-  "zone": [
-   744.5,
-   742.6568913174557
-  ],
-  "tps": [
-   749.1077717063606,
-   752.7939890714492,
-   758.3233151190822
-  ],
-  "sl": 737.6804978745861,
-  "ts": 1793116587.2480175,
-  "entered": true,
-  "entry_ts": 1793140500.0,
-  "hits": [
-   1793116800.0,
-   1793121600.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "SOXLBUSDT",
   "side": "LONG",
   "zone": [
@@ -298,13 +273,35 @@
   ],
   "sl": 7.066186550503535,
   "ts": 1793184434.3431401,
+  "entered": true,
+  "entry_ts": 1793184600.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "BNBUSDT",
+  "side": "LONG",
+  "zone": [
+   760.3,
+   758.4440397373149
+  ],
+  "tps": [
+   764.9399006567123,
+   768.6518211820822,
+   774.2197019701371
+  ],
+  "sl": 753.4329470280655,
+  "ts": 1793187532.6220047,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
