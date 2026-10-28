@@ -1,29 +1,5 @@
 [
  {
-  "sym": "GTCUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.25164,
-   0.2582625331599902
-  ],
-  "tps": [
-   0.23508366710002448,
-   0.22183860078004408,
-   0.20197100130007348
-  ],
-  "sl": 0.27614337269196376,
-  "ts": 1792948514.169485,
-  "entered": true,
-  "entry_ts": 1792948800.0,
-  "hits": [
-   1792974000.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "USD1USDT",
   "side": "LONG",
   "zone": [
@@ -93,28 +69,6 @@
    1793193600.0,
    1793182800.0
   ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "SUIUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.9248,
-   0.9289197127627904
-  ],
-  "tps": [
-   0.914500718093024,
-   0.9062612925674433,
-   0.893902154279072
-  ],
-  "sl": 0.9400429372223246,
-  "ts": 1793194681.4984715,
-  "entered": true,
-  "entry_ts": 1793194800.0,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -204,13 +158,35 @@
   ],
   "sl": 0.4372319382083921,
   "ts": 1793207634.4890554,
+  "entered": true,
+  "entry_ts": 1793209200.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 6
+ },
+ {
+  "sym": "UUSDT",
+  "side": "SHORT",
+  "zone": [
+   1.0001,
+   1.0001813693346562
+  ],
+  "tps": [
+   0.9998965766633595,
+   0.9997338379940471,
+   0.9994897299900785
+  ],
+  "sl": 1.0004010665382281,
+  "ts": 1793212221.496069,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 6
+  "score": 5
  },
  {
   "sym": "UUSDT",
