@@ -1,30 +1,5 @@
 [
  {
-  "sym": "SKHYBUSDT",
-  "side": "LONG",
-  "zone": [
-   161.31,
-   160.31010997004392
-  ],
-  "tps": [
-   163.8097250748902,
-   165.80950513480235,
-   168.80917522467055
-  ],
-  "sl": 157.61040688916253,
-  "ts": 1793199339.708434,
-  "entered": true,
-  "entry_ts": 1793199600.0,
-  "hits": [
-   1793202900.0,
-   1793212800.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "INITUSDT",
   "side": "LONG",
   "zone": [
@@ -48,30 +23,6 @@
   "outcome": null,
   "dry": false,
   "score": 4
- },
- {
-  "sym": "SOXLBUSDT",
-  "side": "LONG",
-  "zone": [
-   100.04,
-   98.77105653758889
-  ],
-  "tps": [
-   103.21235865602779,
-   105.75024558085002,
-   109.55707596808335
-  ],
-  "sl": 95.34490918907889,
-  "ts": 1793257206.910386,
-  "entered": true,
-  "entry_ts": 1793257500.0,
-  "hits": [
-   1793286300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
  },
  {
   "sym": "HYPEUSDT",
@@ -118,31 +69,6 @@
   "score": 4
  },
  {
-  "sym": "ENAUSDT",
-  "side": "LONG",
-  "zone": [
-   0.2055,
-   0.20332928592690852
-  ],
-  "tps": [
-   0.21092678518272862,
-   0.21526821332891155,
-   0.22178035554818593
-  ],
-  "sl": 0.19746835792956155,
-  "ts": 1793281637.2989142,
-  "entered": true,
-  "entry_ts": 1793281800.0,
-  "hits": [
-   1793284500.0,
-   1793289600.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "GOOGLBUSDT",
   "side": "SHORT",
   "zone": [
@@ -158,7 +84,9 @@
   "ts": 1793285997.0302155,
   "entered": true,
   "entry_ts": 1793286000.0,
-  "hits": [],
+  "hits": [
+   1793306700.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -212,28 +140,6 @@
   "score": 5
  },
  {
-  "sym": "ETHUSDT",
-  "side": "SHORT",
-  "zone": [
-   2331.47,
-   2340.666875554134
-  ],
-  "tps": [
-   2308.477811114664,
-   2290.084060006395,
-   2262.493433343992
-  ],
-  "sl": 2365.4984395502966,
-  "ts": 1793301343.3319492,
-  "entered": true,
-  "entry_ts": 1793301600.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "SOLUSDT",
   "side": "SHORT",
   "zone": [
@@ -254,6 +160,28 @@
   "outcome": null,
   "dry": false,
   "score": 4
+ },
+ {
+  "sym": "ADAUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.1906,
+   0.19228218489752613
+  ],
+  "tps": [
+   0.18639453775618467,
+   0.1830301679611324,
+   0.177983613268554
+  ],
+  "sl": 0.1968240841208467,
+  "ts": 1793307667.1265967,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
  },
  {
   "sym": "UUSDT",
