@@ -66,36 +66,13 @@
   "entered": true,
   "entry_ts": 1793203500.0,
   "hits": [
-   1793204700.0
+   1793204700.0,
+   1793271300.0
   ],
   "closed": false,
   "outcome": null,
   "dry": false,
   "score": 4
- },
- {
-  "sym": "UUSDT",
-  "side": "SHORT",
-  "zone": [
-   1.0001,
-   1.0001813693346562
-  ],
-  "tps": [
-   0.9998965766633595,
-   0.9997338379940471,
-   0.9994897299900785
-  ],
-  "sl": 1.0004010665382281,
-  "ts": 1793212221.496069,
-  "entered": true,
-  "entry_ts": 1793212500.0,
-  "hits": [
-   1793238300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
  },
  {
   "sym": "SUIUSDT",
@@ -188,6 +165,28 @@
   "outcome": null,
   "dry": false,
   "score": 4
+ },
+ {
+  "sym": "HYPEUSDT",
+  "side": "LONG",
+  "zone": [
+   85.5,
+   84.9271520495628
+  ],
+  "tps": [
+   86.932119876093,
+   88.07781577696738,
+   89.79635962827898
+  ],
+  "sl": 83.38046258338238,
+  "ts": 1793271828.5264077,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
  },
  {
   "sym": "UUSDT",
