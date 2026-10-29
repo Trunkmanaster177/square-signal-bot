@@ -120,28 +120,6 @@
   "score": 5
  },
  {
-  "sym": "XAUTUSDT",
-  "side": "SHORT",
-  "zone": [
-   4030.67,
-   4037.721593286623
-  ],
-  "tps": [
-   4013.0410167834434,
-   3998.937830210198,
-   3977.78305035033
-  ],
-  "sl": 4056.760895160504,
-  "ts": 1793236581.5967665,
-  "entered": true,
-  "entry_ts": 1793241000.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "SUIUSDT",
   "side": "SHORT",
   "zone": [
@@ -179,13 +157,37 @@
   ],
   "sl": 4.570469592199229,
   "ts": 1793249276.5616202,
+  "entered": true,
+  "entry_ts": 1793249400.0,
+  "hits": [
+   1793256300.0
+  ],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "SOXLBUSDT",
+  "side": "LONG",
+  "zone": [
+   100.04,
+   98.77105653758889
+  ],
+  "tps": [
+   103.21235865602779,
+   105.75024558085002,
+   109.55707596808335
+  ],
+  "sl": 95.34490918907889,
+  "ts": 1793257206.910386,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
