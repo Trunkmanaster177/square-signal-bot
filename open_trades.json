@@ -277,6 +277,28 @@
   "score": 4
  },
  {
+  "sym": "DOGEUSDT",
+  "side": "LONG",
+  "zone": [
+   0.07977,
+   0.07946747302064538
+  ],
+  "tps": [
+   0.08052631744838651,
+   0.08113137140709573,
+   0.08203895234515954
+  ],
+  "sl": 0.07865065017638796,
+  "ts": 1793233569.510766,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
