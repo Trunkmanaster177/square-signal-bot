@@ -187,28 +187,6 @@
   "score": 5
  },
  {
-  "sym": "UNIUSDT",
-  "side": "LONG",
-  "zone": [
-   7.398,
-   7.342564279390094
-  ],
-  "tps": [
-   7.536589301524765,
-   7.6474607427445775,
-   7.813767904574297
-  ],
-  "sl": 7.192887833743346,
-  "ts": 1793293175.510562,
-  "entered": true,
-  "entry_ts": 1793293200.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "XRPUSDT",
   "side": "SHORT",
   "zone": [
@@ -222,6 +200,28 @@
   ],
   "sl": 1.319253890569034,
   "ts": 1793294968.528828,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "PARTIUSDT",
+  "side": "LONG",
+  "zone": [
+   0.0569,
+   0.05537377204431615
+  ],
+  "tps": [
+   0.06071556988920962,
+   0.0637680258005773,
+   0.06834670966762885
+  ],
+  "sl": 0.05125295656396977,
+  "ts": 1793299179.2399716,
   "entered": false,
   "entry_ts": null,
   "hits": [],
