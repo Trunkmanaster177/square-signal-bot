@@ -62,7 +62,9 @@
   "ts": 1793274307.0788875,
   "entered": true,
   "entry_ts": 1793274600.0,
-  "hits": [],
+  "hits": [
+   1793307600.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -175,6 +177,28 @@
   ],
   "sl": 0.1968240841208467,
   "ts": 1793307667.1265967,
+  "entered": true,
+  "entry_ts": 1793307900.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "WLDUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.3888,
+   0.39405533381958957
+  ],
+  "tps": [
+   0.375661665451026,
+   0.3651509978118468,
+   0.34938499635307796
+  ],
+  "sl": 0.40824473513248155,
+  "ts": 1793310418.7236655,
   "entered": false,
   "entry_ts": null,
   "hits": [],
