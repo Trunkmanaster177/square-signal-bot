@@ -254,6 +254,28 @@
   "score": 5
  },
  {
+  "sym": "ETHUSDT",
+  "side": "SHORT",
+  "zone": [
+   2233.58,
+   2246.6131567465977
+  ],
+  "tps": [
+   2200.997108133505,
+   2174.930794640309,
+   2135.831324400515
+  ],
+  "sl": 2281.8026799624126,
+  "ts": 1793379883.2528796,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
