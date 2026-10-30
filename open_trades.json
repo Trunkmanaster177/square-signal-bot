@@ -246,8 +246,8 @@
   ],
   "sl": 11.417883498403295,
   "ts": 1793378703.0257444,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793384400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -290,6 +290,28 @@
   ],
   "sl": 1182.4554644495245,
   "ts": 1793383996.310383,
+  "entered": true,
+  "entry_ts": 1793384100.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "CRCLBUSDT",
+  "side": "SHORT",
+  "zone": [
+   71.63,
+   72.2081373952413
+  ],
+  "tps": [
+   70.18465651189675,
+   69.02838172141414,
+   67.29396953569024
+  ],
+  "sl": 73.76910836239281,
+  "ts": 1793386478.0230095,
   "entered": false,
   "entry_ts": null,
   "hits": [],
