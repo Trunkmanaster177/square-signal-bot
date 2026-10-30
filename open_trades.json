@@ -143,6 +143,28 @@
   "score": 4
  },
  {
+  "sym": "BTCUSDT",
+  "side": "SHORT",
+  "zone": [
+   77700.0,
+   78034.97703327483
+  ],
+  "tps": [
+   76862.55741681294,
+   76192.60335026328,
+   75187.67225043879
+  ],
+  "sl": 78939.41502311686,
+  "ts": 1793355556.3023586,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
