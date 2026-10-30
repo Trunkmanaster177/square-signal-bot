@@ -96,28 +96,6 @@
   "score": 4
  },
  {
-  "sym": "BNBUSDT",
-  "side": "SHORT",
-  "zone": [
-   708.09,
-   713.2055803229995
-  ],
-  "tps": [
-   695.3010491925014,
-   685.0698885465025,
-   669.723147577504
-  ],
-  "sl": 727.017647195098,
-  "ts": 1793349705.3727283,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "BTCUSDT",
   "side": "SHORT",
   "zone": [
@@ -356,6 +334,28 @@
   ],
   "sl": 97.1115874770923,
   "ts": 1793392778.8328824,
+  "entered": true,
+  "entry_ts": 1793392800.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "XRPUSDT",
+  "side": "SHORT",
+  "zone": [
+   1.2508,
+   1.2580074792817846
+  ],
+  "tps": [
+   1.232781301795538,
+   1.2183663432319685,
+   1.1967439053866142
+  ],
+  "sl": 1.2774676733426034,
+  "ts": 1793395703.6350386,
   "entered": false,
   "entry_ts": null,
   "hits": [],
