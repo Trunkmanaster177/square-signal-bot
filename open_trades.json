@@ -74,31 +74,6 @@
   "score": 5
  },
  {
-  "sym": "WLDUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.3888,
-   0.39405533381958957
-  ],
-  "tps": [
-   0.375661665451026,
-   0.3651509978118468,
-   0.34938499635307796
-  ],
-  "sl": 0.40824473513248155,
-  "ts": 1793310418.7236655,
-  "entered": true,
-  "entry_ts": 1793310600.0,
-  "hits": [
-   1793319000.0,
-   1793319300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "NEARUSDT",
   "side": "SHORT",
   "zone": [
@@ -178,13 +153,35 @@
   ],
   "sl": 7.106474698898313,
   "ts": 1793357976.7197232,
+  "entered": true,
+  "entry_ts": 1793358000.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "EURUSDT",
+  "side": "LONG",
+  "zone": [
+   1.1395,
+   1.1320338659373181
+  ],
+  "tps": [
+   1.1581653351567043,
+   1.1730976032820677,
+   1.195496005470113
+  ],
+  "sl": 1.1118753039680775,
+  "ts": 1793360296.3504934,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
