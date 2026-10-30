@@ -133,7 +133,9 @@
   "ts": 1793355556.3023586,
   "entered": true,
   "entry_ts": 1793356500.0,
-  "hits": [],
+  "hits": [
+   1793367900.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -197,13 +199,35 @@
   ],
   "sl": 0.4239340632002687,
   "ts": 1793367653.605495,
+  "entered": true,
+  "entry_ts": 1793371200.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "XAUTUSDT",
+  "side": "SHORT",
+  "zone": [
+   3919.24,
+   3927.7033618173537
+  ],
+  "tps": [
+   3898.0815954566156,
+   3881.154871821908,
+   3855.7647863698467
+  ],
+  "sl": 3950.554438724209,
+  "ts": 1793371996.1967585,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
