@@ -181,8 +181,8 @@
   ],
   "sl": 11.136944789710551,
   "ts": 1793316595.4813473,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793329200.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -247,13 +247,35 @@
   ],
   "sl": 2251.895488147591,
   "ts": 1793326573.3165793,
+  "entered": true,
+  "entry_ts": 1793326800.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "TRXUSDT",
+  "side": "LONG",
+  "zone": [
+   0.3478,
+   0.3443272161366394
+  ],
+  "tps": [
+   0.3564819596584014,
+   0.3634275273851225,
+   0.3738458789752042
+  ],
+  "sl": 0.3349506997055659,
+  "ts": 1793335590.5062304,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
