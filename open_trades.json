@@ -513,13 +513,35 @@
   ],
   "sl": 1253.595032298738,
   "ts": 1793456524.1899903,
+  "entered": true,
+  "entry_ts": 1793456700.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "LSKUSDT",
+  "side": "LONG",
+  "zone": [
+   0.3019,
+   0.29163597704650973
+  ],
+  "tps": [
+   0.3275600573837257,
+   0.3480881032907063,
+   0.3788801721511771
+  ],
+  "sl": 0.263923115072086,
+  "ts": 1793460024.5322754,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
