@@ -447,7 +447,8 @@
   "entered": true,
   "entry_ts": 1793443800.0,
   "hits": [
-   1793461200.0
+   1793461200.0,
+   1793467800.0
   ],
   "closed": false,
   "outcome": null,
@@ -556,8 +557,8 @@
   ],
   "sl": 138.42494288588574,
   "ts": 1793467327.9389474,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793467500.0,
   "hits": [],
   "closed": false,
   "outcome": null,
