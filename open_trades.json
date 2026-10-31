@@ -132,7 +132,9 @@
   "ts": 1793367653.605495,
   "entered": true,
   "entry_ts": 1793371200.0,
-  "hits": [],
+  "hits": [
+   1793421300.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -355,7 +357,9 @@
   "ts": 1793405160.4500036,
   "entered": true,
   "entry_ts": 1793405400.0,
-  "hits": [],
+  "hits": [
+   1793424600.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -419,6 +423,28 @@
   ],
   "sl": 0.20119835429028188,
   "ts": 1793421061.8657439,
+  "entered": true,
+  "entry_ts": 1793426400.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "BEAMXUSDT",
+  "side": "LONG",
+  "zone": [
+   0.004746,
+   0.004587665401208845
+  ],
+  "tps": [
+   0.005141836496977889,
+   0.0054585056945602,
+   0.005933509490933667
+  ],
+  "sl": 0.004160161984472725,
+  "ts": 1793429827.4108305,
   "entered": false,
   "entry_ts": null,
   "hits": [],
