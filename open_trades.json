@@ -1,30 +1,5 @@
 [
  {
-  "sym": "INITUSDT",
-  "side": "LONG",
-  "zone": [
-   0.19492,
-   0.18709002526916096
-  ],
-  "tps": [
-   0.21449493682709758,
-   0.23015488628877565,
-   0.2536448104812927
-  ],
-  "sl": 0.16594909349589557,
-  "ts": 1793203393.9897685,
-  "entered": true,
-  "entry_ts": 1793203500.0,
-  "hits": [
-   1793204700.0,
-   1793271300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "GOOGLBUSDT",
   "side": "SHORT",
   "zone": [
@@ -559,8 +534,8 @@
   ],
   "sl": 8.652751082482249,
   "ts": 1793461730.7847695,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793462400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
