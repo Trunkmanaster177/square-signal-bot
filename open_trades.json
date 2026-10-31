@@ -471,7 +471,9 @@
   "ts": 1793440333.1068285,
   "entered": true,
   "entry_ts": 1793443800.0,
-  "hits": [],
+  "hits": [
+   1793461200.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -535,13 +537,35 @@
   ],
   "sl": 0.263923115072086,
   "ts": 1793460024.5322754,
+  "entered": true,
+  "entry_ts": 1793460300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "AVAXUSDT",
+  "side": "SHORT",
+  "zone": [
+   8.504,
+   8.544202995265472
+  ],
+  "tps": [
+   8.403492511836316,
+   8.32308652130537,
+   8.202477535508951
+  ],
+  "sl": 8.652751082482249,
+  "ts": 1793461730.7847695,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
