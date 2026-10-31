@@ -381,7 +381,9 @@
   "ts": 1793408749.209482,
   "entered": true,
   "entry_ts": 1793409000.0,
-  "hits": [],
+  "hits": [
+   1793431800.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -445,6 +447,28 @@
   ],
   "sl": 0.004160161984472725,
   "ts": 1793429827.4108305,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "PEPEUSDT",
+  "side": "LONG",
+  "zone": [
+   5.07e-06,
+   4.989343123420034e-06
+  ],
+  "tps": [
+   5.271642191449914e-06,
+   5.432955944609846e-06,
+   5.674926574349743e-06
+  ],
+  "sl": 4.7715695566541266e-06,
+  "ts": 1793435322.9169853,
   "entered": false,
   "entry_ts": null,
   "hits": [],
