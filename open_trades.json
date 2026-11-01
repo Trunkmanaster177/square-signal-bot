@@ -491,13 +491,35 @@
   ],
   "sl": 0.005287172017766278,
   "ts": 1793518033.682062,
+  "entered": true,
+  "entry_ts": 1793520300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "UNIUSDT",
+  "side": "LONG",
+  "zone": [
+   7.31,
+   7.268516996131827
+  ],
+  "tps": [
+   7.413707509670432,
+   7.496673517406777,
+   7.621122529011296
+  ],
+  "sl": 7.15651288568776,
+  "ts": 1793524717.0541718,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
