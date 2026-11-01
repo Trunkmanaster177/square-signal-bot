@@ -477,28 +477,6 @@
   "score": 4
  },
  {
-  "sym": "TRXUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.305,
-   0.30696776553329724
-  ],
-  "tps": [
-   0.3000805861667568,
-   0.2961450551001623,
-   0.2902417585002705
-  ],
-  "sl": 0.3122807324731999,
-  "ts": 1793486512.2624648,
-  "entered": true,
-  "entry_ts": 1793491500.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "XPLUSDT",
   "side": "LONG",
   "zone": [
@@ -534,8 +512,8 @@
   ],
   "sl": 0.20803904220055697,
   "ts": 1793492853.1313274,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793493300.0,
   "hits": [],
   "closed": false,
   "outcome": null,
