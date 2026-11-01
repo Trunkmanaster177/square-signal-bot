@@ -535,13 +535,35 @@
   ],
   "sl": 4.422087447428615,
   "ts": 1793548981.487805,
+  "entered": true,
+  "entry_ts": 1793549100.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "CELOUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.07462,
+   0.07512788805489644
+  ],
+  "tps": [
+   0.07335027986275891,
+   0.07233450375296603,
+   0.07081083958827672
+  ],
+  "sl": 0.07649918580311682,
+  "ts": 1793551912.7112372,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
