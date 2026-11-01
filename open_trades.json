@@ -1,29 +1,5 @@
 [
  {
-  "sym": "GOOGLBUSDT",
-  "side": "SHORT",
-  "zone": [
-   285.0,
-   286.7327734942635
-  ],
-  "tps": [
-   280.66806626434135,
-   277.20251927581444,
-   272.0041987930241
-  ],
-  "sl": 291.4112619287748,
-  "ts": 1793285997.0302155,
-  "entered": true,
-  "entry_ts": 1793286000.0,
-  "hits": [
-   1793306700.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "BTCUSDT",
   "side": "SHORT",
   "zone": [
@@ -434,28 +410,6 @@
   "score": 4
  },
  {
-  "sym": "LSKUSDT",
-  "side": "LONG",
-  "zone": [
-   0.2452,
-   0.23515649789204243
-  ],
-  "tps": [
-   0.27030875526989395,
-   0.2903957594858091,
-   0.3205262658096818
-  ],
-  "sl": 0.20803904220055697,
-  "ts": 1793492853.1313274,
-  "entered": true,
-  "entry_ts": 1793493300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "ZECUSDT",
   "side": "SHORT",
   "zone": [
@@ -559,13 +513,35 @@
   ],
   "sl": 11.370910221649252,
   "ts": 1793544472.772446,
+  "entered": true,
+  "entry_ts": 1793544600.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "NEARUSDT",
+  "side": "SHORT",
+  "zone": [
+   4.331,
+   4.355618229034762
+  ],
+  "tps": [
+   4.269454427413098,
+   4.220217969343577,
+   4.146363282239294
+  ],
+  "sl": 4.422087447428615,
+  "ts": 1793548981.487805,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
