@@ -311,7 +311,8 @@
   "entered": true,
   "entry_ts": 1793405400.0,
   "hits": [
-   1793424600.0
+   1793424600.0,
+   1793508300.0
   ],
   "closed": false,
   "outcome": null,
@@ -358,7 +359,9 @@
   "ts": 1793421061.8657439,
   "entered": true,
   "entry_ts": 1793426400.0,
-  "hits": [],
+  "hits": [
+   1793501400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -402,28 +405,6 @@
   "ts": 1793452163.8607569,
   "entered": true,
   "entry_ts": 1793454300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "AVAXUSDT",
-  "side": "SHORT",
-  "zone": [
-   8.504,
-   8.544202995265472
-  ],
-  "tps": [
-   8.403492511836316,
-   8.32308652130537,
-   8.202477535508951
-  ],
-  "sl": 8.652751082482249,
-  "ts": 1793461730.7847695,
-  "entered": true,
-  "entry_ts": 1793462400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -477,28 +458,6 @@
   "score": 4
  },
  {
-  "sym": "XPLUSDT",
-  "side": "LONG",
-  "zone": [
-   0.08124,
-   0.08057039642549359
-  ],
-  "tps": [
-   0.08291400893626608,
-   0.08425321608527893,
-   0.08626202680879821
-  ],
-  "sl": 0.07876246677432625,
-  "ts": 1793490383.9957492,
-  "entered": true,
-  "entry_ts": 1793491200.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "LSKUSDT",
   "side": "LONG",
   "zone": [
@@ -519,6 +478,28 @@
   "outcome": null,
   "dry": false,
   "score": 4
+ },
+ {
+  "sym": "ZECUSDT",
+  "side": "SHORT",
+  "zone": [
+   1244.04,
+   1251.955014065811
+  ],
+  "tps": [
+   1224.2524648354724,
+   1208.4224367038505,
+   1184.6773945064174
+  ],
+  "sl": 1273.325552043501,
+  "ts": 1793508734.59285,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
  },
  {
   "sym": "UUSDT",
