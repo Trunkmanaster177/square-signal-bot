@@ -520,7 +520,9 @@
   "ts": 1793551912.7112372,
   "entered": true,
   "entry_ts": 1793571000.0,
-  "hits": [],
+  "hits": [
+   1793560200.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -589,7 +591,9 @@
   "ts": 1793558220.804143,
   "entered": true,
   "entry_ts": 1793558400.0,
-  "hits": [],
+  "hits": [
+   1793574600.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -611,6 +615,28 @@
   "ts": 1793560901.7051551,
   "entered": true,
   "entry_ts": 1793561100.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "LINKUSDT",
+  "side": "SHORT",
+  "zone": [
+   11.302,
+   11.351581067142034
+  ],
+  "tps": [
+   11.178047332144917,
+   11.078885197860851,
+   10.930141996434752
+  ],
+  "sl": 11.485449948425524,
+  "ts": 1793577330.4953072,
+  "entered": false,
+  "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
