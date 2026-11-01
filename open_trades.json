@@ -563,7 +563,8 @@
   "entered": true,
   "entry_ts": 1793556600.0,
   "hits": [
-   1793563500.0
+   1793563500.0,
+   1793566200.0
   ],
   "closed": false,
   "outcome": null,
