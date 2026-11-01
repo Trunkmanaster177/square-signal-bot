@@ -471,7 +471,9 @@
   "ts": 1793508734.59285,
   "entered": true,
   "entry_ts": 1793508900.0,
-  "hits": [],
+  "hits": [
+   1793535600.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
