@@ -546,6 +546,28 @@
   "score": 4
  },
  {
+  "sym": "LINKUSDT",
+  "side": "LONG",
+  "zone": [
+   11.58,
+   11.523489249094393
+  ],
+  "tps": [
+   11.721276877264021,
+   11.834298379075236,
+   12.00383063179206
+  ],
+  "sl": 11.370910221649252,
+  "ts": 1793544472.772446,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
