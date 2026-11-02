@@ -482,13 +482,35 @@
   ],
   "sl": 4.224645858983701,
   "ts": 1793605085.484686,
+  "entered": true,
+  "entry_ts": 1793606400.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "ZECUSDT",
+  "side": "LONG",
+  "zone": [
+   1260.39,
+   1252.6227170226666
+  ],
+  "tps": [
+   1279.808207443334,
+   1295.3427733980009,
+   1318.6446223300013
+  ],
+  "sl": 1231.6510529838663,
+  "ts": 1793612010.9994717,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
