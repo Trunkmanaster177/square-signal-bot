@@ -62,7 +62,8 @@
   "entered": true,
   "entry_ts": 1793371200.0,
   "hits": [
-   1793421300.0
+   1793421300.0,
+   1793587800.0
   ],
   "closed": false,
   "outcome": null,
@@ -303,30 +304,6 @@
   "score": 4
  },
  {
-  "sym": "ZECUSDT",
-  "side": "SHORT",
-  "zone": [
-   1244.04,
-   1251.955014065811
-  ],
-  "tps": [
-   1224.2524648354724,
-   1208.4224367038505,
-   1184.6773945064174
-  ],
-  "sl": 1273.325552043501,
-  "ts": 1793508734.59285,
-  "entered": true,
-  "entry_ts": 1793508900.0,
-  "hits": [
-   1793535600.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "TRXUSDT",
   "side": "SHORT",
   "zone": [
@@ -435,7 +412,8 @@
   "entered": true,
   "entry_ts": 1793553300.0,
   "hits": [
-   1793577300.0
+   1793577300.0,
+   1793592000.0
   ],
   "closed": false,
   "outcome": null,
@@ -484,7 +462,8 @@
   "entered": true,
   "entry_ts": 1793558400.0,
   "hits": [
-   1793574600.0
+   1793574600.0,
+   1793591100.0
   ],
   "closed": false,
   "outcome": null,
@@ -512,6 +491,28 @@
   "outcome": null,
   "dry": false,
   "score": 4
+ },
+ {
+  "sym": "HYPEUSDT",
+  "side": "LONG",
+  "zone": [
+   88.62,
+   88.2378069525675
+  ],
+  "tps": [
+   89.57548261858129,
+   90.33986871344632,
+   91.48644785574388
+  ],
+  "sl": 87.2058857244997,
+  "ts": 1793595202.6261156,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
  },
  {
   "sym": "UUSDT",
