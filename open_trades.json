@@ -1,29 +1,5 @@
 [
  {
-  "sym": "BTCUSDT",
-  "side": "SHORT",
-  "zone": [
-   77700.0,
-   78034.97703327483
-  ],
-  "tps": [
-   76862.55741681294,
-   76192.60335026328,
-   75187.67225043879
-  ],
-  "sl": 78939.41502311686,
-  "ts": 1793355556.3023586,
-  "entered": true,
-  "entry_ts": 1793356500.0,
-  "hits": [
-   1793367900.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "EURUSDT",
   "side": "LONG",
   "zone": [
@@ -342,7 +318,8 @@
   "entered": true,
   "entry_ts": 1793571000.0,
   "hits": [
-   1793560200.0
+   1793560200.0,
+   1793616000.0
   ],
   "closed": false,
   "outcome": null,
@@ -504,13 +481,35 @@
   ],
   "sl": 1231.6510529838663,
   "ts": 1793612010.9994717,
+  "entered": true,
+  "entry_ts": 1793612100.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "AAVEUSDT",
+  "side": "SHORT",
+  "zone": [
+   131.07,
+   131.76018346125832
+  ],
+  "tps": [
+   129.34454134685421,
+   127.96417442433759,
+   125.89362404056263
+  ],
+  "sl": 133.6236788066558,
+  "ts": 1793619087.4398136,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
