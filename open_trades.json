@@ -1,30 +1,5 @@
 [
  {
-  "sym": "SOLUSDT",
-  "side": "SHORT",
-  "zone": [
-   94.79,
-   95.41745607488981
-  ],
-  "tps": [
-   93.22135981277548,
-   91.96644766299585,
-   90.08407943832643
-  ],
-  "sl": 97.1115874770923,
-  "ts": 1793392778.8328824,
-  "entered": true,
-  "entry_ts": 1793392800.0,
-  "hits": [
-   1793571600.0,
-   1793641500.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "XRPUSDT",
   "side": "SHORT",
   "zone": [
@@ -89,31 +64,6 @@
   "hits": [
    1793431800.0,
    1793648400.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "BEAMXUSDT",
-  "side": "LONG",
-  "zone": [
-   0.004984,
-   0.004843804749943002
-  ],
-  "tps": [
-   0.005334488125142495,
-   0.005614878625256492,
-   0.006035464375427486
-  ],
-  "sl": 0.004465277574789107,
-  "ts": 1793556412.969795,
-  "entered": true,
-  "entry_ts": 1793556600.0,
-  "hits": [
-   1793563500.0,
-   1793566200.0
   ],
   "closed": false,
   "outcome": null,
@@ -253,13 +203,35 @@
   ],
   "sl": 1195.8881587967685,
   "ts": 1793651157.387278,
+  "entered": true,
+  "entry_ts": 1793651400.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "SOLUSDT",
+  "side": "SHORT",
+  "zone": [
+   91.77,
+   92.2434398494127
+  ],
+  "tps": [
+   90.58640037646826,
+   89.63952067764288,
+   88.2192011294048
+  ],
+  "sl": 93.52172744282697,
+  "ts": 1793652670.8752558,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
