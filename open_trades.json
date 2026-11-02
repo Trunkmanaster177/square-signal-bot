@@ -95,28 +95,6 @@
   "score": 5
  },
  {
-  "sym": "SNDKBUSDT",
-  "side": "SHORT",
-  "zone": [
-   1129.95,
-   1144.140666067439
-  ],
-  "tps": [
-   1094.4733348314023,
-   1066.0920026965243,
-   1023.5200044942071
-  ],
-  "sl": 1182.4554644495245,
-  "ts": 1793383996.310383,
-  "entered": true,
-  "entry_ts": 1793384100.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "DOGEUSDT",
   "side": "SHORT",
   "zone": [
@@ -200,28 +178,6 @@
   "ts": 1793399325.7300878,
   "entered": true,
   "entry_ts": 1793399400.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "SOXLBUSDT",
-  "side": "SHORT",
-  "zone": [
-   77.45,
-   78.73533284089969
-  ],
-  "tps": [
-   74.23666789775078,
-   71.66600221595141,
-   67.81000369325234
-  ],
-  "sl": 82.20573151132885,
-  "ts": 1793401601.91638,
-  "entered": true,
-  "entry_ts": 1793401800.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -340,28 +296,6 @@
   "ts": 1793452163.8607569,
   "entered": true,
   "entry_ts": 1793454300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "SPCXBUSDT",
-  "side": "SHORT",
-  "zone": [
-   137.13,
-   137.4799845637529
-  ],
-  "tps": [
-   136.25503859061774,
-   135.55506946311192,
-   134.50511577185318
-  ],
-  "sl": 138.42494288588574,
-  "ts": 1793467327.9389474,
-  "entered": true,
-  "entry_ts": 1793467500.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -552,28 +486,6 @@
   "hits": [
    1793574600.0
   ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "AAVEUSDT",
-  "side": "SHORT",
-  "zone": [
-   133.85,
-   134.61901238336372
-  ],
-  "tps": [
-   131.92746904159065,
-   130.38944427486317,
-   128.08240712477195
-  ],
-  "sl": 136.69534581844584,
-  "ts": 1793560901.7051551,
-  "entered": true,
-  "entry_ts": 1793561100.0,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
