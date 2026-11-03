@@ -65,7 +65,9 @@
   "ts": 1793667906.2258914,
   "entered": true,
   "entry_ts": 1793668200.0,
-  "hits": [],
+  "hits": [
+   1793746500.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -114,28 +116,6 @@
   "hits": [
    1793686200.0
   ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "SUIUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.8764,
-   0.8803941120795592
-  ],
-  "tps": [
-   0.8664147198011019,
-   0.8584264956419834,
-   0.8464441594033056
-  ],
-  "sl": 0.8911782146943692,
-  "ts": 1793704232.206381,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -291,6 +271,28 @@
   ],
   "sl": 0.17740406360036837,
   "ts": 1793742036.5336118,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "UNIUSDT",
+  "side": "LONG",
+  "zone": [
+   7.214,
+   7.1645555040460875
+  ],
+  "tps": [
+   7.337611239884781,
+   7.436500231792606,
+   7.584833719654344
+  ],
+  "sl": 7.031055364970523,
+  "ts": 1793748602.5318737,
   "entered": false,
   "entry_ts": null,
   "hits": [],
