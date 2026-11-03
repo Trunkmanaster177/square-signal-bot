@@ -50,98 +50,6 @@
   "score": 6
  },
  {
-  "sym": "SOXLBUSDT",
-  "side": "SHORT",
-  "zone": [
-   71.85,
-   72.84054103613457
-  ],
-  "tps": [
-   69.37364740966358,
-   67.39256533739443,
-   64.42094222899073
-  ],
-  "sl": 75.51500183369791,
-  "ts": 1793647810.903848,
-  "entered": true,
-  "entry_ts": 1793669400.0,
-  "hits": [
-   1793648100.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
-  "sym": "SOLUSDT",
-  "side": "SHORT",
-  "zone": [
-   91.77,
-   92.2434398494127
-  ],
-  "tps": [
-   90.58640037646826,
-   89.63952067764288,
-   88.2192011294048
-  ],
-  "sl": 93.52172744282697,
-  "ts": 1793652670.8752558,
-  "entered": true,
-  "entry_ts": 1793653200.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "PEPEUSDT",
-  "side": "SHORT",
-  "zone": [
-   4.78e-06,
-   4.823035310146461e-06
-  ],
-  "tps": [
-   4.672411724633847e-06,
-   4.5863411043409245e-06,
-   4.457235173901541e-06
-  ],
-  "sl": 4.939230647541907e-06,
-  "ts": 1793658550.9148939,
-  "entered": true,
-  "entry_ts": 1793658900.0,
-  "hits": [
-   1793676300.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "DOGEUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.07423,
-   0.07454538407519357
-  ],
-  "tps": [
-   0.07344153981201611,
-   0.07281077166162897,
-   0.07186461943604829
-  ],
-  "sl": 0.07539692107821619,
-  "ts": 1793663543.4785104,
-  "entered": true,
-  "entry_ts": 1793663700.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "UUSDT",
   "side": "SHORT",
   "zone": [
@@ -291,13 +199,35 @@
   ],
   "sl": 4.013523352047725,
   "ts": 1793710876.8747036,
+  "entered": true,
+  "entry_ts": 1793712600.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "UNIUSDT",
+  "side": "LONG",
+  "zone": [
+   7.362,
+   7.305780779617264
+  ],
+  "tps": [
+   7.502548050956841,
+   7.6149864917223145,
+   7.783644152870524
+  ],
+  "sl": 7.153988884583875,
+  "ts": 1793717008.5308316,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
