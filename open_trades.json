@@ -87,7 +87,9 @@
   "ts": 1793647810.903848,
   "entered": true,
   "entry_ts": 1793669400.0,
-  "hits": [],
+  "hits": [
+   1793648100.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -217,8 +219,8 @@
   ],
   "sl": 0.998844301360605,
   "ts": 1793661928.5585606,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793672400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -283,6 +285,28 @@
   ],
   "sl": 1.0000726189421816,
   "ts": 1793670235.8452175,
+  "entered": true,
+  "entry_ts": 1793670300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "BNBUSDT",
+  "side": "SHORT",
+  "zone": [
+   698.47,
+   700.2740536799266
+  ],
+  "tps": [
+   693.9598658001837,
+   690.3517584403306,
+   684.939597400551
+  ],
+  "sl": 705.1449986157284,
+  "ts": 1793673563.5612001,
   "entered": false,
   "entry_ts": null,
   "hits": [],
