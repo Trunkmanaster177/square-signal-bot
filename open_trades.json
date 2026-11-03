@@ -120,28 +120,6 @@
   "score": 4
  },
  {
-  "sym": "RLUSDUSDT",
-  "side": "LONG",
-  "zone": [
-   1.0016,
-   1.0015049687694464
-  ],
-  "tps": [
-   1.0018375780763842,
-   1.0020276405374915,
-   1.0023127342291522
-  ],
-  "sl": 1.0012483844469515,
-  "ts": 1793684559.3639276,
-  "entered": true,
-  "entry_ts": 1793684700.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "SUIUSDT",
   "side": "SHORT",
   "zone": [
@@ -245,13 +223,35 @@
   ],
   "sl": 0.17486483807168257,
   "ts": 1793721255.7609289,
+  "entered": true,
+  "entry_ts": 1793721900.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "SOXLBUSDT",
+  "side": "SHORT",
+  "zone": [
+   74.77,
+   75.90226282506768
+  ],
+  "tps": [
+   71.93934293733078,
+   69.6748172871954,
+   66.27802881199234
+  ],
+  "sl": 78.95937245275043,
+  "ts": 1793725409.1706467,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
