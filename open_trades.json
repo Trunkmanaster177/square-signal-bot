@@ -1,30 +1,5 @@
 [
  {
-  "sym": "BNBUSDT",
-  "side": "SHORT",
-  "zone": [
-   708.8,
-   712.0164884877374
-  ],
-  "tps": [
-   700.7587787806563,
-   694.3258018051812,
-   684.6763363419687
-  ],
-  "sl": 720.7010074046287,
-  "ts": 1793408749.209482,
-  "entered": true,
-  "entry_ts": 1793409000.0,
-  "hits": [
-   1793431800.0,
-   1793648400.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "LINKUSDT",
   "side": "SHORT",
   "zone": [
@@ -48,31 +23,6 @@
   "outcome": null,
   "dry": false,
   "score": 4
- },
- {
-  "sym": "AAVEUSDT",
-  "side": "SHORT",
-  "zone": [
-   131.07,
-   131.76018346125832
-  ],
-  "tps": [
-   129.34454134685421,
-   127.96417442433759,
-   125.89362404056263
-  ],
-  "sl": 133.6236788066558,
-  "ts": 1793619087.4398136,
-  "entered": true,
-  "entry_ts": 1793619300.0,
-  "hits": [
-   1793640000.0,
-   1793640000.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
  },
  {
   "sym": "BTCUSDT",
@@ -135,8 +85,8 @@
   ],
   "sl": 75.51500183369791,
   "ts": 1793647810.903848,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793669400.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -311,6 +261,28 @@
   ],
   "sl": 1.0001306358455624,
   "ts": 1793667906.2258914,
+  "entered": true,
+  "entry_ts": 1793668200.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "RWUSDUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.9996,
+   0.9997277348492383
+  ],
+  "tps": [
+   0.9992806628769045,
+   0.9990251931784282,
+   0.9986419886307135
+  ],
+  "sl": 1.0000726189421816,
+  "ts": 1793670235.8452175,
   "entered": false,
   "entry_ts": null,
   "hits": [],
