@@ -111,7 +111,9 @@
   "ts": 1793651157.387278,
   "entered": true,
   "entry_ts": 1793651400.0,
-  "hits": [],
+  "hits": [
+   1793683800.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -208,30 +210,6 @@
   "score": 4
  },
  {
-  "sym": "USD1USDT",
-  "side": "SHORT",
-  "zone": [
-   0.99835,
-   0.9984835949623256
-  ],
-  "tps": [
-   0.9980160125941859,
-   0.9977488226695346,
-   0.9973480377825577
-  ],
-  "sl": 0.998844301360605,
-  "ts": 1793661928.5585606,
-  "entered": true,
-  "entry_ts": 1793672400.0,
-  "hits": [
-   1793662500.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "DOGEUSDT",
   "side": "SHORT",
   "zone": [
@@ -291,7 +269,9 @@
   "ts": 1793670235.8452175,
   "entered": true,
   "entry_ts": 1793670300.0,
-  "hits": [],
+  "hits": [
+   1793683800.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -355,6 +335,28 @@
   ],
   "sl": 127.54791299671813,
   "ts": 1793677646.9492373,
+  "entered": true,
+  "entry_ts": 1793677800.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "RLUSDUSDT",
+  "side": "LONG",
+  "zone": [
+   1.0016,
+   1.0015049687694464
+  ],
+  "tps": [
+   1.0018375780763842,
+   1.0020276405374915,
+   1.0023127342291522
+  ],
+  "sl": 1.0012483844469515,
+  "ts": 1793684559.3639276,
   "entered": false,
   "entry_ts": null,
   "hits": [],
