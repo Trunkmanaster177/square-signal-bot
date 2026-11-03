@@ -188,28 +188,6 @@
   "score": 4
  },
  {
-  "sym": "UNIUSDT",
-  "side": "LONG",
-  "zone": [
-   7.362,
-   7.305780779617264
-  ],
-  "tps": [
-   7.502548050956841,
-   7.6149864917223145,
-   7.783644152870524
-  ],
-  "sl": 7.153988884583875,
-  "ts": 1793717008.5308316,
-  "entered": true,
-  "entry_ts": 1793717100.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "SOXLBUSDT",
   "side": "SHORT",
   "zone": [
