@@ -177,7 +177,9 @@
   "ts": 1793658550.9148939,
   "entered": true,
   "entry_ts": 1793658900.0,
-  "hits": [],
+  "hits": [
+   1793676300.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -331,6 +333,28 @@
   ],
   "sl": 3.916673654814712,
   "ts": 1793675195.9163287,
+  "entered": true,
+  "entry_ts": 1793675400.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "AAVEUSDT",
+  "side": "SHORT",
+  "zone": [
+   124.78,
+   125.5280845937076
+  ],
+  "tps": [
+   122.909788515731,
+   121.41361932831579,
+   119.16936554719298
+  ],
+  "sl": 127.54791299671813,
+  "ts": 1793677646.9492373,
   "entered": false,
   "entry_ts": null,
   "hits": [],
