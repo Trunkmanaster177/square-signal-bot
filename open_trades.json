@@ -131,8 +131,8 @@
   ],
   "sl": 1.3293010394400335,
   "ts": 1793815558.28243,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793826900.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -219,6 +219,28 @@
   ],
   "sl": 73.32161890630498,
   "ts": 1793826181.8223975,
+  "entered": true,
+  "entry_ts": 1793826300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "SPCXBUSDT",
+  "side": "SHORT",
+  "zone": [
+   135.95,
+   137.2504866481528
+  ],
+  "tps": [
+   132.698783379618,
+   130.09781008331237,
+   126.19635013885397
+  ],
+  "sl": 140.76180059816537,
+  "ts": 1793828963.4605944,
   "entered": false,
   "entry_ts": null,
   "hits": [],
