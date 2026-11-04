@@ -40,7 +40,9 @@
   "ts": 1793795253.922817,
   "entered": true,
   "entry_ts": 1793795400.0,
-  "hits": [],
+  "hits": [
+   1793818800.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -151,6 +153,28 @@
   ],
   "sl": 4.820480844652896e-06,
   "ts": 1793817863.5951567,
+  "entered": true,
+  "entry_ts": 1793817900.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "RLUSDUSDT",
+  "side": "SHORT",
+  "zone": [
+   1.0008,
+   1.0009127040258612
+  ],
+  "tps": [
+   1.0005182399353465,
+   1.0002928318836237,
+   0.9999547198060398
+  ],
+  "sl": 1.0012170048956868,
+  "ts": 1793822543.8373897,
   "entered": false,
   "entry_ts": null,
   "hits": [],
