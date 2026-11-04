@@ -89,7 +89,8 @@
   "entered": true,
   "entry_ts": 1793700900.0,
   "hits": [
-   1793686200.0
+   1793686200.0,
+   1793759100.0
   ],
   "closed": false,
   "outcome": null,
@@ -114,31 +115,6 @@
   "entry_ts": 1793708400.0,
   "hits": [
    1793751600.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "NEARUSDT",
-  "side": "SHORT",
-  "zone": [
-   3.908,
-   3.9365198248777635
-  ],
-  "tps": [
-   3.8367004378055904,
-   3.7796607880500632,
-   3.694101313416772
-  ],
-  "sl": 4.013523352047725,
-  "ts": 1793710876.8747036,
-  "entered": true,
-  "entry_ts": 1793712600.0,
-  "hits": [
-   1793718900.0,
-   1793754300.0
   ],
   "closed": false,
   "outcome": null,
@@ -242,28 +218,6 @@
   "score": 4
  },
  {
-  "sym": "RLUSDUSDT",
-  "side": "SHORT",
-  "zone": [
-   1.001,
-   1.0010995851049045
-  ],
-  "tps": [
-   1.0007510372377384,
-   1.000551867027929,
-   1.0002531117132152
-  ],
-  "sl": 1.001368464888147,
-  "ts": 1793750715.9611914,
-  "entered": true,
-  "entry_ts": 1793751000.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "LINKUSDT",
   "side": "SHORT",
   "zone": [
@@ -306,6 +260,28 @@
   "outcome": null,
   "dry": false,
   "score": 4
+ },
+ {
+  "sym": "SPCXBUSDT",
+  "side": "SHORT",
+  "zone": [
+   136.32,
+   137.13941375091204
+  ],
+  "tps": [
+   134.27146562271986,
+   132.63263812089573,
+   130.17439686815956
+  ],
+  "sl": 139.3518308783746,
+  "ts": 1793760605.402814,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
  },
  {
   "sym": "UUSDT",
