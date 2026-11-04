@@ -118,28 +118,6 @@
   "score": 5
  },
  {
-  "sym": "TRUMPUSDT",
-  "side": "SHORT",
-  "zone": [
-   1.248,
-   1.2699732539027118
-  ],
-  "tps": [
-   1.1930668652432206,
-   1.149120357437797,
-   1.0832005957296615
-  ],
-  "sl": 1.3293010394400335,
-  "ts": 1793815558.28243,
-  "entered": true,
-  "entry_ts": 1793826900.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "PEPEUSDT",
   "side": "LONG",
   "zone": [
@@ -241,6 +219,28 @@
   ],
   "sl": 140.76180059816537,
   "ts": 1793828963.4605944,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "ZECUSDT",
+  "side": "LONG",
+  "zone": [
+   1294.34,
+   1280.5466347120562
+  ],
+  "tps": [
+   1328.8234132198595,
+   1356.410143795747,
+   1397.7902396595784
+  ],
+  "sl": 1243.304548434608,
+  "ts": 1793831803.211711,
   "entered": false,
   "entry_ts": null,
   "hits": [],
