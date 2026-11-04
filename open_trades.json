@@ -137,7 +137,8 @@
   "entered": true,
   "entry_ts": 1793712600.0,
   "hits": [
-   1793718900.0
+   1793718900.0,
+   1793754300.0
   ],
   "closed": false,
   "outcome": null,
@@ -161,7 +162,8 @@
   "entered": true,
   "entry_ts": 1793725500.0,
   "hits": [
-   1793735400.0
+   1793735400.0,
+   1793754300.0
   ],
   "closed": false,
   "outcome": null,
@@ -184,29 +186,9 @@
   "ts": 1793728586.0236669,
   "entered": true,
   "entry_ts": 1793738700.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "EURUSDT",
-  "side": "SHORT",
-  "zone": [
-   1.1207,
-   1.1217354675614688
+  "hits": [
+   1793754300.0
   ],
-  "tps": [
-   1.118111331096328,
-   1.1160403959733904,
-   1.112933993288984
-  ],
-  "sl": 1.1245312299774348,
-  "ts": 1793730674.0260723,
-  "entered": true,
-  "entry_ts": 1793730900.0,
-  "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -231,30 +213,6 @@
   "hits": [
    1793751300.0,
    1793752200.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "ENAUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.1729,
-   0.17411731448658604
-  ],
-  "tps": [
-   0.16985671378353484,
-   0.16742208481036275,
-   0.16377014135060458
-  ],
-  "sl": 0.17740406360036837,
-  "ts": 1793742036.5336118,
-  "entered": true,
-  "entry_ts": 1793751000.0,
-  "hits": [
-   1793751600.0
   ],
   "closed": false,
   "outcome": null,
@@ -319,6 +277,28 @@
   ],
   "sl": 11.208528749836784,
   "ts": 1793753725.0599737,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "DOGEUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.07465,
+   0.07492039715878987
+  ],
+  "tps": [
+   0.07397400710302532,
+   0.07343321278544557,
+   0.07262202130907595
+  ],
+  "sl": 0.07565046948752252,
+  "ts": 1793756593.3411987,
   "entered": false,
   "entry_ts": null,
   "hits": [],
