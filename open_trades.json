@@ -1,30 +1,5 @@
 [
  {
-  "sym": "LINKUSDT",
-  "side": "SHORT",
-  "zone": [
-   11.302,
-   11.351581067142034
-  ],
-  "tps": [
-   11.178047332144917,
-   11.078885197860851,
-   10.930141996434752
-  ],
-  "sl": 11.485449948425524,
-  "ts": 1793577330.4953072,
-  "entered": true,
-  "entry_ts": 1793578500.0,
-  "hits": [
-   1793634900.0,
-   1793640900.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "BTCUSDT",
   "side": "SHORT",
   "zone": [
@@ -137,7 +112,9 @@
   "ts": 1793708138.2427106,
   "entered": true,
   "entry_ts": 1793708400.0,
-  "hits": [],
+  "hits": [
+   1793751600.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -251,7 +228,10 @@
   "ts": 1793737130.8235192,
   "entered": true,
   "entry_ts": 1793737200.0,
-  "hits": [],
+  "hits": [
+   1793751300.0,
+   1793752200.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -271,9 +251,11 @@
   ],
   "sl": 0.17740406360036837,
   "ts": 1793742036.5336118,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
+  "entered": true,
+  "entry_ts": 1793751000.0,
+  "hits": [
+   1793751600.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -293,8 +275,8 @@
   ],
   "sl": 7.031055364970523,
   "ts": 1793748602.5318737,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793751000.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -315,6 +297,28 @@
   ],
   "sl": 1.001368464888147,
   "ts": 1793750715.9611914,
+  "entered": true,
+  "entry_ts": 1793751000.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "LINKUSDT",
+  "side": "SHORT",
+  "zone": [
+   11.028,
+   11.076791554009942
+  ],
+  "tps": [
+   10.906021114975147,
+   10.808438006955264,
+   10.662063344925441
+  ],
+  "sl": 11.208528749836784,
+  "ts": 1793753725.0599737,
   "entered": false,
   "entry_ts": null,
   "hits": [],
