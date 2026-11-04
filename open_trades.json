@@ -24,50 +24,6 @@
   "score": 4
  },
  {
-  "sym": "LINKUSDT",
-  "side": "SHORT",
-  "zone": [
-   11.028,
-   11.076791554009942
-  ],
-  "tps": [
-   10.906021114975147,
-   10.808438006955264,
-   10.662063344925441
-  ],
-  "sl": 11.208528749836784,
-  "ts": 1793753725.0599737,
-  "entered": true,
-  "entry_ts": 1793770500.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "DOGEUSDT",
-  "side": "SHORT",
-  "zone": [
-   0.07465,
-   0.07492039715878987
-  ],
-  "tps": [
-   0.07397400710302532,
-   0.07343321278544557,
-   0.07262202130907595
-  ],
-  "sl": 0.07565046948752252,
-  "ts": 1793756593.3411987,
-  "entered": true,
-  "entry_ts": 1793770800.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "SPCXBUSDT",
   "side": "SHORT",
   "zone": [
@@ -81,8 +37,8 @@
   ],
   "sl": 139.3518308783746,
   "ts": 1793760605.402814,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793779500.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -106,7 +62,8 @@
   "entered": true,
   "entry_ts": 1793769300.0,
   "hits": [
-   1793770800.0
+   1793770800.0,
+   1793780100.0
   ],
   "closed": false,
   "outcome": null,
@@ -127,6 +84,28 @@
   ],
   "sl": 7.1474662295239115,
   "ts": 1793777295.3497083,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "HYPEUSDT",
+  "side": "LONG",
+  "zone": [
+   86.8,
+   86.1551486267254
+  ],
+  "tps": [
+   88.4121284331865,
+   89.70183117973569,
+   91.63638529955948
+  ],
+  "sl": 84.414049918884,
+  "ts": 1793783866.4784179,
   "entered": false,
   "entry_ts": null,
   "hits": [],
