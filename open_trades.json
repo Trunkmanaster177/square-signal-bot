@@ -24,31 +24,6 @@
   "score": 4
  },
  {
-  "sym": "SPCXBUSDT",
-  "side": "SHORT",
-  "zone": [
-   136.32,
-   137.13941375091204
-  ],
-  "tps": [
-   134.27146562271986,
-   132.63263812089573,
-   130.17439686815956
-  ],
-  "sl": 139.3518308783746,
-  "ts": 1793760605.402814,
-  "entered": true,
-  "entry_ts": 1793779500.0,
-  "hits": [
-   1793760900.0,
-   1793761200.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "PEPEUSDT",
   "side": "LONG",
   "zone": [
@@ -89,7 +64,9 @@
   "ts": 1793777295.3497083,
   "entered": true,
   "entry_ts": 1793794500.0,
-  "hits": [],
+  "hits": [
+   1793778000.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -131,6 +108,28 @@
   ],
   "sl": 1.0000833329167775,
   "ts": 1793795253.922817,
+  "entered": true,
+  "entry_ts": 1793795400.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "SOXLBUSDT",
+  "side": "SHORT",
+  "zone": [
+   69.62,
+   71.11654106810143
+  ],
+  "tps": [
+   65.87864732974644,
+   62.885565193543606,
+   58.39594198923935
+  ],
+  "sl": 75.15720195197525,
+  "ts": 1793798209.5407898,
   "entered": false,
   "entry_ts": null,
   "hits": [],
