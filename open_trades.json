@@ -69,30 +69,6 @@
   "score": 5
  },
  {
-  "sym": "USD1USDT",
-  "side": "SHORT",
-  "zone": [
-   0.99908,
-   0.9992946884700101
-  ],
-  "tps": [
-   0.9985432788249745,
-   0.9981139018849541,
-   0.9974698364749236
-  ],
-  "sl": 0.9998743473390376,
-  "ts": 1793902093.154067,
-  "entered": true,
-  "entry_ts": 1793907900.0,
-  "hits": [
-   1793904000.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "TRUMPUSDT",
   "side": "SHORT",
   "zone": [
@@ -150,13 +126,35 @@
   ],
   "sl": 47.996955207185735,
   "ts": 1793913601.4894774,
+  "entered": true,
+  "entry_ts": 1793913900.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "SNDKBUSDT",
+  "side": "SHORT",
+  "zone": [
+   807.89,
+   824.1236307189837
+  ],
+  "tps": [
+   767.3059232025408,
+   734.8386617645734,
+   686.1377696076224
+  ],
+  "sl": 867.9544336602396,
+  "ts": 1793915719.2269745,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
