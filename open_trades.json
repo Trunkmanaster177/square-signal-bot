@@ -185,28 +185,6 @@
   "score": 4
  },
  {
-  "sym": "SUIUSDT",
-  "side": "LONG",
-  "zone": [
-   0.9383,
-   0.9314154179172138
-  ],
-  "tps": [
-   0.9555114552069655,
-   0.9692806193725377,
-   0.9899343656208961
-  ],
-  "sl": 0.9128270462936913,
-  "ts": 1793835975.5122535,
-  "entered": true,
-  "entry_ts": 1793836200.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "XAUTUSDT",
   "side": "LONG",
   "zone": [
@@ -244,7 +222,9 @@
   "ts": 1793843439.9888825,
   "entered": true,
   "entry_ts": 1793843700.0,
-  "hits": [],
+  "hits": [
+   1793880900.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -313,7 +293,9 @@
   "ts": 1793865198.0342882,
   "entered": true,
   "entry_ts": 1793865900.0,
-  "hits": [],
+  "hits": [
+   1793877900.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -357,6 +339,28 @@
   ],
   "sl": 79490.05714048535,
   "ts": 1793877557.2726822,
+  "entered": true,
+  "entry_ts": 1793877900.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "SPCXBUSDT",
+  "side": "SHORT",
+  "zone": [
+   134.56,
+   135.31559657703588
+  ],
+  "tps": [
+   132.6710085574103,
+   131.15981540333854,
+   128.8930256722309
+  ],
+  "sl": 137.35570733503275,
+  "ts": 1793882503.304367,
   "entered": false,
   "entry_ts": null,
   "hits": [],
