@@ -272,6 +272,28 @@
   "score": 5
  },
  {
+  "sym": "XAUTUSDT",
+  "side": "LONG",
+  "zone": [
+   4071.74,
+   4064.058501243829
+  ],
+  "tps": [
+   4090.943746890426,
+   4106.306744402767,
+   4129.351240671279
+  ],
+  "sl": 4043.318454602169,
+  "ts": 1793840704.2578578,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
