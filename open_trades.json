@@ -69,28 +69,6 @@
   "score": 5
  },
  {
-  "sym": "XAUTUSDT",
-  "side": "LONG",
-  "zone": [
-   4113.89,
-   4103.204575407334
-  ],
-  "tps": [
-   4140.6035614816665,
-   4161.974410667,
-   4194.030684444999
-  ],
-  "sl": 4074.3539290071344,
-  "ts": 1793899470.5373623,
-  "entered": true,
-  "entry_ts": 1793907900.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "USD1USDT",
   "side": "SHORT",
   "zone": [
@@ -157,6 +135,28 @@
   "outcome": null,
   "dry": false,
   "score": 4
+ },
+ {
+  "sym": "SOXLBUSDT",
+  "side": "SHORT",
+  "zone": [
+   41.07,
+   42.942150055996144
+  ],
+  "tps": [
+   36.38962486000964,
+   32.64532474801735,
+   27.028874580028916
+  ],
+  "sl": 47.996955207185735,
+  "ts": 1793913601.4894774,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
  },
  {
   "sym": "UUSDT",
