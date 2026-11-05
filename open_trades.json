@@ -161,28 +161,6 @@
   "score": 4
  },
  {
-  "sym": "SPCXBUSDT",
-  "side": "SHORT",
-  "zone": [
-   135.95,
-   137.2504866481528
-  ],
-  "tps": [
-   132.698783379618,
-   130.09781008331237,
-   126.19635013885397
-  ],
-  "sl": 140.76180059816537,
-  "ts": 1793828963.4605944,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "ZECUSDT",
   "side": "LONG",
   "zone": [
@@ -355,6 +333,30 @@
   ],
   "sl": 0.9996224979639355,
   "ts": 1793871172.9062407,
+  "entered": true,
+  "entry_ts": 1793874000.0,
+  "hits": [
+   1793874600.0
+  ],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "BTCUSDT",
+  "side": "LONG",
+  "zone": [
+   80276.08,
+   80063.64138932037
+  ],
+  "tps": [
+   80807.1765266991,
+   81232.05374805837,
+   81869.36958009728
+  ],
+  "sl": 79490.05714048535,
+  "ts": 1793877557.2726822,
   "entered": false,
   "entry_ts": null,
   "hits": [],
