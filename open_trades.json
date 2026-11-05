@@ -113,6 +113,28 @@
   "score": 5
  },
  {
+  "sym": "TRUMPUSDT",
+  "side": "SHORT",
+  "zone": [
+   1.122,
+   1.1409908395237887
+  ],
+  "tps": [
+   1.0745229011905286,
+   1.0365412221429515,
+   0.979568703571586
+  ],
+  "sl": 1.1922661062380175,
+  "ts": 1793904734.2861612,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
