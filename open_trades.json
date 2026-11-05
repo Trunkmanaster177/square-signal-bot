@@ -49,31 +49,6 @@
   "score": 5
  },
  {
-  "sym": "SNDKBUSDT",
-  "side": "SHORT",
-  "zone": [
-   1088.38,
-   1098.9372597104252
-  ],
-  "tps": [
-   1061.9868507239376,
-   1040.8723313030875,
-   1009.2005521718124
-  ],
-  "sl": 1127.4418609285729,
-  "ts": 1793804115.4742472,
-  "entered": true,
-  "entry_ts": 1793804400.0,
-  "hits": [
-   1793806200.0,
-   1793807100.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "ETHUSDT",
   "side": "LONG",
   "zone": [
@@ -199,7 +174,9 @@
   "ts": 1793826181.8223975,
   "entered": true,
   "entry_ts": 1793826300.0,
-  "hits": [],
+  "hits": [
+   1793841300.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -285,6 +262,28 @@
   ],
   "sl": 4043.318454602169,
   "ts": 1793840704.2578578,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "SNDKBUSDT",
+  "side": "SHORT",
+  "zone": [
+   1013.02,
+   1024.2698021687315
+  ],
+  "tps": [
+   984.8954945781712,
+   962.3958902407081,
+   928.6464837345136
+  ],
+  "sl": 1054.6442680243067,
+  "ts": 1793843439.9888825,
   "entered": false,
   "entry_ts": null,
   "hits": [],
