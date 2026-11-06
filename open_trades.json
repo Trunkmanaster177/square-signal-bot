@@ -1,27 +1,5 @@
 [
  {
-  "sym": "SPCXBUSDT",
-  "side": "SHORT",
-  "zone": [
-   134.56,
-   135.31559657703588
-  ],
-  "tps": [
-   132.6710085574103,
-   131.15981540333854,
-   128.8930256722309
-  ],
-  "sl": 137.35570733503275,
-  "ts": 1793882503.304367,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "CRCLBUSDT",
   "side": "SHORT",
   "zone": [
@@ -218,6 +196,28 @@
   ],
   "sl": 186.0403083139429,
   "ts": 1793924990.129579,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "ZECUSDT",
+  "side": "LONG",
+  "zone": [
+   1327.96,
+   1311.275695175636
+  ],
+  "tps": [
+   1369.6707620609104,
+   1403.0393717096388,
+   1453.0922861827312
+  ],
+  "sl": 1266.2280721498528,
+  "ts": 1793927332.5090125,
   "entered": false,
   "entry_ts": null,
   "hits": [],
