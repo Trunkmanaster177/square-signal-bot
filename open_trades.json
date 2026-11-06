@@ -218,13 +218,35 @@
   ],
   "sl": 1266.2280721498528,
   "ts": 1793927332.5090125,
+  "entered": true,
+  "entry_ts": 1793927400.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "SUIUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.8604,
+   0.8676911563681942
+  ],
+  "tps": [
+   0.8421721090795147,
+   0.8275897963431263,
+   0.8057163272385439
+  ],
+  "sl": 0.8873772785623184,
+  "ts": 1793929835.0582945,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
