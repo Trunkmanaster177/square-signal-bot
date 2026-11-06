@@ -401,13 +401,35 @@
   ],
   "sl": 4.803504109574605e-06,
   "ts": 1794002661.9809873,
+  "entered": true,
+  "entry_ts": 1794002700.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "RWUSDUSDT",
+  "side": "LONG",
+  "zone": [
+   1.0,
+   0.9999002826371781
+  ],
+  "tps": [
+   1.0002492934070546,
+   1.0004487281326984,
+   1.0007478802211638
+  ],
+  "sl": 0.9996310457575591,
+  "ts": 1794006951.0490224,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 6
  },
  {
   "sym": "UUSDT",
