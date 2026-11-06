@@ -117,50 +117,6 @@
   "score": 5
  },
  {
-  "sym": "SNDKBUSDT",
-  "side": "SHORT",
-  "zone": [
-   807.89,
-   824.1236307189837
-  ],
-  "tps": [
-   767.3059232025408,
-   734.8386617645734,
-   686.1377696076224
-  ],
-  "sl": 867.9544336602396,
-  "ts": 1793915719.2269745,
-  "entered": true,
-  "entry_ts": 1793916300.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
-  "sym": "QQQBUSDT",
-  "side": "SHORT",
-  "zone": [
-   645.78,
-   648.8271332361799
-  ],
-  "tps": [
-   638.1621669095503,
-   632.0679004371906,
-   622.9265007286509
-  ],
-  "sl": 657.0543929738654,
-  "ts": 1793918422.84968,
-  "entered": true,
-  "entry_ts": 1793918700.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "HYPEUSDT",
   "side": "SHORT",
   "zone": [
@@ -240,6 +196,28 @@
   ],
   "sl": 0.8873772785623184,
   "ts": 1793929835.0582945,
+  "entered": true,
+  "entry_ts": 1793930100.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "BNBUSDT",
+  "side": "SHORT",
+  "zone": [
+   694.19,
+   696.6664955959845
+  ],
+  "tps": [
+   687.9987610100387,
+   683.0457698180696,
+   675.6162830301159
+  ],
+  "sl": 703.3530337051428,
+  "ts": 1793933887.5002067,
   "entered": false,
   "entry_ts": null,
   "hits": [],
