@@ -196,13 +196,35 @@
   ],
   "sl": 79.1223257510444,
   "ts": 1793922142.1370533,
+  "entered": true,
+  "entry_ts": 1793922300.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "NVDABUSDT",
+  "side": "SHORT",
+  "zone": [
+   180.91,
+   182.29656981457916
+  ],
+  "tps": [
+   177.4435754635521,
+   174.67043583439377,
+   170.51072639065632
+  ],
+  "sl": 186.0403083139429,
+  "ts": 1793924990.129579,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
