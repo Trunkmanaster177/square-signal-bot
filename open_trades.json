@@ -278,28 +278,6 @@
   "score": 5
  },
  {
-  "sym": "USD1USDT",
-  "side": "SHORT",
-  "zone": [
-   0.99836,
-   0.9986309070567433
-  ],
-  "tps": [
-   0.997682732358142,
-   0.9971409182446556,
-   0.996328197074426
-  ],
-  "sl": 0.99936235610995,
-  "ts": 1793986503.146928,
-  "entered": true,
-  "entry_ts": 1793987700.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "ENAUSDT",
   "side": "SHORT",
   "zone": [
@@ -313,6 +291,28 @@
   ],
   "sl": 0.17155134352966853,
   "ts": 1793988564.701914,
+  "entered": true,
+  "entry_ts": 1793988600.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "NVDABUSDT",
+  "side": "SHORT",
+  "zone": [
+   187.8,
+   189.19302899222714
+  ],
+  "tps": [
+   184.3174275194322,
+   181.53136953497793,
+   177.35228255829657
+  ],
+  "sl": 192.9542072712404,
+  "ts": 1793994100.002222,
   "entered": false,
   "entry_ts": null,
   "hits": [],
