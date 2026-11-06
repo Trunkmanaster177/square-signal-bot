@@ -49,28 +49,6 @@
   "score": 5
  },
  {
-  "sym": "TRUMPUSDT",
-  "side": "SHORT",
-  "zone": [
-   1.122,
-   1.1409908395237887
-  ],
-  "tps": [
-   1.0745229011905286,
-   1.0365412221429515,
-   0.979568703571586
-  ],
-  "sl": 1.1922661062380175,
-  "ts": 1793904734.2861612,
-  "entered": false,
-  "entry_ts": null,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "LINKUSDT",
   "side": "SHORT",
   "zone": [
@@ -198,7 +176,9 @@
   "ts": 1793933887.5002067,
   "entered": true,
   "entry_ts": 1793934000.0,
-  "hits": [],
+  "hits": [
+   1793949000.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -218,6 +198,28 @@
   ],
   "sl": 666.1828445950736,
   "ts": 1793943154.7609866,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "XRPUSDT",
+  "side": "SHORT",
+  "zone": [
+   1.1909,
+   1.1973878681060364
+  ],
+  "tps": [
+   1.1746803297349093,
+   1.1617045935228365,
+   1.1422409892047276
+  ],
+  "sl": 1.2149051119923344,
+  "ts": 1793951627.4874992,
   "entered": false,
   "entry_ts": null,
   "hits": [],
