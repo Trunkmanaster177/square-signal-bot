@@ -291,13 +291,35 @@
   ],
   "sl": 0.99936235610995,
   "ts": 1793986503.146928,
+  "entered": true,
+  "entry_ts": 1793987700.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
+  "sym": "ENAUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.1654,
+   0.16706252527828877
+  ],
+  "tps": [
+   0.16124368680427803,
+   0.15791863624770044,
+   0.15293106041283408
+  ],
+  "sl": 0.17155134352966853,
+  "ts": 1793988564.701914,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 5
+  "score": 4
  },
  {
   "sym": "UUSDT",
