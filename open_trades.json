@@ -198,8 +198,8 @@
   ],
   "sl": 666.1828445950736,
   "ts": 1793943154.7609866,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1793953200.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -220,6 +220,28 @@
   ],
   "sl": 1.2149051119923344,
   "ts": 1793951627.4874992,
+  "entered": true,
+  "entry_ts": 1793952900.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "ETHUSDT",
+  "side": "SHORT",
+  "zone": [
+   2226.76,
+   2237.593130437519
+  ],
+  "tps": [
+   2199.6771739062037,
+   2178.0109130311666,
+   2145.5115217186108
+  ],
+  "sl": 2266.842582618819,
+  "ts": 1793957228.8576941,
   "entered": false,
   "entry_ts": null,
   "hits": [],
