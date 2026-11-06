@@ -73,28 +73,6 @@
   "score": 4
  },
  {
-  "sym": "SOXLBUSDT",
-  "side": "SHORT",
-  "zone": [
-   41.07,
-   42.942150055996144
-  ],
-  "tps": [
-   36.38962486000964,
-   32.64532474801735,
-   27.028874580028916
-  ],
-  "sl": 47.996955207185735,
-  "ts": 1793913601.4894774,
-  "entered": true,
-  "entry_ts": 1793913900.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "HYPEUSDT",
   "side": "SHORT",
   "zone": [
@@ -242,13 +220,35 @@
   ],
   "sl": 2266.842582618819,
   "ts": 1793957228.8576941,
+  "entered": true,
+  "entry_ts": 1793958600.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "SPCXBUSDT",
+  "side": "SHORT",
+  "zone": [
+   128.32,
+   129.28458868559167
+  ],
+  "tps": [
+   125.90852828602078,
+   123.9793509148374,
+   121.08558485806233
+  ],
+  "sl": 131.88897813668925,
+  "ts": 1793963785.6518786,
   "entered": false,
   "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
   "dry": false,
-  "score": 4
+  "score": 5
  },
  {
   "sym": "UUSDT",
