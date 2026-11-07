@@ -447,7 +447,9 @@
   "ts": 1794008821.1173332,
   "entered": true,
   "entry_ts": 1794009300.0,
-  "hits": [],
+  "hits": [
+   1794012000.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -467,6 +469,28 @@
   ],
   "sl": 7.073374465439317,
   "ts": 1794010883.1882093,
+  "entered": true,
+  "entry_ts": 1794011100.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "NEARUSDT",
+  "side": "SHORT",
+  "zone": [
+   3.735,
+   3.764773511282681
+  ],
+  "tps": [
+   3.660566221793297,
+   3.6010191992279346,
+   3.5116986653798907
+  ],
+  "sl": 3.8451619917459205,
+  "ts": 1794014198.5571885,
   "entered": false,
   "entry_ts": null,
   "hits": [],
