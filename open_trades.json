@@ -403,7 +403,8 @@
   "entered": true,
   "entry_ts": 1794009300.0,
   "hits": [
-   1794012000.0
+   1794012000.0,
+   1794027900.0
   ],
   "closed": false,
   "outcome": null,
@@ -470,7 +471,9 @@
   "ts": 1794018479.4794042,
   "entered": true,
   "entry_ts": 1794018600.0,
-  "hits": [],
+  "hits": [
+   1794032400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -490,6 +493,28 @@
   ],
   "sl": 4044.0482489020687,
   "ts": 1794027619.2790716,
+  "entered": true,
+  "entry_ts": 1794027900.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "DOGEUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.07196,
+   0.07221594152369251
+  ],
+  "tps": [
+   0.07132014619076872,
+   0.07080826314338369,
+   0.07004043857230616
+  ],
+  "sl": 0.07290698363766229,
+  "ts": 1794034966.6267946,
   "entered": false,
   "entry_ts": null,
   "hits": [],
