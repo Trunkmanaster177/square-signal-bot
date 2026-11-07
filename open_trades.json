@@ -164,31 +164,6 @@
   "score": 4
  },
  {
-  "sym": "ZECUSDT",
-  "side": "LONG",
-  "zone": [
-   1309.99,
-   1295.38112935594
-  ],
-  "tps": [
-   1346.5121766101502,
-   1375.7299178982705,
-   1419.5565298304507
-  ],
-  "sl": 1255.9371786169777,
-  "ts": 1793970868.3554947,
-  "entered": true,
-  "entry_ts": 1793971800.0,
-  "hits": [
-   1793975700.0,
-   1793976000.0
-  ],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 5
- },
- {
   "sym": "SOLUSDT",
   "side": "SHORT",
   "zone": [
@@ -249,7 +224,8 @@
   "entered": true,
   "entry_ts": 1793988600.0,
   "hits": [
-   1794047100.0
+   1794047100.0,
+   1794065700.0
   ],
   "closed": false,
   "outcome": null,
@@ -558,8 +534,8 @@
   ],
   "sl": 0.0017576290926645392,
   "ts": 1794062638.0795202,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1794063600.0,
   "hits": [],
   "closed": false,
   "outcome": null,
