@@ -392,28 +392,6 @@
   "score": 4
  },
  {
-  "sym": "UNIUSDT",
-  "side": "SHORT",
-  "zone": [
-   6.889,
-   6.938830936605221
-  ],
-  "tps": [
-   6.764422658486948,
-   6.664760785276507,
-   6.515267975460845
-  ],
-  "sl": 7.073374465439317,
-  "ts": 1794010883.1882093,
-  "entered": true,
-  "entry_ts": 1794011100.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "NEARUSDT",
   "side": "SHORT",
   "zone": [
@@ -561,6 +539,28 @@
   ],
   "sl": 48.377793643086534,
   "ts": 1794052571.6623363,
+  "entered": true,
+  "entry_ts": 1794055800.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "SNDKBUSDT",
+  "side": "SHORT",
+  "zone": [
+   836.98,
+   843.0723818732974
+  ],
+  "tps": [
+   821.7490453167565,
+   809.5642815701616,
+   791.2871359502694
+  ],
+  "sl": 859.5218129312004,
+  "ts": 1794058664.4469888,
   "entered": false,
   "entry_ts": null,
   "hits": [],
