@@ -601,6 +601,28 @@
   "score": 5
  },
  {
+  "sym": "EURUSDT",
+  "side": "SHORT",
+  "zone": [
+   1.1153,
+   1.115598559922709
+  ],
+  "tps": [
+   1.1145536001932277,
+   1.1139564803478097,
+   1.113060800579683
+  ],
+  "sl": 1.116404671714023,
+  "ts": 1794092068.092012,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
