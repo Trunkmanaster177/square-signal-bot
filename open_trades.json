@@ -434,7 +434,9 @@
   "ts": 1794047552.2042432,
   "entered": true,
   "entry_ts": 1794047700.0,
-  "hits": [],
+  "hits": [
+   1794119400.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -616,7 +618,10 @@
   "ts": 1794095936.119466,
   "entered": true,
   "entry_ts": 1794109800.0,
-  "hits": [],
+  "hits": [
+   1794096000.0,
+   1794096000.0
+  ],
   "closed": false,
   "outcome": null,
   "dry": false,
@@ -658,6 +663,28 @@
   ],
   "sl": 0.30703478213217106,
   "ts": 1794113748.9965026,
+  "entered": true,
+  "entry_ts": 1794114000.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "PEPEUSDT",
+  "side": "SHORT",
+  "zone": [
+   4.88e-06,
+   4.908260940074878e-06
+  ],
+  "tps": [
+   4.809347649812805e-06,
+   4.752825769663049e-06,
+   4.668042949438416e-06
+  ],
+  "sl": 4.984565478277048e-06,
+  "ts": 1794122098.9700127,
   "entered": false,
   "entry_ts": null,
   "hits": [],
