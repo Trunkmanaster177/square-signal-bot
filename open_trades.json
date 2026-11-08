@@ -716,6 +716,28 @@
   "score": 4
  },
  {
+  "sym": "UNIUSDT",
+  "side": "SHORT",
+  "zone": [
+   6.99,
+   7.023179941530823
+  ],
+  "tps": [
+   6.907050146172944,
+   6.8406902631112985,
+   6.741150438518831
+  ],
+  "sl": 7.112765783664043,
+  "ts": 1794146216.7171197,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
