@@ -760,6 +760,28 @@
   "score": 5
  },
  {
+  "sym": "ZECUSDT",
+  "side": "SHORT",
+  "zone": [
+   1203.43,
+   1213.9609592783079
+  ],
+  "tps": [
+   1177.1026018042303,
+   1156.0406832476144,
+   1124.4478054126907
+  ],
+  "sl": 1242.3945493297392,
+  "ts": 1794179010.7261848,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
