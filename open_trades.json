@@ -738,6 +738,28 @@
   "score": 4
  },
  {
+  "sym": "TRXUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.3199,
+   0.32012873873278386
+  ],
+  "tps": [
+   0.3193281531680404,
+   0.31887067570247274,
+   0.3181844595041212
+  ],
+  "sl": 0.3207463333113002,
+  "ts": 1794176298.560385,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
