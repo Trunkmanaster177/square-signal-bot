@@ -303,28 +303,6 @@
   "score": 4
  },
  {
-  "sym": "PEPEUSDT",
-  "side": "LONG",
-  "zone": [
-   4.99e-06,
-   4.939595705290433e-06
-  ],
-  "tps": [
-   5.116010736773915e-06,
-   5.216819326193047e-06,
-   5.368032210321745e-06
-  ],
-  "sl": 4.803504109574605e-06,
-  "ts": 1794002661.9809873,
-  "entered": true,
-  "entry_ts": 1794002700.0,
-  "hits": [],
-  "closed": false,
-  "outcome": null,
-  "dry": false,
-  "score": 4
- },
- {
   "sym": "RWUSDUSDT",
   "side": "LONG",
   "zone": [
@@ -636,8 +614,8 @@
   ],
   "sl": 0.010415153025294487,
   "ts": 1794095936.119466,
-  "entered": false,
-  "entry_ts": null,
+  "entered": true,
+  "entry_ts": 1794109800.0,
   "hits": [],
   "closed": false,
   "outcome": null,
@@ -660,6 +638,28 @@
   "ts": 1794099418.7215517,
   "entered": true,
   "entry_ts": 1794099600.0,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
+  "sym": "METUSDT",
+  "side": "LONG",
+  "zone": [
+   0.3232,
+   0.31883102219788406
+  ],
+  "tps": [
+   0.3341224445052897,
+   0.34286040010952157,
+   0.3559673335158693
+  ],
+  "sl": 0.30703478213217106,
+  "ts": 1794113748.9965026,
+  "entered": false,
+  "entry_ts": null,
   "hits": [],
   "closed": false,
   "outcome": null,
