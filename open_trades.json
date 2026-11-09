@@ -804,6 +804,28 @@
   "score": 4
  },
  {
+  "sym": "SPCXBUSDT",
+  "side": "LONG",
+  "zone": [
+   138.05,
+   137.40108824918119
+  ],
+  "tps": [
+   139.6722793770471,
+   140.97010287868474,
+   142.91683813114122
+  ],
+  "sl": 135.64902652197037,
+  "ts": 1794230393.3811347,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
