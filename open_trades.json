@@ -848,6 +848,28 @@
   "score": 4
  },
  {
+  "sym": "AVAXUSDT",
+  "side": "SHORT",
+  "zone": [
+   8.313,
+   8.371323676236665
+  ],
+  "tps": [
+   8.167190809408337,
+   8.050543456935008,
+   7.875572428225013
+  ],
+  "sl": 8.528797602075661,
+  "ts": 1794315505.3384128,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
