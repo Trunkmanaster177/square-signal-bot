@@ -826,6 +826,28 @@
   "score": 5
  },
  {
+  "sym": "INITUSDT",
+  "side": "LONG",
+  "zone": [
+   0.20729,
+   0.19783994525758478
+  ],
+  "tps": [
+   0.23091513685603804,
+   0.2498152463408685,
+   0.27816541056811417
+  ],
+  "sl": 0.17232479745306367,
+  "ts": 1794310370.6761584,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
