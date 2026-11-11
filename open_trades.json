@@ -892,6 +892,28 @@
   "score": 5
  },
  {
+  "sym": "INTCBUSDT",
+  "side": "LONG",
+  "zone": [
+   63.96,
+   63.48498661817444
+  ],
+  "tps": [
+   65.14753345456391,
+   66.09756021821504,
+   67.52260036369174
+  ],
+  "sl": 62.202450487245414,
+  "ts": 1794417155.9726481,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
