@@ -870,6 +870,28 @@
   "score": 4
  },
  {
+  "sym": "GRAMUSDT",
+  "side": "LONG",
+  "zone": [
+   1.243,
+   1.228385854816594
+  ],
+  "tps": [
+   1.2795353629585156,
+   1.3087636533253277,
+   1.3526060888755462
+  ],
+  "sl": 1.1889276628213974,
+  "ts": 1794402039.5876257,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
