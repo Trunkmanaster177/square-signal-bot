@@ -936,6 +936,28 @@
   "score": 5
  },
  {
+  "sym": "SOXSBUSDT",
+  "side": "SHORT",
+  "zone": [
+   45.76,
+   46.73961928058904
+  ],
+  "tps": [
+   43.3109517985274,
+   41.351713237349315,
+   38.4128553955822
+  ],
+  "sl": 49.38459133817944,
+  "ts": 1794510126.0925667,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
