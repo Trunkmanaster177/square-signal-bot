@@ -914,6 +914,28 @@
   "score": 5
  },
  {
+  "sym": "GOOGLBUSDT",
+  "side": "LONG",
+  "zone": [
+   297.1,
+   296.0922597580198
+  ],
+  "tps": [
+   299.6193506049507,
+   301.63483108891114,
+   304.6580518148519
+  ],
+  "sl": 293.37136110467316,
+  "ts": 1794498122.0953557,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
