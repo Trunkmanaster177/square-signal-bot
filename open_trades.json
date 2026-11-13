@@ -1046,6 +1046,28 @@
   "score": 5
  },
  {
+  "sym": "TAOUSDT",
+  "side": "SHORT",
+  "zone": [
+   211.9,
+   213.48809460572906
+  ],
+  "tps": [
+   207.92976348567734,
+   204.7535742742192,
+   199.98929045703204
+  ],
+  "sl": 217.77595004119755,
+  "ts": 1794613302.2951968,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
