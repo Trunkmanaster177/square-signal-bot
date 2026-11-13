@@ -1024,6 +1024,28 @@
   "score": 5
  },
  {
+  "sym": "SHELLUSDT",
+  "side": "LONG",
+  "zone": [
+   0.0413,
+   0.03985432347579304
+  ],
+  "tps": [
+   0.0449141913105174,
+   0.04780554435893132,
+   0.052142573931552194
+  ],
+  "sl": 0.03595099686043425,
+  "ts": 1794606949.6243188,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
