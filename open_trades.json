@@ -1002,6 +1002,28 @@
   "score": 4
  },
  {
+  "sym": "BARDUSDT",
+  "side": "LONG",
+  "zone": [
+   0.1639,
+   0.15724114390251548
+  ],
+  "tps": [
+   0.1805471402437113,
+   0.19386485243868035,
+   0.2138414207311339
+  ],
+  "sl": 0.13926223243930727,
+  "ts": 1794576610.4546623,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
