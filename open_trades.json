@@ -980,6 +980,28 @@
   "score": 4
  },
  {
+  "sym": "LTCUSDT",
+  "side": "SHORT",
+  "zone": [
+   50.04,
+   50.25237051668213
+  ],
+  "tps": [
+   49.50907370829468,
+   49.08433267493042,
+   48.447221124884045
+  ],
+  "sl": 50.82577091172387,
+  "ts": 1794530543.7303817,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
