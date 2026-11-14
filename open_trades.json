@@ -1112,6 +1112,28 @@
   "score": 4
  },
  {
+  "sym": "ASTERUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.4862,
+   0.4951582609969688
+  ],
+  "tps": [
+   0.46380434750757804,
+   0.4458878255136405,
+   0.41901304252273414
+  ],
+  "sl": 0.5193455656887845,
+  "ts": 1794691645.2989511,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
