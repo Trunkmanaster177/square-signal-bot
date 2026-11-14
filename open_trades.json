@@ -1090,6 +1090,28 @@
   "score": 5
  },
  {
+  "sym": "SOPHUSDT",
+  "side": "LONG",
+  "zone": [
+   0.00181,
+   0.0016907401471069725
+  ],
+  "tps": [
+   0.0021081496322325685,
+   0.0023466693380186235,
+   0.002704448896697706
+  ],
+  "sl": 0.0013687385442957983,
+  "ts": 1794674557.6025581,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
