@@ -1134,6 +1134,28 @@
   "score": 5
  },
  {
+  "sym": "RAREUSDT",
+  "side": "LONG",
+  "zone": [
+   0.01363,
+   0.013018612304593943
+  ],
+  "tps": [
+   0.015158469238515139,
+   0.016381244629327253,
+   0.01821540771554542
+  ],
+  "sl": 0.011367865526997591,
+  "ts": 1794822681.1239736,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
