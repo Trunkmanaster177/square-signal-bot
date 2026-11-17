@@ -1178,6 +1178,28 @@
   "score": 4
  },
  {
+  "sym": "BREVUSDT",
+  "side": "LONG",
+  "zone": [
+   0.1022,
+   0.0977257121048772
+  ],
+  "tps": [
+   0.113385719737807,
+   0.1223342955280526,
+   0.135757159213421
+  ],
+  "sl": 0.08564513478804564,
+  "ts": 1794940573.4685886,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
