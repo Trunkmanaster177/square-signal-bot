@@ -1156,6 +1156,28 @@
   "score": 4
  },
  {
+  "sym": "HUMAUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.00799,
+   0.008261580339377435
+  ],
+  "tps": [
+   0.007311049151556415,
+   0.006767888472801546,
+   0.005953147454669242
+  ],
+  "sl": 0.00899484725569651,
+  "ts": 1794927505.2424436,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
