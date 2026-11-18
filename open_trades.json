@@ -1222,6 +1222,28 @@
   "score": 5
  },
  {
+  "sym": "MSTRBUSDT",
+  "side": "SHORT",
+  "zone": [
+   93.31,
+   94.17075256483196
+  ],
+  "tps": [
+   91.15811858792013,
+   89.43661345825623,
+   86.8543557637604
+  ],
+  "sl": 96.49478448987821,
+  "ts": 1795017861.9938393,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
