@@ -1200,6 +1200,28 @@
   "score": 4
  },
  {
+  "sym": "MMTUSDT",
+  "side": "LONG",
+  "zone": [
+   0.2194,
+   0.21270113619014683
+  ],
+  "tps": [
+   0.23614715952463294,
+   0.24954488714433928,
+   0.2696414785738988
+  ],
+  "sl": 0.19461420390354328,
+  "ts": 1794983058.3169792,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
