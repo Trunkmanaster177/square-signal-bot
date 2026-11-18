@@ -1244,6 +1244,28 @@
   "score": 4
  },
  {
+  "sym": "PAXGUSDT",
+  "side": "SHORT",
+  "zone": [
+   3730.0,
+   3739.4682293841956
+  ],
+  "tps": [
+   3706.3294265395116,
+   3687.3929677711208,
+   3658.988279618534
+  ],
+  "sl": 3765.0324487215235,
+  "ts": 1795025270.426573,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
