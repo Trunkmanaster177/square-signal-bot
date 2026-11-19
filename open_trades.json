@@ -1288,6 +1288,28 @@
   "score": 4
  },
  {
+  "sym": "SKYUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.04663,
+   0.04762713422024453
+  ],
+  "tps": [
+   0.04413716444938867,
+   0.0421428960088996,
+   0.039151493348166005
+  ],
+  "sl": 0.050319396614904775,
+  "ts": 1795121991.0702167,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
