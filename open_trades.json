@@ -1266,6 +1266,28 @@
   "score": 4
  },
  {
+  "sym": "SENTUSDT",
+  "side": "LONG",
+  "zone": [
+   0.02239,
+   0.021794664175745385
+  ],
+  "tps": [
+   0.02387833956063654,
+   0.025069011209145765,
+   0.02685501868190961
+  ],
+  "sl": 0.02018725745025793,
+  "ts": 1795084108.348035,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
