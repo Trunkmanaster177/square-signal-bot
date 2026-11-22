@@ -1310,6 +1310,28 @@
   "score": 4
  },
  {
+  "sym": "BFUSDUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.9994,
+   0.9994499383719118
+  ],
+  "tps": [
+   0.9992751540702204,
+   0.9991752773263968,
+   0.9990254622106614
+  ],
+  "sl": 0.9995847719760735,
+  "ts": 1795359665.6610336,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
