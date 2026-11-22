@@ -1332,6 +1332,28 @@
   "score": 5
  },
  {
+  "sym": "ACEUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.0685,
+   0.07019540928977719
+  ],
+  "tps": [
+   0.06426147677555703,
+   0.060870658196002646,
+   0.055784430326671075
+  ],
+  "sl": 0.07477301437217561,
+  "ts": 1795377589.6907349,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
