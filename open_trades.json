@@ -1354,6 +1354,28 @@
   "score": 5
  },
  {
+  "sym": "PROMUSDT",
+  "side": "SHORT",
+  "zone": [
+   4.563,
+   4.680784027581362
+  ],
+  "tps": [
+   4.268539931046593,
+   4.0329718758838675,
+   3.6796197931397794
+  ],
+  "sl": 4.998800902051042,
+  "ts": 1795431172.343746,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
