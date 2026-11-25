@@ -1376,6 +1376,28 @@
   "score": 4
  },
  {
+  "sym": "WBTCUSDT",
+  "side": "SHORT",
+  "zone": [
+   59948.4,
+   60205.03548353054
+  ],
+  "tps": [
+   59306.811291173646,
+   58793.54032411257,
+   58023.63387352095
+  ],
+  "sl": 60897.951289063,
+  "ts": 1795567052.5411608,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
