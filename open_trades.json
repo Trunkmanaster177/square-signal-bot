@@ -1398,6 +1398,28 @@
   "score": 5
  },
  {
+  "sym": "MANTRAUSDT",
+  "side": "LONG",
+  "zone": [
+   0.0025,
+   0.002404645025240666
+  ],
+  "tps": [
+   0.0027383874368983353,
+   0.0029290973864170037,
+   0.003215162310695006
+  ],
+  "sl": 0.002147186593390464,
+  "ts": 1795716744.110952,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
