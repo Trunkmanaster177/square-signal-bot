@@ -1464,6 +1464,28 @@
   "score": 4
  },
  {
+  "sym": "SKHYBUSDT",
+  "side": "LONG",
+  "zone": [
+   118.21,
+   117.36515710384467
+  ],
+  "tps": [
+   120.32210724038833,
+   122.01179303269899,
+   124.54632172116499
+  ],
+  "sl": 115.08408128422528,
+  "ts": 1795821199.9427214,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
