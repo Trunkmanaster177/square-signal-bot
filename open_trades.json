@@ -1420,6 +1420,28 @@
   "score": 4
  },
  {
+  "sym": "PORTALUSDT",
+  "side": "LONG",
+  "zone": [
+   0.02426,
+   0.023686906089255583
+  ],
+  "tps": [
+   0.02569273477686105,
+   0.026838922598349888,
+   0.028558204330583148
+  ],
+  "sl": 0.022139552530245653,
+  "ts": 1795784306.2905707,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 5
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
