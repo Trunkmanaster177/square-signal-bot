@@ -1442,6 +1442,28 @@
   "score": 5
  },
  {
+  "sym": "HAEDALUSDT",
+  "side": "LONG",
+  "zone": [
+   0.02467,
+   0.023819417875927177
+  ],
+  "tps": [
+   0.02679645531018206,
+   0.02849761955832771,
+   0.03104936593054618
+  ],
+  "sl": 0.02152284614093055,
+  "ts": 1795788956.2449634,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
