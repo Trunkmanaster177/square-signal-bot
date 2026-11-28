@@ -1486,6 +1486,28 @@
   "score": 4
  },
  {
+  "sym": "WLFIUSDT",
+  "side": "SHORT",
+  "zone": [
+   0.0344,
+   0.034836802617526294
+  ],
+  "tps": [
+   0.03330799345618426,
+   0.03243438822113167,
+   0.03112398036855278
+  ],
+  "sl": 0.03601616968484729,
+  "ts": 1795840042.1983747,
+  "entered": false,
+  "entry_ts": null,
+  "hits": [],
+  "closed": false,
+  "outcome": null,
+  "dry": false,
+  "score": 4
+ },
+ {
   "sym": "UUSDT",
   "side": "LONG",
   "zone": [
